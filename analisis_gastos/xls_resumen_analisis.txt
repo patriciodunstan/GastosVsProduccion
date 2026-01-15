@@ -1,0 +1,25 @@
+============================================================
+RESUMEN: ANÁLISIS XLS vs DATABODEGA.CSV
+============================================================
+
+ARCHIVOS XLS ANALIZADOS:
+
+============================================================
+COMPARACIÓN CON DATABODEGA.CSV
+============================================================
+
+DUPLICADOS (ya en DATABODEGA.csv):
+  - Cantidad: 0
+  - Monto total: $0
+
+GASTOS ADICIONALES (NO en DATABODEGA.csv):
+  - Cantidad: 0
+  - Monto total: $0
+
+============================================================
+RECOMENDACIÓN
+============================================================
+
+Todos los gastos en XLS ya están en DATABODEGA.csv.
+
+RECOMENDACIÓN: Los archivos XLS son desgloses/duplicados y pueden ignorarse.

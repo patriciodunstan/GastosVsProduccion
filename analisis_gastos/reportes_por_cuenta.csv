@@ -1,0 +1,34 @@
+﻿Código Cuenta;Nombre Cuenta;Total Gastos;Total Ingresos;Archivos
+301010101;INGRESOS ARRIENDO MAQUINARIA;$268,743,672;$489,876,183;barredora.csv, bulldozer.csv, cargadores.csv, exc.csv, gruas.csv, maquinaria asfaltica.csv, motoniveladoras.csv, retros.csv, rodillos.csv
+301010102;CUENTA 301010102;$28,516,605;$90,038,209;vehiculos operaciones.csv, vehiculos.csv
+301010104;INGRESOS SERVICIOS TRANSPORTES;$239,143,850;$702,431,650;camiones.csv
+301010201;CUENTA 301010201;$5,390;$5,390;taller.csv
+301020105;CUENTA 301020105;$96,987,414;$96,987,414;camiones.csv
+401010101;COMBUSTIBLES;$54,199,919;$0;barredora.csv, bulldozer.csv, camiones.csv, cargadores.csv, exc.csv, gruas.csv, maquinaria asfaltica.csv, motoniveladoras.csv, pl aridos.csv, retros.csv, taller.csv, vehiculos operaciones.csv, vehiculos.csv
+401010102;REPUESTOS Y ACCESORIOS;$148,227,049;$156,066;barredora.csv, bulldozer.csv, camiones.csv, cargadores.csv, exc.csv, gruas.csv, maquinaria asfaltica.csv, motoniveladoras.csv, pl aridos.csv, pl hormigon.csv, retros.csv, rodillos.csv, taller.csv, tractores.csv, vehiculos operaciones.csv, vehiculos.csv
+401010103;REPARACIONES Y MANTENCION;$71,866,677;$0;barredora.csv, bulldozer.csv, camiones.csv, cargadores.csv, exc.csv, gruas.csv, maquinaria asfaltica.csv, motoniveladoras.csv, retros.csv, rodillos.csv, taller.csv, vehiculos operaciones.csv, vehiculos.csv
+401010104;ELEMENTOS DE PROTECCION PERSONAL;$2,573,868;$0;camiones.csv, cargadores.csv, exc.csv, gruas.csv, motoniveladoras.csv, retros.csv, taller.csv, tractores.csv, vehiculos operaciones.csv, vehiculos.csv
+401010105;CUENTA 401010105;$1,929,629;$0;camiones.csv, cargadores.csv, gruas.csv, maquinaria asfaltica.csv, rodillos.csv, taller.csv, vehiculos operaciones.csv, vehiculos.csv
+401010106;SERVICIO TRANSPORTES;$10,125,778;$0;camiones.csv, cargadores.csv, exc.csv, gruas.csv, taller.csv, vehiculos operaciones.csv
+401010107;CUENTA 401010107;$2,160,000;$0;camiones.csv
+401010108;CUENTA 401010108;$115,760,826;$0;camiones.csv, cargadores.csv, taller.csv
+401010109;HONORARIOS;$1,864,035;$0;barredora.csv, taller.csv, vehiculos operaciones.csv
+401010111;CUENTA 401010111;$563,740;$0;camiones.csv, gruas.csv, taller.csv, vehiculos.csv
+401010112;CUENTA 401010112;$1,149,590;$0;bulldozer.csv, camiones.csv, exc.csv, gruas.csv, taller.csv, vehiculos operaciones.csv, vehiculos.csv
+401010113;CUENTA 401010113;$21,640;$0;vehiculos operaciones.csv
+401010114;CUENTA 401010114;$4,509,668;$0;camiones.csv, exc.csv, gruas.csv, maquinaria asfaltica.csv, taller.csv, vehiculos operaciones.csv
+401010115;POLIZA DE SEGURO;$15,188,006;$0;camiones.csv, pl aridos.csv, vehiculos operaciones.csv, vehiculos.csv
+401010116;CUENTA 401010116;$3,753,386;$0;camiones.csv, motoniveladoras.csv, retros.csv
+401010117;CUENTA 401010117;$416,950;$0;camiones.csv, retros.csv, vehiculos operaciones.csv, vehiculos.csv
+401010118;CUENTA 401010118;$19,500;$0;camiones.csv
+401010119;CUENTA 401010119;$257,267,556;$0;bulldozer.csv, camiones.csv, cargadores.csv, exc.csv, motoniveladoras.csv, pl aridos.csv, retros.csv, rodillos.csv, tractores.csv, vehiculos operaciones.csv, vehiculos.csv
+401020101;CUENTA 401020101;$3,008,679;$0;pl aridos.csv, taller.csv
+401020102;CUENTA 401020102;$1,968,029;$0;taller.csv
+401020103;CUENTA 401020103;$172,336;$0;taller.csv
+401020107;CUENTA 401020107;$1,104,192;$0;camiones.csv, cargadores.csv, exc.csv, gruas.csv, maquinaria asfaltica.csv, motoniveladoras.csv, pl aridos.csv, pl hormigon.csv, retros.csv, rodillos.csv, taller.csv, vehiculos operaciones.csv, vehiculos.csv
+401020108;CUENTA 401020108;$80,000;$0;camiones.csv, cargadores.csv, gruas.csv, taller.csv
+401020114;CUENTA 401020114;$19,580;$0;taller.csv
+401030102;CUENTA 401030102;$685,719;$0;camiones.csv, vehiculos.csv
+401030107;OTROS GASTOS;$936,214;$0;barredora.csv, camiones.csv, cargadores.csv, exc.csv, gruas.csv, retros.csv, taller.csv, vehiculos operaciones.csv, vehiculos.csv
+401040101;CUENTA 401040101;$1,222,242;$0;vehiculos.csv
+401040104;CUENTA 401040104;$11,643;$0;camiones.csv

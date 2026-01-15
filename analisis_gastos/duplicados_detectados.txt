@@ -1,0 +1,4778 @@
+============================================================
+GASTOS DUPLICADOS DETECTADOS
+============================================================
+
+Fecha: 2025-10-17
+Máquina: CT-30
+Nombre: NEUMATICO 1200 R24 FAENEROS
+Total: $529,722
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-14
+Máquina: CP-07
+Nombre: NEUMATICO 11R 22.5 MIXTO
+Total: $340,102
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-13
+Máquina: CT-16
+Nombre: AMORTIGUADOR TRASERO AROCS
+Total: $214,558
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-07
+Máquina: CT-34
+Nombre: SEPARADOR DE LLANTA MACK (CV)
+Total: $180,771
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-11
+Máquina: TALLER
+Nombre: JUEGO DE ORING
+Total: $140,750
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-07
+Máquina: TALLER
+Nombre: INDURMIG
+Total: $138,006
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-06
+Máquina: TALLER
+Nombre: INDURMIG
+Total: $136,674
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-12
+Máquina: TALLER
+Nombre: INDURMIG
+Total: $136,303
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-29
+Máquina: TALLER
+Nombre: ALAMBRE TUBULAR 71T-1 1.2
+Total: $82,043
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-18
+Máquina: TALLER
+Nombre: OXIGENO
+Total: $68,529
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-23
+Máquina: OPERACIONES MAQUINAS ARRENDADAS
+Nombre: ACEITE 15W40 RIMULA R4
+Total: $67,020
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-26
+Máquina: RX-03
+Nombre: ACEITE 68 TAMBOR
+Total: $48,750
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-18
+Máquina: TALLER
+Nombre: CAMILLA
+Total: $43,708
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-03
+Máquina: TALLER
+Nombre: BOTIN N°41
+Total: $42,422
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-29
+Máquina: TALLER
+Nombre: BOTIN N°41
+Total: $39,990
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-20
+Máquina: TALLER
+Nombre: BOTIN N°42
+Total: $39,990
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-18
+Máquina: TALLER
+Nombre: BOTIN N°43
+Total: $39,990
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-16
+Máquina: CF-07
+Nombre: ACEITE 68 TAMBOR
+Total: $39,000
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-21
+Máquina: BA-01
+Nombre: ACEITE 68 TAMBOR
+Total: $39,000
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-23
+Máquina: TALLER
+Nombre: BOTIN MASTER Nº44
+Total: $37,970
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-10
+Máquina: EQUIPOS MENORES
+Nombre: FILTRO GL3 PIUSI
+Total: $34,000
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-12
+Máquina: TALLER
+Nombre: ALAMBRE TUBULAR 71T-1 1.2
+Total: $33,783
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-22
+Máquina: EX-19
+Nombre: GRASA MULTIPROPOSITO MOBIL 400 GRS
+Total: $33,780
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-24
+Máquina: EX-09
+Nombre: GRASA MULTIPROPOSITO MOBIL 400 GRS
+Total: $33,780
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-27
+Máquina: EQUIPOS MENORES
+Nombre: CARBURADOR EQ MENOR
+Total: $29,412
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-04
+Máquina: EX-11
+Nombre: DISCO DE CORTE 4 1/2
+Total: $28,950
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-27
+Máquina: SALA DE VENTAS REPUESTOS-MAQUINARIAS
+Nombre: ACEITE MOBIL DELVAC 1300 SUPER 15W40
+Total: $28,350
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-10
+Máquina: CT-38
+Nombre: ADBLUE LT.
+Total: $25,800
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-24
+Máquina: EX-09
+Nombre: ENGRASADORA MANUAL
+Total: $24,322
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-26
+Máquina: TALLER
+Nombre: BOTA DE GOMA N° 41
+Total: $22,290
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-28
+Máquina: TALLER
+Nombre: ENGRASADORA MANUAL
+Total: $21,742
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-12
+Máquina: EX-03
+Nombre: MANGUERA DIESEL 3/4
+Total: $21,500
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-12
+Máquina: CT-16
+Nombre: ADBLUE LT.
+Total: $21,480
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-28
+Máquina: EQUIPOS MENORES
+Nombre: VOLTIMETRO
+Total: $20,704
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-24
+Máquina: TC-02
+Nombre: FOCO FAENERO LED CUADRADO 12v/24v
+Total: $19,730
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-01
+Máquina: CT-13
+Nombre: PLUMILLA PARA PARABRISA 24
+Total: $17,804
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-25
+Máquina: MC-04
+Nombre: ALARMA DE RETROCESO 12/24 V
+Total: $17,196
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-26
+Máquina: CT-07
+Nombre: ACEITE 15W40 RIMULA R4
+Total: $16,755
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-12
+Máquina: EQUIPOS MENORES
+Nombre: PORTAELECTRODO 500 AMP
+Total: $16,716
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-28
+Máquina: TALLER
+Nombre: TRAJE DE AGUA T-M
+Total: $15,178
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-21
+Máquina: RX-03
+Nombre: GRASA MULTIPROPOSITO MOBIL 400 GRS
+Total: $14,415
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-25
+Máquina: ADMINISTRACION
+Nombre: Letrero Obra
+Total: $13,990
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-09
+Máquina: C-24
+Nombre: FILTRO MAXUS COMBUSTIBLE
+Total: $13,836
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-14
+Máquina: BA-01
+Nombre: FILTRO FLEETGUARD FF05485
+Total: $13,611
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-16
+Máquina: TALLER
+Nombre: TRAJE DE AGUA T-XXL
+Total: $13,511
+Aparece en 7 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-08
+Máquina: CF-09
+Nombre: ACEITE MOBIL DELVAC 1300 SUPER 15W40
+Total: $13,500
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-10
+Máquina: OPERACIONES MAQUINAS ARRENDADAS
+Nombre: ADBLUE LT.
+Total: $12,900
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-05
+Máquina: CT-33
+Nombre: REFRIGERANTE TAMBOR
+Total: $12,750
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-06
+Máquina: CT-06
+Nombre: REFRIGERANTE TAMBOR
+Total: $12,750
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-11
+Máquina: CF-09
+Nombre: REFRIGERANTE TAMBOR
+Total: $12,750
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-25
+Máquina: TALLER
+Nombre: TRAJE DE AGUA T-XXL
+Total: $12,207
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-01
+Máquina: TALLER
+Nombre: BOQUILLA OXICORTE 2NX
+Total: $12,024
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-09
+Máquina: TALLER
+Nombre: TRAJE DE AGUA T-XL
+Total: $11,990
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-26
+Máquina: TALLER
+Nombre: TRAJE DE AGUA T-XL
+Total: $11,990
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-29
+Máquina: EQUIPOS MENORES
+Nombre: LIQUIDO DE FRENO 1 LITRO
+Total: $11,681
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-24
+Máquina: TALLER
+Nombre: TRAJE DE AGUA T-XL
+Total: $11,569
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-09
+Máquina: TALLER
+Nombre: TRAJE DE AGUA T-XL
+Total: $11,569
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-12
+Máquina: TALLER
+Nombre: TRAJE DE AGUA T-XL
+Total: $11,390
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-11
+Máquina: TC-01
+Nombre: CANDADO 40 MM
+Total: $10,574
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-22
+Máquina: EX-08
+Nombre: ACEITE 15W40 RIMULA R4
+Total: $10,053
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-20
+Máquina: EX-08
+Nombre: KIT PASADOR Y SEGURO CALZA T35
+Total: $10,005
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-09
+Máquina: C-24
+Nombre: FILTRO MAXUS AIRE
+Total: $10,000
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-26
+Máquina: TALLER
+Nombre: MASCARILLA MEDIO ROSTRO
+Total: $9,899
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-03
+Máquina: EQUIPOS MENORES
+Nombre: FILTRO DE AIRE EQ MENOR
+Total: $9,776
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-26
+Máquina: CT-37
+Nombre: ADBLUE LT.
+Total: $9,520
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-01
+Máquina: OPERACIONES MAQUINAS ARRENDADAS
+Nombre: ADBLUE LT.
+Total: $9,520
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-08
+Máquina: OPERACIONES MAQUINAS ARRENDADAS
+Nombre: ADBLUE LT.
+Total: $9,520
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-19
+Máquina: TALLER
+Nombre: OVEROL T/L
+Total: $9,166
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-14
+Máquina: BA-01
+Nombre: FILTRO FLEETGUARD FF5052
+Total: $8,406
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-08
+Máquina: CT-12
+Nombre: EMPAQUETADURA DE FILTRO RESPIRADERO DE CARTER(IVEC
+Total: $8,320
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-23
+Máquina: TALLER
+Nombre: SOLDADURA 6011 1/8
+Total: $8,186
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-07
+Máquina: TALLER
+Nombre: CHALECO GEOLOGO TALLA XL
+Total: $7,990
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-14
+Máquina: TALLER
+Nombre: CHALECO GEOLOGO TALLA XXL
+Total: $7,990
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-27
+Máquina: EQUIPOS MENORES
+Nombre: FILTRO DE AIRE EQ MENOR
+Total: $7,843
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-10
+Máquina: TALLER
+Nombre: PRIMERA CAPA L
+Total: $7,835
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-09
+Máquina: TALLER
+Nombre: PRIMERA CAPA L
+Total: $7,835
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-09
+Máquina: C-24
+Nombre: FILTRO MAXUS ACEITE
+Total: $7,605
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-28
+Máquina: TALLER
+Nombre: POLICARBONATO PARA MASCARA SOLDAR
+Total: $7,283
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-24
+Máquina: EX-09
+Nombre: FLEXIBLE PARA ENGRASADORA
+Total: $7,208
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-05
+Máquina: TALLER
+Nombre: PRIMERA CAPA XXL
+Total: $7,182
+Aparece en 6 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-09
+Máquina: TALLER
+Nombre: PRIMERA CAPA XXL
+Total: $7,182
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-02
+Máquina: TALLER
+Nombre: PRIMERA CAPA XXL
+Total: $7,182
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-12
+Máquina: TALLER
+Nombre: PRIMERA CAPA XXL
+Total: $7,182
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-11
+Máquina: TALLER
+Nombre: PRIMERA CAPA XXL
+Total: $7,182
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-09
+Máquina: TALLER
+Nombre: PRIMERA CAPA XL
+Total: $7,108
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-12
+Máquina: EX-03
+Nombre: MANGUERA PARKER 1/2 R2
+Total: $7,000
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-07
+Máquina: TALLER
+Nombre: CHALECO GEOLOGO TALLA M
+Total: $6,986
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-15
+Máquina: SALA DE VENTAS REPUESTOS-MAQUINARIAS
+Nombre: OVEROL T/L
+Total: $6,942
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-15
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $6,711
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-13
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $6,711
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-28
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $6,711
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-12
+Máquina: TALLER
+Nombre: OVEROL T/L
+Total: $6,612
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-04
+Máquina: TALLER
+Nombre: ANTIPARRAS TRANSPARENTE
+Total: $6,600
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-02
+Máquina: TALLER
+Nombre: OVEROL 3XL
+Total: $6,592
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-07
+Máquina: TALLER
+Nombre: OVEROL 3XL
+Total: $6,592
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-19
+Máquina: TALLER
+Nombre: OVEROL 3XL
+Total: $6,592
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-13
+Máquina: TALLER
+Nombre: OVEROL 3XL
+Total: $6,592
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-22
+Máquina: TALLER
+Nombre: OVEROL 3XL
+Total: $6,592
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-21
+Máquina: TALLER
+Nombre: OVEROL 3XL
+Total: $6,592
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-11
+Máquina: TALLER
+Nombre: OVEROL 3XL
+Total: $6,592
+Aparece en 5 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-13
+Máquina: TALLER
+Nombre: OVEROL 3XL
+Total: $6,592
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-28
+Máquina: CF-05
+Nombre: GRASA MULTIPROPOSITO MOBIL 400 GRS
+Total: $6,396
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-23
+Máquina: CK-03
+Nombre: LOGO
+Total: $6,322
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-04
+Máquina: TALLER
+Nombre: PROTECTOR AUDITIVO CINTILLO
+Total: $6,090
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-06
+Máquina: TALLER
+Nombre: OVEROL 3XL
+Total: $6,050
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-28
+Máquina: OPERACIONES MAQUINAS ARRENDADAS
+Nombre: ADBLUE LT.
+Total: $5,712
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-29
+Máquina: TALLER
+Nombre: LENTES IN/OUT
+Total: $5,700
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-05
+Máquina: TALLER
+Nombre: LENTES IN/OUT
+Total: $5,700
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-03
+Máquina: SALA DE VENTAS REPUESTOS-MAQUINARIAS
+Nombre: OVEROL T/XL
+Total: $5,649
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-05
+Máquina: TALLER
+Nombre: OVEROL T/XXL
+Total: $5,449
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-14
+Máquina: TALLER
+Nombre: OVEROL T/XXL
+Total: $5,449
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-04
+Máquina: TALLER
+Nombre: OVEROL T/XXL
+Total: $5,449
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-23
+Máquina: TALLER
+Nombre: OVEROL T/XXL
+Total: $5,449
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-28
+Máquina: TALLER
+Nombre: OVEROL T/XXL
+Total: $5,449
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-29
+Máquina: TALLER
+Nombre: OVEROL T/XXL
+Total: $5,449
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-26
+Máquina: TALLER
+Nombre: OVEROL T/XXL
+Total: $5,449
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-29
+Máquina: TALLER
+Nombre: OVEROL T/XXL
+Total: $5,449
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-12
+Máquina: TALLER
+Nombre: OVEROL T/XXL
+Total: $5,449
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-21
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $5,380
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-24
+Máquina: TALLER
+Nombre: SOLDADURA 7018 1/8
+Total: $5,258
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-24
+Máquina: TC-02
+Nombre: HUINCHA AISLADORA
+Total: $5,192
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-14
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $5,087
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-15
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $5,087
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-05
+Máquina: EX-09
+Nombre: OVEROL T/XL
+Total: $5,087
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-10
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $5,087
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-13
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $5,087
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-06
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $5,023
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-30
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $5,023
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-21
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $5,023
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-04
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $5,023
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-13
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $5,023
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-25
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $5,023
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-30
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $5,023
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-23
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $5,023
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-30
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $5,023
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-06
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $5,023
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-18
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $5,023
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-29
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $5,023
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-15
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $5,023
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-08
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $5,023
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-20
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $5,023
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-07
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $4,997
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-19
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $4,997
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-29
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $4,997
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-21
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $4,997
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-08
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $4,997
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-18
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $4,997
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-24
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $4,997
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-01
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $4,997
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-14
+Máquina: TALLER
+Nombre: OVEROL T/M
+Total: $4,997
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-15
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,991
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-13
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,991
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-17
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,991
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-29
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,991
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-30
+Máquina: OPERACIONES MAQUINAS ARRENDADAS
+Nombre: ADBLUE LT.
+Total: $4,940
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-09
+Máquina: C-24
+Nombre: FILTRO MAXUS POLEN
+Total: $4,925
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-17
+Máquina: TALLER
+Nombre: CHALECO GEOLOGO TALLA M
+Total: $4,917
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-01
+Máquina: TALLER
+Nombre: OVEROL T/L
+Total: $4,881
+Aparece en 5 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-21
+Máquina: TALLER
+Nombre: OVEROL T/L
+Total: $4,881
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-30
+Máquina: TALLER
+Nombre: OVEROL T/L
+Total: $4,881
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-08
+Máquina: TALLER
+Nombre: OVEROL T/L
+Total: $4,881
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-07
+Máquina: TALLER
+Nombre: OVEROL T/L
+Total: $4,881
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-26
+Máquina: TALLER
+Nombre: OVEROL T/L
+Total: $4,881
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-09
+Máquina: CT-12
+Nombre: LIMPIADOR DE FRENO DE 500ML
+Total: $4,766
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-06
+Máquina: BD-03
+Nombre: LIMPIADOR DE FRENO DE 500ML
+Total: $4,766
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-07
+Máquina: EX-06
+Nombre: LIMPIADOR DE FRENO DE 500ML
+Total: $4,766
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-24
+Máquina: OPERACIONES MAQUINAS ARRENDADAS
+Nombre: ADBLUE LT.
+Total: $4,760
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-07
+Máquina: TALLER
+Nombre: SOLDADURA 6011 1/8
+Total: $4,750
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-07
+Máquina: TALLER
+Nombre: CHALECO GEOLOGO TALLA XL
+Total: $4,686
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-13
+Máquina: TALLER
+Nombre: CHALECO GEOLOGO TALLA XL
+Total: $4,686
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-18
+Máquina: TALLER
+Nombre: CHALECO GEOLOGO TALLA XL
+Total: $4,686
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-23
+Máquina: TALLER
+Nombre: CHALECO GEOLOGO TALLA XL
+Total: $4,686
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-14
+Máquina: TALLER
+Nombre: CHALECO GEOLOGO TALLA XL
+Total: $4,686
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-26
+Máquina: TALLER
+Nombre: CHALECO GEOLOGO TALLA XL
+Total: $4,686
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-29
+Máquina: TALLER
+Nombre: OVEROL T/L
+Total: $4,583
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-22
+Máquina: TALLER
+Nombre: OVEROL T/L
+Total: $4,583
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-15
+Máquina: TALLER
+Nombre: OVEROL T/L
+Total: $4,583
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-01
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,564
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-08
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,564
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-11
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,564
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-03
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,564
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-14
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,564
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-10
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,564
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-20
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,564
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-26
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,564
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-08
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,564
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-29
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,564
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-06
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,564
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-09
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,564
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-14
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,564
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-26
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,564
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-01
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,564
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-18
+Máquina: TALLER
+Nombre: OVEROL T/XXL
+Total: $4,539
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-24
+Máquina: TALLER
+Nombre: OVEROL T/XXL
+Total: $4,539
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-11
+Máquina: TALLER
+Nombre: OVEROL T/XXL
+Total: $4,539
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-15
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,528
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-27
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,528
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-10
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,528
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-17
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,528
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-13
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,528
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-14
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,528
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-01
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,528
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-19
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,528
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-07
+Máquina: TALLER
+Nombre: OVEROL T/XL
+Total: $4,528
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-14
+Máquina: TALLER
+Nombre: CHALECO GEOLOGO TALLA XXL
+Total: $4,364
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-25
+Máquina: TC-01
+Nombre: ROST OFF
+Total: $4,351
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-07
+Máquina: TALLER
+Nombre: SOLDADURA 7018 3/32
+Total: $4,169
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-21
+Máquina: OPERACIONES MAQUINAS ARRENDADAS
+Nombre: AMPOLLETA H7 12V
+Total: $4,122
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-29
+Máquina: TALLER
+Nombre: SOLDADURA 6011 1/8
+Total: $4,093
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-14
+Máquina: BA-01
+Nombre: FILTRO MANN WK714/1
+Total: $4,067
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-16
+Máquina: TALLER
+Nombre: ROST OFF
+Total: $3,808
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-05
+Máquina: TC-03
+Nombre: ROST OFF
+Total: $3,808
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-16
+Máquina: TALLER
+Nombre: MARCADOR DE METAL (LAPIZ)
+Total: $3,782
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-10
+Máquina: CT-21
+Nombre: ROST OFF
+Total: $3,755
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-16
+Máquina: TC-01
+Nombre: ROST OFF
+Total: $3,755
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-10
+Máquina: TALLER
+Nombre: DISCO DE CORTE 4 1/2
+Total: $3,618
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-28
+Máquina: TALLER
+Nombre: DISCO DE CORTE 4 1/2
+Total: $3,618
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-10
+Máquina: CT-06
+Nombre: GRASA MULTIPROPOSITO MOBIL 400 GRS
+Total: $3,164
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-09
+Máquina: BD-03
+Nombre: BOLSA DE PAÑOS
+Total: $3,136
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-05
+Máquina: TALLER
+Nombre: CALCETIN TERMICO
+Total: $3,096
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-09
+Máquina: TALLER
+Nombre: CALCETIN TERMICO
+Total: $3,096
+Aparece en 18 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-01
+Máquina: TALLER
+Nombre: CALCETIN TERMICO
+Total: $3,096
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-12
+Máquina: TALLER
+Nombre: CALCETIN TERMICO
+Total: $3,096
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-10
+Máquina: TALLER
+Nombre: CALCETIN TERMICO
+Total: $3,096
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-09
+Máquina: ADMINISTRACION
+Nombre: CALCETIN TERMICO
+Total: $3,096
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-14
+Máquina: EX-14
+Nombre: BOLSA DE PAÑOS
+Total: $3,066
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-19
+Máquina: EQUIPOS MENORES
+Nombre: BOLSA DE PAÑOS
+Total: $3,046
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-10
+Máquina: TALLER
+Nombre: BLOQUEADOR SOLAR INDIVIDUAL
+Total: $2,955
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-04
+Máquina: SALA DE VENTAS REPUESTOS-MAQUINARIAS
+Nombre: MASCARILLA DESECHABLE
+Total: $2,800
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-25
+Máquina: CT-28
+Nombre: HUINCHA AISLADORA
+Total: $2,773
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-30
+Máquina: C-27
+Nombre: FILTRO DE AIRE GREAT WALL
+Total: $2,630
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-26
+Máquina: TALLER
+Nombre: BLOQUEADOR SOLAR INDIVIDUAL
+Total: $2,603
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-25
+Máquina: EQUIPOS MENORES
+Nombre: BUJIA
+Total: $2,521
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-09
+Máquina: CT-20
+Nombre: HUINCHA AISLADORA
+Total: $2,411
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-25
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $2,000
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-15
+Máquina: TALLER
+Nombre: BOQUILLA MIG BERNARD 1.2 (EZ-200/300/400)
+Total: $1,907
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-06
+Máquina: TALLER
+Nombre: CASCO GAMASPROT 221 AZUL
+Total: $1,853
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-21
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XXL
+Total: $1,780
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-21
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XL
+Total: $1,780
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-11
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XXL
+Total: $1,780
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-17
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XL
+Total: $1,780
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-06
+Máquina: EX-03
+Nombre: MANGUERA 3/8
+Total: $1,708
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-04
+Máquina: TALLER
+Nombre: CASCO 221 GRIS
+Total: $1,590
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-17
+Máquina: EX-10
+Nombre: LIJA GRANO 120
+Total: $1,588
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-19
+Máquina: EX-06
+Nombre: BOLSA DE PAÑOS
+Total: $1,563
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-24
+Máquina: TC-02
+Nombre: AMPOLLETA GLOBO GRANDE 12 V DOS CONTACTO P/D
+Total: $1,558
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-11
+Máquina: OPERACIONES MAQUINAS ARRENDADAS
+Nombre: CALCETIN TERMICO
+Total: $1,548
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-19
+Máquina: TALLER
+Nombre: BOLSA DE PAÑOS
+Total: $1,533
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-18
+Máquina: TALLER
+Nombre: BOLSA DE PAÑOS
+Total: $1,533
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-08
+Máquina: TALLER
+Nombre: BOLSA DE PAÑOS
+Total: $1,528
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-09
+Máquina: CT-06
+Nombre: BOLSA DE PAÑOS
+Total: $1,528
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-12
+Máquina: EX-09
+Nombre: BOLSA DE PAÑOS
+Total: $1,523
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-26
+Máquina: CT-37
+Nombre: BOLSA DE PAÑOS
+Total: $1,514
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-26
+Máquina: CT-38
+Nombre: BOLSA DE PAÑOS
+Total: $1,514
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-04
+Máquina: EQUIPOS MENORES
+Nombre: BOLSA DE PAÑOS
+Total: $1,507
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-01
+Máquina: TALLER
+Nombre: BOLSA DE PAÑOS
+Total: $1,507
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-01
+Máquina: CT-30
+Nombre: BOLSA DE PAÑOS
+Total: $1,507
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-19
+Máquina: TALLER
+Nombre: LENTE OSCURO
+Total: $1,490
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-10
+Máquina: TALLER
+Nombre: LENTES IN/OUT
+Total: $1,490
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-29
+Máquina: TALLER
+Nombre: LENTE OSCURO
+Total: $1,490
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-30
+Máquina: TALLER
+Nombre: LENTE CLARO
+Total: $1,490
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-02
+Máquina: TALLER
+Nombre: LENTES IN/OUT
+Total: $1,490
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-01
+Máquina: TALLER
+Nombre: LENTE CLARO
+Total: $1,490
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-28
+Máquina: TALLER
+Nombre: LENTE OSCURO
+Total: $1,490
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-22
+Máquina: CT-20
+Nombre: GOTITA
+Total: $1,406
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-13
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,399
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-03
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,399
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-23
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,399
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-08
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,399
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-16
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,399
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-22
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,399
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-21
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,399
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-14
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,399
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-10
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,399
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-06
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,399
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-09
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,399
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-15
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,399
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-25
+Máquina: TALLER
+Nombre: GORRO
+Total: $1,252
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-11
+Máquina: TALLER
+Nombre: GORRO
+Total: $1,252
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-03
+Máquina: CP-07
+Nombre: ABRAZADERA PLASTICA CHICA 4,8MM X 178MM
+Total: $1,240
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-04
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,200
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-18
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,200
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-21
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,200
+Aparece en 6 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-27
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,200
+Aparece en 5 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-11
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,200
+Aparece en 6 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-10
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,200
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-07
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,200
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-24
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,200
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-24
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,200
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-12
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,200
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-14
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,200
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-30
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,200
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-03
+Máquina: EX-10
+Nombre: GUANTE NITRILO
+Total: $1,192
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-19
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,136
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-15
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,136
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-12
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,136
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-09
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,136
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-10
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,136
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-23
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,136
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-18
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,136
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-22
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,136
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-16
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,136
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-29
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,136
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-26
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,127
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-22
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,127
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-20
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,127
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-30
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,127
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-11
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,127
+Aparece en 5 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-25
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,127
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-01
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,127
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-29
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,127
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-09
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,127
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-04
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,127
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-27
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,127
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-01
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,127
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-22
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,127
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-16
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,127
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-02
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,127
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-24
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,127
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-28
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,090
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-03
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,090
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-17
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,090
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-21
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,090
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-28
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,090
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-12
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,090
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-25
+Máquina: MN-02
+Nombre: GUANTE DE CABRETILLA
+Total: $1,090
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-05
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,090
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-25
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,090
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-02
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,090
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-05
+Máquina: CT-33
+Nombre: GUANTE DE CABRETILLA
+Total: $1,090
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-02
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,090
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-27
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,090
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-04
+Máquina: OPERACIONES MAQUINAS ARRENDADAS
+Nombre: GUANTE DE CABRETILLA
+Total: $1,090
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-20
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,090
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-06
+Máquina: EX-03
+Nombre: HEMBRA FOR 3/8
+Total: $1,003
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-15
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,002
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-24
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,002
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-28
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,002
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-21
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,002
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-10
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,002
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-23
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,002
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-07
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,002
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-29
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,002
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-11
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,002
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-22
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,002
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-10
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-03
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-17
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-27
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-09
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-04
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-23
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-14
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 8 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-26
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-22
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-19
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-30
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 5 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-26
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-11
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-19
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-11
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-01
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-22
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-28
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-25
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-23
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-16
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-10
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-15
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-18
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-23
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-17
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-21
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $1,000
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-08
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $993
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-01
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $993
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-06
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $993
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-30
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $993
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-11
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $993
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-13
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $993
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-31
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $993
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-04
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $993
+Aparece en 6 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-12
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $993
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-07
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $989
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-31
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $989
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-29
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $989
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-21
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $989
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-04
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $989
+Aparece en 5 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-22
+Máquina: TALLER
+Nombre: GUANTE DE CABRETILLA
+Total: $989
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-11
+Máquina: EX-11
+Nombre: GUANTE DE CABRETILLA
+Total: $989
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-19
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA L
+Total: $897
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-01
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA L
+Total: $897
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-13
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA L
+Total: $897
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-30
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XL
+Total: $890
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-18
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XL
+Total: $890
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-26
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XL
+Total: $890
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-24
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XL
+Total: $890
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-08
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XXL
+Total: $890
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-26
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XXL
+Total: $890
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-03
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XXL
+Total: $890
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-18
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XXL
+Total: $890
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-13
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XXL
+Total: $890
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-28
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XL
+Total: $890
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-19
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XL
+Total: $890
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-24
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XL
+Total: $890
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-30
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XL
+Total: $890
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-17
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XL
+Total: $890
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-02
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XL
+Total: $890
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-07
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XL
+Total: $890
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-06
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XXL
+Total: $890
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-22
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XL
+Total: $890
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-09
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XL
+Total: $890
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-06
+Máquina: C-37
+Nombre: OVEROL PAPEL TALLA XL
+Total: $890
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-27
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XL
+Total: $890
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-16
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XL
+Total: $890
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-04
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XXL
+Total: $890
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-19
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XL
+Total: $890
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-22
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XL
+Total: $890
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-14
+Máquina: TALLER
+Nombre: OVEROL PAPEL TALLA XL
+Total: $890
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-12
+Máquina: TALLER
+Nombre: VISOR CLARO 8 X 16 CON BORDE ALUMINIO
+Total: $886
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-17
+Máquina: TALLER
+Nombre: GUANTE NITRILO
+Total: $758
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-09
+Máquina: TALLER
+Nombre: GUANTE NITRILO
+Total: $758
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-08
+Máquina: SALA DE VENTAS REPUESTOS-MAQUINARIAS
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $715
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-24
+Máquina: CT-09
+Nombre: GUANTE NITRILO
+Total: $696
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-01
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $681
+Aparece en 7 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-24
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $681
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-27
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $681
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-19
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $681
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-29
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $681
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-15
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $681
+Aparece en 5 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-12
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $681
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-17
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $681
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-10
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $681
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-28
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $681
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-18
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $681
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-22
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $681
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-12-23
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $681
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-26
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $681
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-10
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $677
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-13
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $677
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-14
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $677
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-17
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $677
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-22
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $677
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-21
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $677
+Aparece en 8 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-24
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $677
+Aparece en 7 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-27
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $677
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-07
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $677
+Aparece en 5 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-24
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $677
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-11
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $677
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-11-20
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $677
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-06
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $669
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-13
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $669
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-23
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $669
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-07
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $669
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-09
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $669
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-21
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $669
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-08
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $669
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-15
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $669
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-22
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $669
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-02
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $669
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-16
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $669
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-10-10
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $669
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-22
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $652
+Aparece en 5 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-30
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $652
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-29
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $652
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-25
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $652
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-01
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $652
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-15
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $652
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-10
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $652
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-08
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $652
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-24
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $652
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-03
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $652
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-12
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $652
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-05
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $652
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-23
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $601
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-14
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $601
+Aparece en 8 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-04
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $601
+Aparece en 6 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-22
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $601
+Aparece en 5 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-01
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $601
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-06
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $601
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-13
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $601
+Aparece en 5 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-21
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $601
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-07
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $601
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-24
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $601
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-14
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $601
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-29
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $601
+Aparece en 6 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-17
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $601
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-12
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $601
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-19
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $601
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-22
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $601
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-15
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $601
+Aparece en 5 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-29
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $601
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-18
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $601
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-20
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $601
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-24
+Máquina: TC-02
+Nombre: ABRAZADERA PLASTICA MEDIANA 4,8MM X 360MM
+Total: $600
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-24
+Máquina: TALLER
+Nombre: GUANTE NITRILO
+Total: $596
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-13
+Máquina: TALLER
+Nombre: GUANTE NITRILO
+Total: $596
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-04
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $591
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-31
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $591
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-24
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $591
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-11
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $591
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-17
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $591
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-28
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $591
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-21
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $591
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-12
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $591
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-20
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $591
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-14
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-19
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 5 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-03
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-15
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 6 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-23
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-11
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-02
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-06
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-12
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-22
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-26
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-18
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-23
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 6 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-30
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-07
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-21
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-19
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-25
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 5 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-04
+Máquina: EX-12
+Nombre: ABRAZADERA PLASTICA MEDIANA 4,8MM X 360MM
+Total: $590
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-27
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-16
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 7 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-06
+Máquina: CT-21
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-26
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-07-08
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-04
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-27
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-23
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-25
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-16
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $590
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-20
+Máquina: TALLER
+Nombre: TAPON AUDITIVO
+Total: $574
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-24
+Máquina: TC-02
+Nombre: AMPOLLETA GLOBO GRANDE 12 V UN CONTACTO P/I
+Total: $573
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-14
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $490
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-26
+Máquina: TALLER
+Nombre: LENTE OSCURO
+Total: $490
+Aparece en 4 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-15
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $490
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-23
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $490
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-07
+Máquina: TALLER
+Nombre: LENTE CLARO
+Total: $490
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-19
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $490
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-02
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $490
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-03
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $490
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-16
+Máquina: TALLER
+Nombre: LENTE CLARO
+Total: $490
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-03
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $490
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-01-30
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $490
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-26
+Máquina: TALLER
+Nombre: LENTE CLARO
+Total: $490
+Aparece en 3 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-13
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $490
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-04-15
+Máquina: TALLER
+Nombre: LENTE OSCURO
+Total: $490
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-10
+Máquina: CT-22
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $490
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-08-11
+Máquina: TALLER
+Nombre: LENTE CLARO
+Total: $490
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-24
+Máquina: TALLER
+Nombre: GUANTE MECANICO TECHNICAL
+Total: $490
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-02-04
+Máquina: TALLER
+Nombre: LENTE OSCURO
+Total: $463
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-25
+Máquina: TALLER
+Nombre: LENTE OSCURO
+Total: $463
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-03-20
+Máquina: TALLER
+Nombre: LENTE CLARO
+Total: $449
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-06-24
+Máquina: TC-02
+Nombre: ABRAZADERA PLASTICA CHICA 4,8MM X 178MM
+Total: $440
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-05-30
+Máquina: TALLER
+Nombre: TAPON AUDITIVO
+Total: $402
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+Fecha: 2025-09-01
+Máquina: TALLER
+Nombre: TAPON AUDITIVO
+Total: $402
+Aparece en 2 archivo(s):
+  - DATABODEGA.csv
+  - DATABODEGA.csv
+
+
+Total en duplicados (exceso): $4,971,183

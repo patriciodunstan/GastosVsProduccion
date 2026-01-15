@@ -1,0 +1,635 @@
+﻿FECHA_SALIDA,MAQUINA,MECANICO,TIPO_ORDEN,HORAS HOMBRE
+31 dic 2025,[CT-10 HKDX21] - FOTON AUMAN 3239,Cristóbal Burgos,Preventivo,5
+31 dic 2025,[TC-01 ZW5118] - IVECO STRALIS 740S42,EXTERNO EXTERNO,Correctivo,1
+31 dic 2025,[CT-14 RCKP70] - MERCEDEZ BENZ AROCS 3342,EXTERNO EXTERNO,Correctivo,1
+31 dic 2025,[EX-15 THYP52] - KOMATSU PC210 LC,EXTERNO EXTERNO,Correctivo,1
+31 dic 2025,[CT-07 CHPV26] - FREIGHTLINER M2 112,EXTERNO EXTERNO,Correctivo,1
+31 dic 2025,[EX-15 THYP52] - KOMATSU PC210 LC,NEFTALÍ LINCOPI,Correctivo,5
+31 dic 2025,[CT-10 HKDX21] - FOTON AUMAN 3239,Claudio Vásquez,Preventivo,2
+31 dic 2025,[C-54 VPPL47] - MAXUS T60 CS MT 4X4 2.0 DX PLUS,EXTERNO EXTERNO,Correctivo,1
+31 dic 2025,[EX-15 THYP52] - KOMATSU PC210 LC,Daniel Rubio,Correctivo,5
+31 dic 2025,[CT-30 YU4568-9] - MACK CV713,EXTERNO EXTERNO,Correctivo,1
+30 dic 2025,[CT-07 CHPV26] - FREIGHTLINER M2 112,Daniel Rubio,Correctivo,10
+30 dic 2025,[CT-07 CHPV26] - FREIGHTLINER M2 112,Gabriel Compay,Correctivo,6
+30 dic 2025,"[CT-20 BFTP53] - MERCEDEZ BENZ ",Cristóbal Burgos,Correctivo,2
+30 dic 2025,[EX-15 THYP52] - KOMATSU PC210 LC,Daniel Rubio,Correctivo,7
+30 dic 2025,"[C-38 SRPL59] - MAXUS T60 DX 4X4 CABSIM 2,8CC",EXTERNO EXTERNO,Correctivo,1
+30 dic 2025,[MN-02 CKPV95] - KOMATSU GD675-3EO,NEFTALÍ LINCOPI,Correctivo,33
+30 dic 2025,[MB-01 KDWS38] - MERCEDEZ BENZ SPRINTER 315 CDI,Cristóbal Burgos,Correctivo,6
+30 dic 2025,"[C-20 RCZX23] - MITSUBISHI L200 4X2, WORK CR WF 2,4CC",EXTERNO EXTERNO,Correctivo,1
+30 dic 2025,[EX-15 THYP52] - KOMATSU PC210 LC,Alex Cuevas,Correctivo,2
+30 dic 2025,[MN-02 CKPV95] - KOMATSU GD675-3EO,daniel alvares,Correctivo,33
+30 dic 2025,"[C-38 SRPL59] - MAXUS T60 DX 4X4 CABSIM 2,8CC",Claudio Vásquez,Correctivo,5
+30 dic 2025,[CT-07 CHPV26] - FREIGHTLINER M2 112,IGNACIO ROSAS,Correctivo,6
+30 dic 2025,[CT-07 CHPV26] - FREIGHTLINER M2 112,Edison Uribe,Correctivo,10
+30 dic 2025,[EX-15 THYP52] - KOMATSU PC210 LC,Edison Uribe,Correctivo,7
+29 dic 2025,[CT-31 YU4569-7] - MACK CV713,IGNACIO ROSAS,Preventivo,3
+29 dic 2025,"[CT-20 BFTP53] - MERCEDEZ BENZ ",Cristóbal Burgos,Correctivo,2
+29 dic 2025,"[C-38 SRPL59] - MAXUS T60 DX 4X4 CABSIM 2,8CC",Carlos Astudillo,Preventivo,3
+29 dic 2025,"[RC-02 RSRK53] - HAMM ",Gabriel Compay,Correctivo,1
+29 dic 2025,"[RC-02 RSRK53] - HAMM ",Cristóbal Burgos,Correctivo,7
+29 dic 2025,"[C-39 SRPL60] - MAXUS T60 DX 4X4 CABSIM 2,8CC",Cristóbal Burgos,Correctivo,3
+29 dic 2025,"[CT-20 BFTP53] - MERCEDEZ BENZ ",Luis Patricio Lamilla Mansilla,Correctivo,2
+29 dic 2025,"[C-43 STWW21] - MITSUBISHI L200 ",Carlos Astudillo,Preventivo,3
+29 dic 2025,[CT-31 YU4569-7] - MACK CV713,Gabriel Compay,Preventivo,3
+29 dic 2025,[MN-04 YF5586-4 VOLVO G730B] - VOLVO G730B,EXTERNO EXTERNO,Correctivo,1
+24 dic 2025,[EX-15 THYP52] - KOMATSU PC210 LC,Edison Uribe,Preventivo,2
+24 dic 2025,[EX-15 THYP52] - KOMATSU PC210 LC,Alex Cuevas,Preventivo,22
+24 dic 2025,[CB-04 PXKW57] - VICFER VIC-6,daniel alvares,Correctivo,1
+24 dic 2025,[EX-15 THYP52] - KOMATSU PC210 LC,Daniel Rubio,Preventivo,6
+24 dic 2025,[EX-15 THYP52] - KOMATSU PC210 LC,IGNACIO ROSAS,Preventivo,4
+24 dic 2025,[CK-03 TS2119] - CHEVROLET KODIAK 241,Daniel Rubio,Correctivo,4
+24 dic 2025,[CK-03 TS2119] - CHEVROLET KODIAK 241,Edison Uribe,Correctivo,4
+24 dic 2025,[EX-15 THYP52] - KOMATSU PC210 LC,Claudio Vásquez,Preventivo,5
+23 dic 2025,[CT-25 WH9819-7] - MACK CV713,Claudio Vásquez,Correctivo,2
+23 dic 2025,[CT-25 WH9819-7] - MACK CV713,IGNACIO ROSAS,Correctivo,21
+23 dic 2025,[CT-26 WH9820-0] - MACK CV713,Luis Patricio Lamilla Mansilla,Correctivo,6
+23 dic 2025,[CT-25 WH9819-7] - MACK CV713,Luis Patricio Lamilla Mansilla,Correctivo,71
+23 dic 2025,[TC-02 DSBH56] - INTERNACIONAL 7600,Edison Uribe,Correctivo,4
+23 dic 2025,"[CT-20 BFTP53] - MERCEDEZ BENZ ",Daniel Rubio,Correctivo,1
+23 dic 2025,[CT-23 BSPZ51-K] - MACK GU 813,Luis Patricio Lamilla Mansilla,Preventivo,21
+23 dic 2025,[CT-36 VJGJ11] - IVECO TRAKKER 410 TOLVA 15M3,daniel alvares,Correctivo,3
+23 dic 2025,[CT-23 BSPZ51-K] - MACK GU 813,IGNACIO ROSAS,Preventivo,21
+23 dic 2025,[CT-25 WH9819-7] - MACK CV713,daniel alvares,Correctivo,12
+23 dic 2025,[TC-02 DSBH56] - INTERNACIONAL 7600,Paulo Coronado,Correctivo,4
+23 dic 2025,[CT-26 WH9820-0] - MACK CV713,IGNACIO ROSAS,Correctivo,6
+23 dic 2025,[CK-03 TS2119] - CHEVROLET KODIAK 241,Carlos Astudillo,Correctivo,7
+23 dic 2025,[CT-25 WH9819-7] - MACK CV713,Paulo Coronado,Correctivo,49
+23 dic 2025,[CT-36 VJGJ11] - IVECO TRAKKER 410 TOLVA 15M3,Cristóbal Burgos,Correctivo,3
+22 dic 2025,[EX-14 KFZK38] - KOMATSU PC200LC-8M0,EXTERNO EXTERNO,Correctivo,1
+22 dic 2025,[CI-02 GGHD72] - FREIGHTLINER GGHD72,SAMUEL NUÑEZ,Correctivo,2
+22 dic 2025,[CI-02 GGHD72] - FREIGHTLINER GGHD72,daniel alvares,Correctivo,2
+22 dic 2025,[BD-03 KSRG22] - JOHN DEERE 850J,EXTERNO EXTERNO,Correctivo,1
+21 dic 2025,[EX-14 KFZK38] - KOMATSU PC200LC-8M0,Eduardo Barrera,Correctivo,2
+21 dic 2025,[EX-14 KFZK38] - KOMATSU PC200LC-8M0,Matías López,Correctivo,2
+21 dic 2025,[EX-18 VHTG61] - KOMATSU PC210LC-10M0,Eduardo Barrera,Correctivo,1
+21 dic 2025,[CP-04 LBLG59] - MITSUBUSHI CANTER 7.5,Eduardo Barrera,Correctivo,1
+21 dic 2025,[EX-18 VHTG61] - KOMATSU PC210LC-10M0,Matías López,Correctivo,1
+21 dic 2025,[CP-04 LBLG59] - MITSUBUSHI CANTER 7.5,Matías López,Correctivo,1
+20 dic 2025,[CF-05 LZRC22] - CLINTON LW 300 F,Luis Patricio Lamilla Mansilla,Preventivo,5
+20 dic 2025,[CF-10 PYCJ80] - KOMATSU WA 470 - 6A,Carlos Astudillo,Correctivo,2
+20 dic 2025,[CF-05 LZRC22] - CLINTON LW 300 F,IGNACIO ROSAS,Preventivo,5
+19 dic 2025,[EX-12 JJLH67] - JOHN DEERE 350G,Matías López,Correctivo,3
+19 dic 2025,[RC-01 DBFS56] - CATERPILLAR CS 533 E,EXTERNO EXTERNO,Correctivo,1
+19 dic 2025,[C-35 SCSL76] - JMC VIGUS WOR LX 4X4,EXTERNO EXTERNO,Correctivo,1
+19 dic 2025,[CF-10 PYCJ80] - KOMATSU WA 470 - 6A,NEFTALÍ LINCOPI,Correctivo,2
+19 dic 2025,[CK-03 TS2119] - CHEVROLET KODIAK 241,EXTERNO EXTERNO,Correctivo,1
+19 dic 2025,[CT-13 PDSF75] - IVECO TRAKKER HI LAND AD 380T50,Eduardo Barrera,Correctivo,3
+19 dic 2025,[EX-15 THYP52] - KOMATSU PC210 LC,NEFTALÍ LINCOPI,Correctivo,3
+19 dic 2025,[CT-13 PDSF75] - IVECO TRAKKER HI LAND AD 380T50,Matías López,Correctivo,3
+19 dic 2025,[CT-25 WH9819-7] - MACK CV713,EXTERNO EXTERNO,Correctivo,1
+19 dic 2025,[GM-03] - TEREX HC-110,EXTERNO EXTERNO,Correctivo,1
+19 dic 2025,[EX-08 JVXT34] - KOMATSU PC200LC 8MO,EXTERNO EXTERNO,Correctivo,1
+19 dic 2025,[EX-12 JJLH67] - JOHN DEERE 350G,Eduardo Barrera,Correctivo,3
+18 dic 2025,"[C-39 SRPL60] - MAXUS T60 DX 4X4 CABSIM 2,8CC",Matías López,Preventivo,2
+18 dic 2025,[CP-03 HKFG20] - FOTON AUMARK 613E,Cristóbal Burgos,Correctivo,2
+18 dic 2025,[CP-03 HKFG20] - FOTON AUMARK 613E,IGNACIO ROSAS,Correctivo,5
+18 dic 2025,[EX-03] - JCB JS 200 LC,Carlos Astudillo,Correctivo,8
+18 dic 2025,[EX-03] - JCB JS 200 LC,Paulo Coronado,Correctivo,8
+18 dic 2025,"[C-39 SRPL60] - MAXUS T60 DX 4X4 CABSIM 2,8CC",Eduardo Barrera,Preventivo,2
+18 dic 2025,[CP-04 LBLG59] - MITSUBUSHI CANTER 7.5,IGNACIO ROSAS,Correctivo,1
+18 dic 2025,[CP-03 HKFG20] - FOTON AUMARK 613E,Claudio Vásquez,Correctivo,1
+18 dic 2025,[CP-03 HKFG20] - FOTON AUMARK 613E,Gabriel Compay,Correctivo,14
+17 dic 2025,"[CT-20 BFTP53] - MERCEDEZ BENZ ",Luis Patricio Lamilla Mansilla,Correctivo,1
+17 dic 2025,[CM-01 YZ6869] - INTERNACIONAL 7600,Eduardo Barrera,Correctivo,2
+17 dic 2025,[CM-01 YZ6869] - INTERNACIONAL 7600,Matías López,Correctivo,2
+17 dic 2025,[GM-02] - TEREX GRUA ESTRUCTURAL TEREX 2001,Cristóbal Burgos,Correctivo,2
+17 dic 2025,[GM-02] - TEREX GRUA ESTRUCTURAL TEREX 2001,Daniel Rubio,Correctivo,14
+17 dic 2025,"[CT-20 BFTP53] - MERCEDEZ BENZ ",IGNACIO ROSAS,Correctivo,1
+17 dic 2025,[CT-16 RCKP72] - MERCEDEZ BENZ AROCS 3342,Eduardo Barrera,Correctivo,2
+17 dic 2025,[CT-16 RCKP72] - MERCEDEZ BENZ AROCS 3342,Matías López,Correctivo,2
+17 dic 2025,[MC-03] - TOYOTA 42-5F625,IGNACIO ROSAS,Correctivo,3
+17 dic 2025,[EX-18 VHTG61] - KOMATSU PC210LC-10M0,EXTERNO EXTERNO,Preventivo,4
+17 dic 2025,[GM-02] - TEREX GRUA ESTRUCTURAL TEREX 2001,Edison Uribe,Correctivo,14
+16 dic 2025,"[C-49 JRPT44] - NISSAN ",Luis Patricio Lamilla Mansilla,Preventivo,1
+16 dic 2025,"[GV-01 VHRZ33] - ETNYRE ",EXTERNO EXTERNO,Correctivo,1
+16 dic 2025,"[C-49 JRPT44] - NISSAN ",Carlos Astudillo,Preventivo,1
+16 dic 2025,[CK-03 TS2119] - CHEVROLET KODIAK 241,Gabriel Compay,Correctivo,18
+16 dic 2025,[BD-03 KSRG22] - JOHN DEERE 850J,Matías López,Preventivo,3
+16 dic 2025,[BD-03 KSRG22] - JOHN DEERE 850J,Eduardo Barrera,Preventivo,3
+16 dic 2025,"[G-10] - CUMMINS ",Carlos Astudillo,Correctivo,16
+16 dic 2025,"[C-45  SLCT29] - MAXUS T60 DX 4X4 DCAB 2,8CC",Cristóbal Burgos,Correctivo,2
+16 dic 2025,[CK-03 TS2119] - CHEVROLET KODIAK 241,Edison Uribe,Correctivo,1
+16 dic 2025,"[G-10] - CUMMINS ",Paulo Coronado,Correctivo,16
+16 dic 2025,[MN-04 YF5586-4 VOLVO G730B] - VOLVO G730B,Carlos Astudillo,Correctivo,21
+15 dic 2025,"[C-39 SRPL60] - MAXUS T60 DX 4X4 CABSIM 2,8CC",Carlos Astudillo,Correctivo,13
+15 dic 2025,[CT-31 YU4569-7] - MACK CV713,Luis Patricio Lamilla Mansilla,Correctivo,4
+15 dic 2025,"[C-39 SRPL60] - MAXUS T60 DX 4X4 CABSIM 2,8CC",Cristóbal Burgos,Correctivo,6
+15 dic 2025,"[C-39 SRPL60] - MAXUS T60 DX 4X4 CABSIM 2,8CC",Alex Cuevas,Correctivo,6
+15 dic 2025,[CT-31 YU4569-7] - MACK CV713,IGNACIO ROSAS,Correctivo,4
+12 dic 2025,[CK-03 TS2119] - CHEVROLET KODIAK 241,EXTERNO EXTERNO,Correctivo,1
+12 dic 2025,[CT-27 WH9821] - MACK CV713,EXTERNO EXTERNO,Correctivo,2
+12 dic 2025,[EX-12 JJLH67] - JOHN DEERE 350G,EXTERNO EXTERNO,Correctivo,1
+12 dic 2025,"[C-26  RTXW68] - GEAT WALL WNGLE 7  2,0T  D 4X4 ELITE",EXTERNO EXTERNO,Correctivo,1
+12 dic 2025,[BD-03 KSRG22] - JOHN DEERE 850J,EXTERNO EXTERNO,Correctivo,1
+11 dic 2025,[CT-16 RCKP72] - MERCEDEZ BENZ AROCS 3342,Eduardo Barrera,Correctivo,4
+11 dic 2025,[CB-01] - SCHILGER SR-CB-25T,Luis Patricio Lamilla Mansilla,Correctivo,6
+11 dic 2025,[CB-01] - SCHILGER SR-CB-25T,Paulo Coronado,Correctivo,6
+11 dic 2025,[CT-16 RCKP72] - MERCEDEZ BENZ AROCS 3342,Matías López,Correctivo,4
+11 dic 2025,"[C-13 KPGT73] - MITSUBISHI L 200 4X2, WORK CR 2,4cc DOB CAB",Cristóbal Burgos,Preventivo,1
+11 dic 2025,[CP-04 LBLG59] - MITSUBUSHI CANTER 7.5,Cristóbal Burgos,Preventivo,3
+10 dic 2025,[RC-01 DBFS56] - CATERPILLAR CS 533 E,Luis Patricio Lamilla Mansilla,Preventivo,23
+10 dic 2025,"[C-18 KSRB30] - MITSUBISHI L 200 4X4, WORK CR 2,4cc DOB CAB",EXTERNO EXTERNO,Preventivo,1
+10 dic 2025,[CT-36 VJGJ11] - IVECO TRAKKER 410 TOLVA 15M3,Eduardo Barrera,Correctivo,1
+10 dic 2025,[CT-25 WH9819-7] - MACK CV713,EXTERNO EXTERNO,Correctivo,1
+10 dic 2025,[CT-36 VJGJ11] - IVECO TRAKKER 410 TOLVA 15M3,Matías López,Correctivo,1
+10 dic 2025,"[C-17 KPGT74] - MITSUBISHI L 200 4X2, WORK CR 2,4cc DOB CAB",Carlos Astudillo,Preventivo,2
+10 dic 2025,[RC-01 DBFS56] - CATERPILLAR CS 533 E,Gabriel Compay,Preventivo,2
+10 dic 2025,[C-30 RWRH50] - JMC VIGUS WOR 4X4,Matías López,Preventivo,1
+10 dic 2025,[C-30 RWRH50] - JMC VIGUS WOR 4X4,Eduardo Barrera,Preventivo,1
+10 dic 2025,[RC-01 DBFS56] - CATERPILLAR CS 533 E,Paulo Coronado,Preventivo,17
+9 dic 2025,"[CT-20 BFTP53] - MERCEDEZ BENZ ",Carlos Canales,Preventivo,5
+9 dic 2025,[CP-04 LBLG59] - MITSUBUSHI CANTER 7.5,EXTERNO EXTERNO,Correctivo,1
+9 dic 2025,"[CT-20 BFTP53] - MERCEDEZ BENZ ",Cristóbal Burgos,Preventivo,4
+8 dic 2025,[C-51 TSXT79] - PEUGEOT PARTNER L2 1.5,Carlos Astudillo,Preventivo,4
+7 dic 2025,"[C-06 GZZB73] - MAHINDRA PIC UP 4X2 2,2cc DOB CAB",IGNACIO ROSAS,Correctivo,2
+7 dic 2025,"[C-06 GZZB73] - MAHINDRA PIC UP 4X2 2,2cc DOB CAB",Luis Patricio Lamilla Mansilla,Correctivo,3
+7 dic 2025,"[C-06 GZZB73] - MAHINDRA PIC UP 4X2 2,2cc DOB CAB",Carlos Astudillo,Correctivo,1
+6 dic 2025,[TC-03 RKYD79] - MERCEDEZ BENZ NEW ACTROS 3351,Gabriel Compay,Correctivo,3
+6 dic 2025,"[C-38 SRPL59] - MAXUS T60 DX 4X4 CABSIM 2,8CC",Eduardo Barrera,Correctivo,1
+6 dic 2025,[CT-13 PDSF75] - IVECO TRAKKER HI LAND AD 380T50,Eduardo Barrera,Correctivo,3
+6 dic 2025,[CT-13 PDSF75] - IVECO TRAKKER HI LAND AD 380T50,Matías López,Correctivo,3
+6 dic 2025,"[C-38 SRPL59] - MAXUS T60 DX 4X4 CABSIM 2,8CC",Matías López,Correctivo,1
+5 dic 2025,[CP-03 HKFG20] - FOTON AUMARK 613E,EXTERNO EXTERNO,Correctivo,1
+5 dic 2025,[CF-08 KOMATSU WA430 6] - KOMATSU WA430 6,EXTERNO EXTERNO,Correctivo,1
+5 dic 2025,"[RX-08 JOHN DEERE] - JOHN DEERE ",Eduardo Barrera,Preventivo,7
+5 dic 2025,"[RX-08 JOHN DEERE] - JOHN DEERE ",Matías López,Preventivo,7
+4 dic 2025,"[C-23 RCWX81] - MAXUS T60 DX 4X4 DCAB 2,8CC",Edison Uribe,Preventivo,1
+4 dic 2025,[RC-01 DBFS56] - CATERPILLAR CS 533 E,EXTERNO EXTERNO,Correctivo,1
+4 dic 2025,[EX-14 KFZK38] - KOMATSU PC200LC-8M0,Matías López,Correctivo,1
+4 dic 2025,[BD-03 KSRG22] - JOHN DEERE 850J,Eduardo Barrera,Correctivo,1
+4 dic 2025,[BD-03 KSRG22] - JOHN DEERE 850J,Matías López,Correctivo,1
+4 dic 2025,[G-01] - JOHN DEERE J-130 130 / kva,Alex Cuevas,Correctivo,8
+4 dic 2025,"[C-23 RCWX81] - MAXUS T60 DX 4X4 DCAB 2,8CC",Gabriel Compay,Preventivo,1
+4 dic 2025,[RX-02 BGDW56] - JONH DEERE 310 J,IGNACIO ROSAS,Correctivo,3
+4 dic 2025,[EX-10] - KOMATSU PC300LC-8,EXTERNO EXTERNO,Correctivo,1
+4 dic 2025,[EX-14 KFZK38] - KOMATSU PC200LC-8M0,Eduardo Barrera,Correctivo,1
+4 dic 2025,[EX-20] - KOMATSU PC290LC-11E0,EXTERNO EXTERNO,Preventivo,2
+4 dic 2025,"[C-23 RCWX81] - MAXUS T60 DX 4X4 DCAB 2,8CC",daniel alvares,Preventivo,1
+3 dic 2025,[RX-03 FPLK20] - JCB 3 C 4X4 TURBO,Edison Uribe,Correctivo,2
+3 dic 2025,[CT-25 WH9819-7] - MACK CV713,EXTERNO EXTERNO,Correctivo,1
+3 dic 2025,[CT-18 RCKP78] - MERCEDEZ BENZ AROCS 3342,Daniel Rubio,Correctivo,5
+3 dic 2025,"[BA-01] - LAYMOR ",EXTERNO EXTERNO,Correctivo,1
+3 dic 2025,[CF-07 HYUNDAI HL770 9S] - HYUNDAI HL770 9S,Eduardo Barrera,Preventivo,2
+3 dic 2025,[CF-07 HYUNDAI HL770 9S] - HYUNDAI HL770 9S,Matías López,Preventivo,2
+3 dic 2025,[CP-08 SXBK30] - IVECO TECTOR,EXTERNO EXTERNO,Correctivo,1
+3 dic 2025,[CT-30 YU4568-9] - MACK CV713,EXTERNO EXTERNO,Correctivo,1
+3 dic 2025,[RX-03 FPLK20] - JCB 3 C 4X4 TURBO,Daniel Rubio,Correctivo,2
+3 dic 2025,[CP-03 HKFG20] - FOTON AUMARK 613E,Carlos Astudillo,Preventivo,3
+3 dic 2025,[GM-04] - TEREX RT-345-1 XL,EXTERNO EXTERNO,Correctivo,1
+3 dic 2025,[CT-18 RCKP78] - MERCEDEZ BENZ AROCS 3342,Edison Uribe,Correctivo,5
+2 dic 2025,[RX-06 GYXY36] - NEW HOLAND B90B 4X4,Daniel Rubio,Correctivo,6
+2 dic 2025,"[C-38 SRPL59] - MAXUS T60 DX 4X4 CABSIM 2,8CC",Eduardo Barrera,Correctivo,1
+2 dic 2025,[CT-16 RCKP72] - MERCEDEZ BENZ AROCS 3342,IGNACIO ROSAS,Preventivo,17
+2 dic 2025,[RX-06 GYXY36] - NEW HOLAND B90B 4X4,Edison Uribe,Correctivo,6
+2 dic 2025,[RX-02 BGDW56] - JONH DEERE 310 J,IGNACIO ROSAS,Correctivo,9
+2 dic 2025,[CT-31 YU4569-7] - MACK CV713,Luis Patricio Lamilla Mansilla,Correctivo,19
+2 dic 2025,[CT-31 YU4569-7] - MACK CV713,Edison Uribe,Correctivo,19
+2 dic 2025,"[C-38 SRPL59] - MAXUS T60 DX 4X4 CABSIM 2,8CC",Matías López,Correctivo,1
+2 dic 2025,[CT-16 RCKP72] - MERCEDEZ BENZ AROCS 3342,Cristóbal Burgos,Preventivo,2
+2 dic 2025,[CT-31 YU4569-7] - MACK CV713,Cristóbal Burgos,Correctivo,2
+2 dic 2025,[CT-13 PDSF75] - IVECO TRAKKER HI LAND AD 380T50,Matías López,Correctivo,2
+2 dic 2025,[CT-16 RCKP72] - MERCEDEZ BENZ AROCS 3342,Luis Patricio Lamilla Mansilla,Preventivo,7
+2 dic 2025,[CT-13 PDSF75] - IVECO TRAKKER HI LAND AD 380T50,Eduardo Barrera,Correctivo,2
+1 dic 2025,[CT-30 YU4568-9] - MACK CV713,Cristóbal Burgos,Correctivo,16
+1 dic 2025,[CT-30 YU4568-9] - MACK CV713,Gabriel Compay,Correctivo,31
+1 dic 2025,[CT-30 YU4568-9] - MACK CV713,Luis Patricio Lamilla Mansilla,Correctivo,15
+1 dic 2025,[CT-09 GGFY95] - JAC LANDER HFC 3311,daniel alvares,Correctivo,5
+1 dic 2025,"[C-38 SRPL59] - MAXUS T60 DX 4X4 CABSIM 2,8CC",EXTERNO EXTERNO,Correctivo,1
+1 dic 2025,[CF-06 PPFG75] - JOHN DEERE 624K-II,Daniel Rubio,Correctivo,3
+1 dic 2025,[CF-06 PPFG75] - JOHN DEERE 624K-II,Edison Uribe,Correctivo,3
+1 dic 2025,[EX-03] - JCB JS 200 LC,Edison Uribe,Correctivo,3
+1 dic 2025,[CT-30 YU4568-9] - MACK CV713,Claudio Vásquez,Correctivo,6
+1 dic 2025,[EX-03] - JCB JS 200 LC,Daniel Rubio,Correctivo,3
+1 dic 2025,[CT-09 GGFY95] - JAC LANDER HFC 3311,Claudio Vásquez,Correctivo,5
+28 nov 2025,[CT-09 GGFY95] - JAC LANDER HFC 3311,daniel alvares,Correctivo,2
+28 nov 2025,[TC-03 RKYD79] - MERCEDEZ BENZ NEW ACTROS 3351,Daniel Rubio,Preventivo,1
+28 nov 2025,[CT-24 BDYC87-k] - MACK GU 813,EXTERNO EXTERNO,Correctivo,1
+28 nov 2025,[CT-30 YU4568-9] - MACK CV713,EXTERNO EXTERNO,Correctivo,1
+28 nov 2025,[CT-28 WH9822-7] - MACK CV713,Edison Uribe,Correctivo,4
+28 nov 2025,[CT-28 WH9822-7] - MACK CV713,Daniel Rubio,Correctivo,12
+28 nov 2025,[CT-28 WH9822-7] - MACK CV713,Cristóbal Burgos,Correctivo,4
+28 nov 2025,[CT-28 WH9822-7] - MACK CV713,Claudio Vásquez,Correctivo,4
+28 nov 2025,"[CT-22 BFTP66] - MERCEDEZ BENZ ",Paulo Coronado,Correctivo,15
+28 nov 2025,"[CT-22 BFTP66] - MERCEDEZ BENZ ",Luis Patricio Lamilla Mansilla,Correctivo,15
+28 nov 2025,[CT-14 RCKP70] - MERCEDEZ BENZ AROCS 3342,daniel alvares,Correctivo,8
+28 nov 2025,[CT-09 GGFY95] - JAC LANDER HFC 3311,Edison Uribe,Correctivo,2
+28 nov 2025,"[C-26  RTXW68] - GEAT WALL WNGLE 7  2,0T  D 4X4 ELITE",EXTERNO EXTERNO,Preventivo,1
+28 nov 2025,[CT-09 GGFY95] - JAC LANDER HFC 3311,Daniel Rubio,Correctivo,2
+28 nov 2025,"[C-38 SRPL59] - MAXUS T60 DX 4X4 CABSIM 2,8CC",EXTERNO EXTERNO,Correctivo,1
+28 nov 2025,[TC-03 RKYD79] - MERCEDEZ BENZ NEW ACTROS 3351,Edison Uribe,Preventivo,1
+27 nov 2025,[CF-04 DSLH27] - VOLVO L150G,Carlos Astudillo,Correctivo,1
+27 nov 2025,"[G-10] - CUMMINS ",Carlos Canales,Preventivo,4
+27 nov 2025,[TC-01 ZW5118] - IVECO STRALIS 740S42,IGNACIO ROSAS,Correctivo,6
+27 nov 2025,[TC-01 ZW5118] - IVECO STRALIS 740S42,Carlos Canales,Correctivo,4
+27 nov 2025,[CT-09 GGFY95] - JAC LANDER HFC 3311,EXTERNO EXTERNO,Correctivo,1
+26 nov 2025,[CF-06 PPFG75] - JOHN DEERE 624K-II,EXTERNO EXTERNO,Correctivo,1
+26 nov 2025,[CT-10 HKDX21] - FOTON AUMAN 3239,Luis Patricio Lamilla Mansilla,Correctivo,38
+26 nov 2025,[RX-07 HYVX68] - JCB 3CXG 4X4,EXTERNO EXTERNO,Correctivo,1
+26 nov 2025,"[C-46 RXKR45] - JMC ",Cristóbal Burgos,Preventivo,2
+26 nov 2025,"[C-46 RXKR45] - JMC ",Carlos Astudillo,Preventivo,2
+26 nov 2025,"[C-06 GZZB73] - MAHINDRA PIC UP 4X2 2,2cc DOB CAB",Carlos Astudillo,Preventivo,2
+26 nov 2025,[MN-04 YF5586-4 VOLVO G730B] - VOLVO G730B,EXTERNO EXTERNO,Correctivo,1
+26 nov 2025,[EX-09 RHDP26] - KOMATSU PC300LC-8,EXTERNO EXTERNO,Correctivo,1
+26 nov 2025,[EX-07 JRKH82] - KOMATSU PC200 LC-8MO,EXTERNO EXTERNO,Correctivo,1
+26 nov 2025,[CT-26 WH9820-0] - MACK CV713,Samuel García,Correctivo,1
+26 nov 2025,[CT-26 WH9820-0] - MACK CV713,IGNACIO ROSAS,Correctivo,4
+26 nov 2025,[CT-23 BSPZ51-K] - MACK GU 813,EXTERNO EXTERNO,Correctivo,1
+26 nov 2025,[CT-10 HKDX21] - FOTON AUMAN 3239,Paulo Coronado,Correctivo,46
+26 nov 2025,[CT-10 HKDX21] - FOTON AUMAN 3239,IGNACIO ROSAS,Correctivo,1
+26 nov 2025,[CP-08 SXBK30] - IVECO TECTOR,Cristóbal Burgos,Correctivo,3
+26 nov 2025,[CF-07 HYUNDAI HL770 9S] - HYUNDAI HL770 9S,EXTERNO EXTERNO,Correctivo,1
+26 nov 2025,[C-35 SCSL76] - JMC VIGUS WOR LX 4X4,EXTERNO EXTERNO,Correctivo,1
+26 nov 2025,"[C-24  RCXB16] - MAXUS T60 DX 4X4 DCAB 2,8CC",EXTERNO EXTERNO,Correctivo,1
+26 nov 2025,"[C-14 KPGT71] - MITSUBISHI L 200 4X2, WORK CR 2,4cc DOB CAB",EXTERNO EXTERNO,Correctivo,1
+25 nov 2025,"[EXTERNO] -  ",Matías López,Preventivo,3
+25 nov 2025,"[EXTERNO] -  ",Eduardo Barrera,Preventivo,3
+25 nov 2025,[CP-05 RKYD89] - MITSUBISHI FUSO CANTER 815,Edison Uribe,Preventivo,2
+25 nov 2025,[CP-05 RKYD89] - MITSUBISHI FUSO CANTER 815,Daniel Rubio,Preventivo,2
+25 nov 2025,[P-04] - POWERSREEN CRUSHER,Cristóbal Burgos,Correctivo,1
+25 nov 2025,[BD-03 KSRG22] - JOHN DEERE 850J,NEFTALÍ LINCOPI,Correctivo,8
+25 nov 2025,[BD-03 KSRG22] - JOHN DEERE 850J,IGNACIO ROSAS,Correctivo,8
+24 nov 2025,"[RX-08 JOHN DEERE] - JOHN DEERE ",EXTERNO EXTERNO,Correctivo,4
+24 nov 2025,[EX-17 SDRZ54] - KOMATSU PC210LC-10H0,EXTERNO EXTERNO,Preventivo,3
+24 nov 2025,[P-04] - POWERSREEN CRUSHER,NEFTALÍ LINCOPI,Correctivo,10
+24 nov 2025,[P-04] - POWERSREEN CRUSHER,IGNACIO ROSAS,Correctivo,5
+24 nov 2025,[G-03] - CUMMINS C440 D5,NEFTALÍ LINCOPI,Correctivo,3
+24 nov 2025,[CT-13 PDSF75] - IVECO TRAKKER HI LAND AD 380T50,Matías López,Correctivo,1
+24 nov 2025,[CT-13 PDSF75] - IVECO TRAKKER HI LAND AD 380T50,Eduardo Barrera,Correctivo,1
+24 nov 2025,[CB-03] - SERVICE TRILERS CB50T,Daniel Rubio,Correctivo,2
+24 nov 2025,[BD-03 KSRG22] - JOHN DEERE 850J,Eduardo Barrera,Correctivo,5
+24 nov 2025,"[BA-01] - LAYMOR ",daniel alvares,Correctivo,4
+24 nov 2025,"[BA-01] - LAYMOR ",Edison Uribe,Correctivo,4
+24 nov 2025,"[BA-01] - LAYMOR ",Daniel Rubio,Correctivo,4
+24 nov 2025,[BD-03 KSRG22] - JOHN DEERE 850J,Matías López,Correctivo,5
+24 nov 2025,[G-03] - CUMMINS C440 D5,IGNACIO ROSAS,Correctivo,3
+22 nov 2025,[G-03] - CUMMINS C440 D5,daniel alvares,Preventivo,2
+22 nov 2025,[G-03] - CUMMINS C440 D5,Carlos Astudillo,Preventivo,2
+22 nov 2025,[CF-05 LZRC22] - CLINTON LW 300 F,daniel alvares,Preventivo,3
+22 nov 2025,[EX-14 KFZK38] - KOMATSU PC200LC-8M0,Matías López,Correctivo,1
+22 nov 2025,[EX-14 KFZK38] - KOMATSU PC200LC-8M0,Eduardo Barrera,Correctivo,1
+22 nov 2025,[BD-03 KSRG22] - JOHN DEERE 850J,Matías López,Correctivo,2
+22 nov 2025,[BD-03 KSRG22] - JOHN DEERE 850J,Eduardo Barrera,Correctivo,2
+22 nov 2025,[CF-05 LZRC22] - CLINTON LW 300 F,Carlos Astudillo,Preventivo,3
+21 nov 2025,[T-04 SHRB11] - CASE MAXXUM 125 DT,Carlos Canales,Preventivo,4
+21 nov 2025,[EX-12 JJLH67] - JOHN DEERE 350G,Matías López,Preventivo,3
+21 nov 2025,[EX-12 JJLH67] - JOHN DEERE 350G,Eduardo Barrera,Preventivo,3
+21 nov 2025,[EX-03] - JCB JS 200 LC,Daniel Rubio,Correctivo,5
+21 nov 2025,[CT-31 YU4569-7] - MACK CV713,EXTERNO EXTERNO,Correctivo,1
+21 nov 2025,[CT-26 WH9820-0] - MACK CV713,Paulo Coronado,Correctivo,14
+21 nov 2025,[CT-26 WH9820-0] - MACK CV713,IGNACIO ROSAS,Correctivo,14
+21 nov 2025,[CT-26 WH9820-0] - MACK CV713,Claudio Vásquez,Correctivo,2
+21 nov 2025,[CF-07 HYUNDAI HL770 9S] - HYUNDAI HL770 9S,Matías López,Correctivo,1
+21 nov 2025,[CF-07 HYUNDAI HL770 9S] - HYUNDAI HL770 9S,Eduardo Barrera,Correctivo,1
+21 nov 2025,"[C-26  RTXW68] - GEAT WALL WNGLE 7  2,0T  D 4X4 ELITE",EXTERNO EXTERNO,Correctivo,1
+21 nov 2025,[C-35 SCSL76] - JMC VIGUS WOR LX 4X4,EXTERNO EXTERNO,Correctivo,1
+21 nov 2025,"[GV-01 VHRZ33] - ETNYRE ",Daniel Rubio,Correctivo,4
+20 nov 2025,[CT-03 RD7433] - MACK DM 690 S,Carlos Canales,Preventivo,3
+20 nov 2025,"[C-20 RCZX23] - MITSUBISHI L200 4X2, WORK CR WF 2,4CC",Carlos Astudillo,Preventivo,2
+20 nov 2025,"[GV-01 VHRZ33] - ETNYRE ",EXTERNO EXTERNO,Correctivo,1
+20 nov 2025,[G-03] - CUMMINS C440 D5,Daniel Rubio,Correctivo,3
+20 nov 2025,[EX-10] - KOMATSU PC300LC-8,EXTERNO EXTERNO,Correctivo,1
+20 nov 2025,[CP-07 DZYT67] - FORD CARGO 2429,SAMUEL NUÑEZ,Correctivo,5
+20 nov 2025,[CP-07 DZYT67] - FORD CARGO 2429,Cristóbal Burgos,Correctivo,2
+20 nov 2025,[CP-03 HKFG20] - FOTON AUMARK 613E,EXTERNO EXTERNO,Correctivo,1
+20 nov 2025,"[C-22 RCZX28] - MITSUBISHI L200 4X2, WORK CR WF 2,4CC",Carlos Astudillo,Correctivo,2
+20 nov 2025,[CP-07 DZYT67] - FORD CARGO 2429,daniel alvares,Correctivo,7
+20 nov 2025,[RX-07 HYVX68] - JCB 3CXG 4X4,EXTERNO EXTERNO,Correctivo,1
+19 nov 2025,[RX-05 GYXY37] - NEW HOLAND B90B 4X4,Carlos Canales,Preventivo,3
+19 nov 2025,[G-08] - CUMMINS 350KVA,Matías López,Preventivo,2
+19 nov 2025,[G-08] - CUMMINS 350KVA,Eduardo Barrera,Preventivo,2
+19 nov 2025,"[C-09  JYFV98] - MITSUBISHI L 200 4X2, WORK CR 2,4cc DOB CAB",Cristóbal Burgos,Preventivo,5
+19 nov 2025,[RN-01 VHRZ34] - AMMANN AP 240,EXTERNO EXTERNO,Correctivo,1
+19 nov 2025,[CF-09 KOMATSU WA430 6] - KOMATSU WA430 6,SAMUEL NUÑEZ,Correctivo,8
+19 nov 2025,[CF-09 KOMATSU WA430 6] - KOMATSU WA430 6,IGNACIO ROSAS,Correctivo,8
+19 nov 2025,[CF-09 KOMATSU WA430 6] - KOMATSU WA430 6,Cristóbal Burgos,Correctivo,8
+19 nov 2025,"[C-24  RCXB16] - MAXUS T60 DX 4X4 DCAB 2,8CC",EXTERNO EXTERNO,Correctivo,1
+19 nov 2025,"[BA-01] - LAYMOR ",Gabriel Compay,Correctivo,3
+19 nov 2025,[CF-09 KOMATSU WA430 6] - KOMATSU WA430 6,NEFTALÍ LINCOPI,Correctivo,8
+19 nov 2025,"[C-09  JYFV98] - MITSUBISHI L 200 4X2, WORK CR 2,4cc DOB CAB",IGNACIO ROSAS,Preventivo,5
+18 nov 2025,"[RC-02 RSRK53] - HAMM ",Carlos Canales,Preventivo,4
+18 nov 2025,[CP-06 DJBD80] - SINOTRUCK CG 190,Daniel Rubio,Preventivo,1
+18 nov 2025,[RX-07 HYVX68] - JCB 3CXG 4X4,EXTERNO EXTERNO,Correctivo,1
+18 nov 2025,[EX-14 KFZK38] - KOMATSU PC200LC-8M0,Matías López,Correctivo,3
+18 nov 2025,[EX-14 KFZK38] - KOMATSU PC200LC-8M0,Eduardo Barrera,Correctivo,3
+18 nov 2025,[CT-33 YU4931-5] - MACK CV713,NEFTALÍ LINCOPI,Correctivo,20
+18 nov 2025,[CT-33 YU4931-5] - MACK CV713,Gabriel Compay,Correctivo,20
+18 nov 2025,[CT-29 YU4567-0] - MACK CV713,Luis Patricio Lamilla Mansilla,Correctivo,1
+18 nov 2025,[CT-29 YU4567-0] - MACK CV713,IGNACIO ROSAS,Correctivo,1
+18 nov 2025,[CT-24 BDYC87-k] - MACK GU 813,Luis Patricio Lamilla Mansilla,Correctivo,2
+18 nov 2025,[CT-24 BDYC87-k] - MACK GU 813,IGNACIO ROSAS,Correctivo,20
+18 nov 2025,[CT-24 BDYC87-k] - MACK GU 813,Cristóbal Burgos,Correctivo,20
+18 nov 2025,[CT-14 RCKP70] - MERCEDEZ BENZ AROCS 3342,Paulo Coronado,Correctivo,2
+18 nov 2025,[CT-14 RCKP70] - MERCEDEZ BENZ AROCS 3342,Luis Patricio Lamilla Mansilla,Correctivo,2
+18 nov 2025,[CT-14 RCKP70] - MERCEDEZ BENZ AROCS 3342,Alex Cuevas,Correctivo,1
+17 nov 2025,[T-04 SHRB11] - CASE MAXXUM 125 DT,Carlos Canales,Preventivo,3
+17 nov 2025,[GM-02] - TEREX GRUA ESTRUCTURAL TEREX 2001,Carlos Astudillo,Correctivo,5
+17 nov 2025,"[C-39 SRPL60] - MAXUS T60 DX 4X4 CABSIM 2,8CC",Carlos Astudillo,Correctivo,2
+17 nov 2025,"[BA-01] - LAYMOR ",Daniel Rubio,Correctivo,11
+15 nov 2025,[TC-01 ZW5118] - IVECO STRALIS 740S42,Cristóbal Burgos,Preventivo,16
+15 nov 2025,[TC-01 ZW5118] - IVECO STRALIS 740S42,Alex Cuevas,Preventivo,8
+15 nov 2025,[CT-09 GGFY95] - JAC LANDER HFC 3311,Paulo Coronado,Preventivo,3
+15 nov 2025,[CT-09 GGFY95] - JAC LANDER HFC 3311,Gabriel Compay,Preventivo,3
+14 nov 2025,"[C-45  SLCT29] - MAXUS T60 DX 4X4 DCAB 2,8CC",Carlos Astudillo,Preventivo,2
+14 nov 2025,[TC-02 DSBH56] - INTERNACIONAL 7600,IGNACIO ROSAS,Correctivo,8
+14 nov 2025,[EX-10] - KOMATSU PC300LC-8,Samuel García,Correctivo,100
+13 nov 2025,[T-02 HLZF62] - SAME EXPLORER 95,Carlos Canales,Preventivo,3
+13 nov 2025,[EX-03] - JCB JS 200 LC,Gabriel Compay,Preventivo,6
+13 nov 2025,[C-47 SXLL36] - FORD F-150LT 3.3 4X2,EXTERNO EXTERNO,Preventivo,1
+13 nov 2025,[TC-02 DSBH56] - INTERNACIONAL 7600,EXTERNO EXTERNO,Correctivo,1
+13 nov 2025,[RX-07 HYVX68] - JCB 3CXG 4X4,Edison Uribe,Correctivo,40
+13 nov 2025,[RX-07 HYVX68] - JCB 3CXG 4X4,Daniel Rubio,Correctivo,19
+13 nov 2025,[RX-07 HYVX68] - JCB 3CXG 4X4,Claudio Vásquez,Correctivo,2
+13 nov 2025,[RX-07 HYVX68] - JCB 3CXG 4X4,Alex Cuevas,Correctivo,27
+13 nov 2025,[MB-01 KDWS38] - MERCEDEZ BENZ SPRINTER 315 CDI,Matías López,Correctivo,1
+13 nov 2025,[MB-01 KDWS38] - MERCEDEZ BENZ SPRINTER 315 CDI,Eduardo Barrera,Correctivo,1
+13 nov 2025,[EX-12 JJLH67] - JOHN DEERE 350G,Matías López,Correctivo,2
+13 nov 2025,[EX-12 JJLH67] - JOHN DEERE 350G,Eduardo Barrera,Correctivo,2
+13 nov 2025,[CT-33 YU4931-5] - MACK CV713,EXTERNO EXTERNO,Correctivo,1
+13 nov 2025,[CT-10 HKDX21] - FOTON AUMAN 3239,EXTERNO EXTERNO,Correctivo,1
+13 nov 2025,[C-52 LGTF54] - MITSUBISHI L200,EXTERNO EXTERNO,Correctivo,1
+13 nov 2025,"[C-39 SRPL60] - MAXUS T60 DX 4X4 CABSIM 2,8CC",Matías López,Correctivo,1
+13 nov 2025,"[C-39 SRPL60] - MAXUS T60 DX 4X4 CABSIM 2,8CC",Eduardo Barrera,Correctivo,1
+12 nov 2025,[CP-02 HKST11] - FOTON AUMARK 613 CS,Carlos Astudillo,Preventivo,3
+12 nov 2025,[GM-04] - TEREX RT-345-1 XL,Matías López,Correctivo,1
+12 nov 2025,[GM-04] - TEREX RT-345-1 XL,Eduardo Barrera,Correctivo,1
+12 nov 2025,[EX-14 KFZK38] - KOMATSU PC200LC-8M0,Matías López,Correctivo,4
+12 nov 2025,[EX-14 KFZK38] - KOMATSU PC200LC-8M0,Eduardo Barrera,Correctivo,4
+12 nov 2025,[CF-07 HYUNDAI HL770 9S] - HYUNDAI HL770 9S,Matías López,Correctivo,1
+12 nov 2025,[CF-07 HYUNDAI HL770 9S] - HYUNDAI HL770 9S,Eduardo Barrera,Correctivo,1
+11 nov 2025,[CF-09 KOMATSU WA430 6] - KOMATSU WA430 6,NEFTALÍ LINCOPI,Preventivo,16
+11 nov 2025,[CF-09 KOMATSU WA430 6] - KOMATSU WA430 6,Gabriel Compay,Preventivo,16
+11 nov 2025,"[C-37 SLCT28] - MAXUS T60 DX 4X4 DCAB 2,8CC",Carlos Astudillo,Preventivo,3
+11 nov 2025,"[C-31  GLLL86] - DODGE RAM1500 4X4 3,0CC AUTOMATICA",Carlos Astudillo,Preventivo,2
+11 nov 2025,[EX-06 DRXC28] - JCB JS 330 LC AUTO,SAMUEL NUÑEZ,Correctivo,32
+11 nov 2025,[EX-06 DRXC28] - JCB JS 330 LC AUTO,IGNACIO ROSAS,Correctivo,32
+10 nov 2025,[TC-01 ZW5118] - IVECO STRALIS 740S42,Carlos Astudillo,Correctivo,3
+10 nov 2025,[G-01] - JOHN DEERE J-130 130 / kva,Matías López,Correctivo,4
+10 nov 2025,[G-01] - JOHN DEERE J-130 130 / kva,Eduardo Barrera,Correctivo,4
+10 nov 2025,[EX-14 KFZK38] - KOMATSU PC200LC-8M0,Matías López,Correctivo,2
+10 nov 2025,[EX-14 KFZK38] - KOMATSU PC200LC-8M0,Eduardo Barrera,Correctivo,2
+10 nov 2025,[CT-03 RD7433] - MACK DM 690 S,Edison Uribe,Correctivo,1
+10 nov 2025,[CT-03 RD7433] - MACK DM 690 S,Daniel Rubio,Correctivo,1
+10 nov 2025,[C-29 RWRH49] - JMC VIGUS WOR 4X4,Carlos Astudillo,Correctivo,3
+9 nov 2025,"[GV-01 VHRZ33] - ETNYRE ",EXTERNO EXTERNO,Correctivo,1
+9 nov 2025,[CI-02 GGHD72] - FREIGHTLINER GGHD72,Luis Patricio Lamilla Mansilla,Correctivo,13
+9 nov 2025,[CI-02 GGHD72] - FREIGHTLINER GGHD72,Cristóbal Burgos,Correctivo,3
+8 nov 2025,[EX-12 JJLH67] - JOHN DEERE 350G,Eduardo Barrera,Correctivo,2
+8 nov 2025,[G-08] - CUMMINS 350KVA,Matías López,Correctivo,3
+8 nov 2025,[G-08] - CUMMINS 350KVA,Eduardo Barrera,Correctivo,3
+8 nov 2025,[EX-12 JJLH67] - JOHN DEERE 350G,Matías López,Correctivo,2
+8 nov 2025,[EX-12 JJLH67] - JOHN DEERE 350G,Hernan Ignacio Silva Peña,Correctivo,1
+7 nov 2025,[MX-02 HWFT99] - WACKER NEUSON 3503,Carlos Canales,Preventivo,3
+7 nov 2025,[EX-19 VHTG55] - KOMATSU PC210LC-10M0,EXTERNO EXTERNO,Preventivo,3
+7 nov 2025,[GM-04] - TEREX RT-345-1 XL,Matías López,Correctivo,1
+7 nov 2025,[GM-04] - TEREX RT-345-1 XL,Eduardo Barrera,Correctivo,1
+7 nov 2025,[EX-08 JVXT34] - KOMATSU PC200LC 8MO,Edison Uribe,Correctivo,2
+7 nov 2025,[EX-06 DRXC28] - JCB JS 330 LC AUTO,Edison Uribe,Correctivo,1
+7 nov 2025,[CT-38 VJGJ12] - IVECO TRAKKER 500,Matías López,Correctivo,1
+7 nov 2025,[CT-38 VJGJ12] - IVECO TRAKKER 500,Eduardo Barrera,Correctivo,1
+7 nov 2025,[CT-23 BSPZ51-K] - MACK GU 813,EXTERNO EXTERNO,Correctivo,1
+7 nov 2025,[CM-01 YZ6869] - INTERNACIONAL 7600,Matías López,Correctivo,1
+7 nov 2025,[CM-01 YZ6869] - INTERNACIONAL 7600,Eduardo Barrera,Correctivo,1
+7 nov 2025,"[C-14 KPGT71] - MITSUBISHI L 200 4X2, WORK CR 2,4cc DOB CAB",Paulo Coronado,Correctivo,24
+7 nov 2025,"[C-14 KPGT71] - MITSUBISHI L 200 4X2, WORK CR 2,4cc DOB CAB",Carlos Astudillo,Correctivo,4
+6 nov 2025,[EX-06 DRXC28] - JCB JS 330 LC AUTO,EXTERNO EXTERNO,Correctivo,1
+6 nov 2025,[CF-06 PPFG75] - JOHN DEERE 624K-II,SAMUEL NUÑEZ,Correctivo,4
+6 nov 2025,[CF-06 PPFG75] - JOHN DEERE 624K-II,Luis Patricio Lamilla Mansilla,Correctivo,3
+6 nov 2025,[CF-06 PPFG75] - JOHN DEERE 624K-II,IGNACIO ROSAS,Correctivo,3
+6 nov 2025,[CF-06 PPFG75] - JOHN DEERE 624K-II,Gabriel Compay,Correctivo,3
+6 nov 2025,[CF-06 PPFG75] - JOHN DEERE 624K-II,Claudio Vásquez,Correctivo,2
+6 nov 2025,[BD-03 KSRG22] - JOHN DEERE 850J,Matías López,Correctivo,2
+6 nov 2025,[BD-03 KSRG22] - JOHN DEERE 850J,Eduardo Barrera,Correctivo,2
+5 nov 2025,[EX-06 DRXC28] - JCB JS 330 LC AUTO,Luis Patricio Lamilla Mansilla,Preventivo,5
+5 nov 2025,[EX-06 DRXC28] - JCB JS 330 LC AUTO,Gabriel Compay,Preventivo,5
+5 nov 2025,[MB-01 KDWS38] - MERCEDEZ BENZ SPRINTER 315 CDI,Matías López,Correctivo,1
+5 nov 2025,[MB-01 KDWS38] - MERCEDEZ BENZ SPRINTER 315 CDI,Eduardo Barrera,Correctivo,2
+5 nov 2025,[G-08] - CUMMINS 350KVA,Matías López,Correctivo,1
+5 nov 2025,[G-08] - CUMMINS 350KVA,Eduardo Barrera,Correctivo,1
+5 nov 2025,[CT-23 BSPZ51-K] - MACK GU 813,daniel alvares,Correctivo,5
+5 nov 2025,[CT-23 BSPZ51-K] - MACK GU 813,Luis Patricio Lamilla Mansilla,Correctivo,12
+5 nov 2025,[CT-23 BSPZ51-K] - MACK GU 813,IGNACIO ROSAS,Correctivo,5
+5 nov 2025,[CT-23 BSPZ51-K] - MACK GU 813,Gabriel Compay,Correctivo,12
+5 nov 2025,[CT-23 BSPZ51-K] - MACK GU 813,EXTERNO EXTERNO,Correctivo,1
+5 nov 2025,[CT-23 BSPZ51-K] - MACK GU 813,Cristóbal Burgos,Correctivo,5
+5 nov 2025,"[C-45  SLCT29] - MAXUS T60 DX 4X4 DCAB 2,8CC",EXTERNO EXTERNO,Correctivo,1
+5 nov 2025,"[C-31  GLLL86] - DODGE RAM1500 4X4 3,0CC AUTOMATICA",EXTERNO EXTERNO,Correctivo,1
+5 nov 2025,"[C-19 RCZX21] - MITSUBISHI L200 4X4 KATANA CRT 2,4CC",Carlos Astudillo,Correctivo,2
+4 nov 2025,[CT-13 PDSF75] - IVECO TRAKKER HI LAND AD 380T50,Edison Uribe,Preventivo,2
+4 nov 2025,[CT-13 PDSF75] - IVECO TRAKKER HI LAND AD 380T50,Daniel Rubio,Preventivo,6
+4 nov 2025,[CT-13 PDSF75] - IVECO TRAKKER HI LAND AD 380T50,Cristóbal Burgos,Preventivo,1
+4 nov 2025,[CT-13 PDSF75] - IVECO TRAKKER HI LAND AD 380T50,Alex Cuevas,Preventivo,12
+4 nov 2025,[EX-12 JJLH67] - JOHN DEERE 350G,Matías López,Correctivo,3
+4 nov 2025,[EX-12 JJLH67] - JOHN DEERE 350G,Eduardo Barrera,Correctivo,3
+4 nov 2025,[EX-11 KTRD37] - KOMATSU PC200LC-8MO,Edison Uribe,Correctivo,1
+4 nov 2025,[CT-30 YU4568-9] - MACK CV713,Luis Patricio Lamilla Mansilla,Correctivo,13
+4 nov 2025,[CT-30 YU4568-9] - MACK CV713,Gabriel Compay,Correctivo,13
+4 nov 2025,[CT-30 YU4568-9] - MACK CV713,Cristóbal Burgos,Correctivo,8
+4 nov 2025,[CT-26 WH9820-0] - MACK CV713,Eduardo Vera,Correctivo,1
+4 nov 2025,[CT-26 WH9820-0] - MACK CV713,Edison Uribe,Correctivo,3
+4 nov 2025,[CT-26 WH9820-0] - MACK CV713,Daniel Rubio,Correctivo,3
+4 nov 2025,[CT-26 WH9820-0] - MACK CV713,Claudio Vásquez,Correctivo,2
+4 nov 2025,[CT-03 RD7433] - MACK DM 690 S,Edison Uribe,Correctivo,1
+4 nov 2025,[CT-03 RD7433] - MACK DM 690 S,Daniel Rubio,Correctivo,1
+3 nov 2025,[MX-03 KHSJ37] - JCB 8035ZTS,Carlos Canales,Correctivo,5
+2 nov 2025,[RN-01 VHRZ34] - AMMANN AP 240,Daniel Rubio,Correctivo,2
+2 nov 2025,[MN-03 KTRL62] - KOMATSU GD675-5,Edison Uribe,Correctivo,2
+2 nov 2025,[MN-03 KTRL62] - KOMATSU GD675-5,Daniel Rubio,Correctivo,4
+2 nov 2025,"[GV-01 VHRZ33] - ETNYRE ",Daniel Rubio,Correctivo,2
+2 nov 2025,[EX-10] - KOMATSU PC300LC-8,Edison Uribe,Correctivo,9
+2 nov 2025,[EX-10] - KOMATSU PC300LC-8,Daniel Rubio,Correctivo,9
+1 nov 2025,"[BA-01] - LAYMOR ",Edison Uribe,Correctivo,6
+1 nov 2025,"[BA-01] - LAYMOR ",Daniel Rubio,Correctivo,6
+31 oct 2025,"[C-38 SRPL59] - MAXUS T60 DX 4X4 CABSIM 2,8CC",Carlos Astudillo,Preventivo,4
+31 oct 2025,[CI-02 GGHD72] - FREIGHTLINER GGHD72,Edison Uribe,Correctivo,1
+31 oct 2025,[CI-02 GGHD72] - FREIGHTLINER GGHD72,Daniel Rubio,Correctivo,1
+30 oct 2025,[TC-02 DSBH56] - INTERNACIONAL 7600,SAMUEL NUÑEZ,Preventivo,4
+30 oct 2025,[TC-02 DSBH56] - INTERNACIONAL 7600,IGNACIO ROSAS,Preventivo,8
+30 oct 2025,[TC-02 DSBH56] - INTERNACIONAL 7600,Cristóbal Burgos,Preventivo,1
+30 oct 2025,[CF-03 CKTG19] - NEW HOLAND W 190B,SAMUEL NUÑEZ,Correctivo,27
+30 oct 2025,[CF-03 CKTG19] - NEW HOLAND W 190B,IGNACIO ROSAS,Correctivo,27
+30 oct 2025,[CF-03 CKTG19] - NEW HOLAND W 190B,Cristóbal Burgos,Correctivo,27
+29 oct 2025,[RX-04 GTJH71] - CATERPILLAR 416E,Edison Uribe,Correctivo,1
+29 oct 2025,"[EXTERNO] -  ",Matías López,Correctivo,1
+29 oct 2025,"[EXTERNO] -  ",Eduardo Barrera,Correctivo,1
+29 oct 2025,[EX-12 JJLH67] - JOHN DEERE 350G,Matías López,Correctivo,2
+29 oct 2025,[EX-12 JJLH67] - JOHN DEERE 350G,Eduardo Barrera,Correctivo,2
+29 oct 2025,[EX-12 JJLH67] - JOHN DEERE 350G,EXTERNO EXTERNO,Correctivo,1
+29 oct 2025,[EX-10] - KOMATSU PC300LC-8,EXTERNO EXTERNO,Correctivo,1
+29 oct 2025,[CT-34 YU4943-9] - MACK CV713,EXTERNO EXTERNO,Correctivo,1
+29 oct 2025,[CT-31 YU4569-7] - MACK CV713,EXTERNO EXTERNO,Correctivo,1
+29 oct 2025,[CT-29 YU4567-0] - MACK CV713,daniel alvares,Correctivo,16
+29 oct 2025,[CT-12 PDSF74] - IVECO TRAKKER HI LAND AD 380T50,EXTERNO EXTERNO,Correctivo,2
+29 oct 2025,[CT-09 GGFY95] - JAC LANDER HFC 3311,EXTERNO EXTERNO,Correctivo,1
+29 oct 2025,[CT-06 BSLY79] - FREIGHTLINER M2 106,Daniel Rubio,Correctivo,9
+29 oct 2025,[CT-06 BSLY79] - FREIGHTLINER M2 106,Cristóbal Burgos,Correctivo,9
+29 oct 2025,[CM-01 YZ6869] - INTERNACIONAL 7600,EXTERNO EXTERNO,Correctivo,1
+28 oct 2025,[EX-18 VHTG61] - KOMATSU PC210LC-10M0,EXTERNO EXTERNO,Preventivo,6
+28 oct 2025,[MC-03] - TOYOTA 42-5F625,Cristóbal Burgos,Correctivo,1
+28 oct 2025,[C-35 SCSL76] - JMC VIGUS WOR LX 4X4,EXTERNO EXTERNO,Correctivo,1
+27 oct 2025,"[CT-22 BFTP66] - MERCEDEZ BENZ ",Matías López,Preventivo,13
+27 oct 2025,"[CT-22 BFTP66] - MERCEDEZ BENZ ",Edison Uribe,Preventivo,4
+27 oct 2025,"[CT-22 BFTP66] - MERCEDEZ BENZ ",Daniel Rubio,Preventivo,4
+27 oct 2025,"[C-22 RCZX28] - MITSUBISHI L200 4X2, WORK CR WF 2,4CC",Carlos Astudillo,Preventivo,5
+27 oct 2025,"[RX-08 JOHN DEERE] - JOHN DEERE ",Matías López,Correctivo,1
+27 oct 2025,"[RX-08 JOHN DEERE] - JOHN DEERE ",Eduardo Barrera,Correctivo,1
+27 oct 2025,[CT-34 YU4943-9] - MACK CV713,IGNACIO ROSAS,Correctivo,1
+27 oct 2025,[CP-08 SXBK30] - IVECO TECTOR,Eduardo Barrera,Correctivo,1
+27 oct 2025,[CP-08 SXBK30] - IVECO TECTOR,Edison Uribe,Correctivo,6
+27 oct 2025,[CP-08 SXBK30] - IVECO TECTOR,Daniel Rubio,Correctivo,5
+25 oct 2025,"[RC-02 RSRK53] - HAMM ",Daniel Rubio,Correctivo,3
+25 oct 2025,"[GV-01 VHRZ33] - ETNYRE ",Daniel Rubio,Correctivo,3
+24 oct 2025,[RX-03 FPLK20] - JCB 3 C 4X4 TURBO,Edison Uribe,Correctivo,1
+24 oct 2025,[EX-12 JJLH67] - JOHN DEERE 350G,Matías López,Correctivo,2
+24 oct 2025,[EX-12 JJLH67] - JOHN DEERE 350G,Eduardo Barrera,Correctivo,2
+24 oct 2025,[CF-07 HYUNDAI HL770 9S] - HYUNDAI HL770 9S,daniel alvares,Correctivo,7
+24 oct 2025,[CF-07 HYUNDAI HL770 9S] - HYUNDAI HL770 9S,SAMUEL NUÑEZ,Correctivo,4
+24 oct 2025,[CF-07 HYUNDAI HL770 9S] - HYUNDAI HL770 9S,IGNACIO ROSAS,Correctivo,4
+24 oct 2025,[CF-07 HYUNDAI HL770 9S] - HYUNDAI HL770 9S,Eduardo Vera,Correctivo,1
+24 oct 2025,[CF-07 HYUNDAI HL770 9S] - HYUNDAI HL770 9S,Cristóbal Burgos,Correctivo,7
+24 oct 2025,"[C-12 JZRK53] - MITSUBISHI L 200 4X2, WORK CR 2,4cc DOB CAB",EXTERNO EXTERNO,Correctivo,1
+23 oct 2025,[CF-06 PPFG75] - JOHN DEERE 624K-II,Paulo Coronado,Preventivo,6
+23 oct 2025,[CF-06 PPFG75] - JOHN DEERE 624K-II,Luis Patricio Lamilla Mansilla,Preventivo,6
+23 oct 2025,[TC-01 ZW5118] - IVECO STRALIS 740S42,Alex Cuevas,Correctivo,11
+23 oct 2025,[RX-05 GYXY37] - NEW HOLAND B90B 4X4,Edison Uribe,Correctivo,2
+23 oct 2025,[RX-05 GYXY37] - NEW HOLAND B90B 4X4,Daniel Rubio,Correctivo,2
+23 oct 2025,[EX-10] - KOMATSU PC300LC-8,Eduardo Vera,Correctivo,8
+23 oct 2025,[EX-10] - KOMATSU PC300LC-8,Edison Uribe,Correctivo,24
+23 oct 2025,[EX-10] - KOMATSU PC300LC-8,Daniel Rubio,Correctivo,24
+23 oct 2025,[EX-10] - KOMATSU PC300LC-8,Claudio Vásquez,Correctivo,8
+23 oct 2025,[CT-23 BSPZ51-K] - MACK GU 813,EXTERNO EXTERNO,Correctivo,1
+23 oct 2025,[CF-09 KOMATSU WA430 6] - KOMATSU WA430 6,daniel alvares,Correctivo,21
+23 oct 2025,[CF-09 KOMATSU WA430 6] - KOMATSU WA430 6,Gabriel Compay,Correctivo,21
+23 oct 2025,[CF-09 KOMATSU WA430 6] - KOMATSU WA430 6,Eduardo Vera,Correctivo,3
+22 oct 2025,[MN-02 CKPV95] - KOMATSU GD675-3EO,Edison Uribe,Correctivo,1
+22 oct 2025,[CF-03 CKTG19] - NEW HOLAND W 190B,EXTERNO EXTERNO,Correctivo,2
+22 oct 2025,"[C-13 KPGT73] - MITSUBISHI L 200 4X2, WORK CR 2,4cc DOB CAB",EXTERNO EXTERNO,Correctivo,1
+21 oct 2025,[CF-04 DSLH27] - VOLVO L150G,Daniel Rubio,Preventivo,12
+21 oct 2025,[CF-04 DSLH27] - VOLVO L150G,Claudio Vásquez,Preventivo,8
+21 oct 2025,[CF-04 DSLH27] - VOLVO L150G,Carlos Astudillo,Preventivo,9
+21 oct 2025,[MN-03 KTRL62] - KOMATSU GD675-5,IGNACIO ROSAS,Correctivo,7
+21 oct 2025,[MN-03 KTRL62] - KOMATSU GD675-5,Cristóbal Burgos,Correctivo,4
+21 oct 2025,[MN-03 KTRL62] - KOMATSU GD675-5,Carlos Astudillo,Correctivo,3
+21 oct 2025,[MN-03 KTRL62] - KOMATSU GD675-5,Alex Cuevas,Correctivo,11
+21 oct 2025,[CT-12 PDSF74] - IVECO TRAKKER HI LAND AD 380T50,Paulo Coronado,Correctivo,8
+21 oct 2025,[CT-12 PDSF74] - IVECO TRAKKER HI LAND AD 380T50,Luis Patricio Lamilla Mansilla,Correctivo,12
+21 oct 2025,[CF-04 DSLH27] - VOLVO L150G,Gabriel Compay,Preventivo,9
+21 oct 2025,[CF-04 DSLH27] - VOLVO L150G,Edison Uribe,Preventivo,12
+20 oct 2025,[TC-03 RKYD79] - MERCEDEZ BENZ NEW ACTROS 3351,Alex Cuevas,Correctivo,2
+20 oct 2025,[RX-05 GYXY37] - NEW HOLAND B90B 4X4,EXTERNO EXTERNO,Correctivo,1
+20 oct 2025,[MC-04] - BOBCAT S185,Gabriel Compay,Correctivo,3
+20 oct 2025,[MC-04] - BOBCAT S185,Carlos Astudillo,Correctivo,3
+20 oct 2025,[EX-12 JJLH67] - JOHN DEERE 350G,EXTERNO EXTERNO,Correctivo,1
+20 oct 2025,[CP-04 LBLG59] - MITSUBUSHI CANTER 7.5,Gabriel Compay,Correctivo,16
+20 oct 2025,[CP-04 LBLG59] - MITSUBUSHI CANTER 7.5,Carlos Astudillo,Correctivo,16
+20 oct 2025,[BD-02 CCKZ72] - CATERPILLAR D6T,Edison Uribe,Correctivo,6
+20 oct 2025,[BD-02 CCKZ72] - CATERPILLAR D6T,Daniel Rubio,Correctivo,6
+20 oct 2025,[BD-02 CCKZ72] - CATERPILLAR D6T,Cristóbal Burgos,Correctivo,7
+20 oct 2025,[BD-02 CCKZ72] - CATERPILLAR D6T,Claudio Vásquez,Correctivo,4
+16 oct 2025,[GM-02] - TEREX GRUA ESTRUCTURAL TEREX 2001,IGNACIO ROSAS,Preventivo,6
+16 oct 2025,[GM-02] - TEREX GRUA ESTRUCTURAL TEREX 2001,Gabriel Compay,Preventivo,6
+16 oct 2025,[RX-06 GYXY36] - NEW HOLAND B90B 4X4,Carlos Canales,Correctivo,3
+16 oct 2025,[EX-08 JVXT34] - KOMATSU PC200LC 8MO,daniel alvares,Correctivo,4
+16 oct 2025,[EX-08 JVXT34] - KOMATSU PC200LC 8MO,Luis Patricio Lamilla Mansilla,Correctivo,25
+16 oct 2025,[EX-08 JVXT34] - KOMATSU PC200LC 8MO,Edison Uribe,Correctivo,9
+16 oct 2025,[EX-08 JVXT34] - KOMATSU PC200LC 8MO,Daniel Rubio,Correctivo,9
+16 oct 2025,[EX-08 JVXT34] - KOMATSU PC200LC 8MO,Cristóbal Burgos,Correctivo,18
+16 oct 2025,[EX-08 JVXT34] - KOMATSU PC200LC 8MO,Claudio Vásquez,Correctivo,8
+16 oct 2025,[CT-25 WH9819-7] - MACK CV713,Samuel García,Correctivo,5
+16 oct 2025,[CT-25 WH9819-7] - MACK CV713,IGNACIO ROSAS,Correctivo,2
+16 oct 2025,[CT-10 HKDX21] - FOTON AUMAN 3239,Luis Patricio Lamilla Mansilla,Correctivo,5
+16 oct 2025,[CF-05 LZRC22] - CLINTON LW 300 F,Gabriel Compay,Correctivo,2
+16 oct 2025,[CF-05 LZRC22] - CLINTON LW 300 F,Alex Cuevas,Correctivo,2
+16 oct 2025,"[C-44 STWW39] - MITSUBISHI L200 ",EXTERNO EXTERNO,Correctivo,1
+16 oct 2025,"[C-39 SRPL60] - MAXUS T60 DX 4X4 CABSIM 2,8CC",Carlos Astudillo,Correctivo,2
+16 oct 2025,"[C-36 GBPD93] - ZNA RICH 4X2 2,5cc DOB CAB",EXTERNO EXTERNO,Correctivo,1
+15 oct 2025,[RX-06 GYXY36] - NEW HOLAND B90B 4X4,Carlos Canales,Preventivo,4
+15 oct 2025,"[C-49 JRPT44] - NISSAN ",Carlos Astudillo,Preventivo,3
+15 oct 2025,"[C-43 STWW21] - MITSUBISHI L200 ",Carlos Astudillo,Preventivo,4
+15 oct 2025,[CT-26 WH9820-0] - MACK CV713,Gabriel Compay,Correctivo,8
+15 oct 2025,[CT-26 WH9820-0] - MACK CV713,Cristóbal Burgos,Correctivo,8
+14 oct 2025,"[C-36 GBPD93] - ZNA RICH 4X2 2,5cc DOB CAB",Carlos Astudillo,Preventivo,3
+14 oct 2025,[CT-09 GGFY95] - JAC LANDER HFC 3311,EXTERNO EXTERNO,Correctivo,1
+14 oct 2025,"[C-04 GBPH77] - JAC REFINE 1,9cc",EXTERNO EXTERNO,Correctivo,1
+13 oct 2025,[CT-06 BSLY79] - FREIGHTLINER M2 106,Paulo Coronado,Preventivo,2
+13 oct 2025,[CT-06 BSLY79] - FREIGHTLINER M2 106,IGNACIO ROSAS,Preventivo,8
+13 oct 2025,[EX-20] - KOMATSU PC290LC-11E0,Carlos Canales,Correctivo,5
+13 oct 2025,[CP-07 DZYT67] - FORD CARGO 2429,daniel alvares,Correctivo,4
+13 oct 2025,[CP-07 DZYT67] - FORD CARGO 2429,Paulo Coronado,Correctivo,4
+12 oct 2025,"[C-39 SRPL60] - MAXUS T60 DX 4X4 CABSIM 2,8CC",Daniel Rubio,Correctivo,3
+11 oct 2025,[MC-03] - TOYOTA 42-5F625,daniel alvares,Correctivo,1
+11 oct 2025,[CT-28 WH9822-7] - MACK CV713,daniel alvares,Correctivo,4
+11 oct 2025,[CT-28 WH9822-7] - MACK CV713,Luis Patricio Lamilla Mansilla,Correctivo,9
+11 oct 2025,[CT-28 WH9822-7] - MACK CV713,Gabriel Compay,Correctivo,5
+11 oct 2025,[CT-28 WH9822-7] - MACK CV713,Cristóbal Burgos,Correctivo,1
+10 oct 2025,"[G-10] - CUMMINS ",Cristóbal Burgos,Preventivo,5
+10 oct 2025,"[G-10] - CUMMINS ",Carlos Canales,Preventivo,5
+10 oct 2025,"[C-20 RCZX23] - MITSUBISHI L200 4X2, WORK CR WF 2,4CC",Carlos Astudillo,Preventivo,16
+10 oct 2025,[EX-11 KTRD37] - KOMATSU PC200LC-8MO,Edison Uribe,Correctivo,1
+10 oct 2025,[EX-11 KTRD37] - KOMATSU PC200LC-8MO,Alex Cuevas,Correctivo,1
+10 oct 2025,[C-30 RWRH50] - JMC VIGUS WOR 4X4,EXTERNO EXTERNO,Correctivo,1
+9 oct 2025,"[C-19 RCZX21] - MITSUBISHI L200 4X4 KATANA CRT 2,4CC",Carlos Astudillo,Preventivo,4
+9 oct 2025,"[CT-20 BFTP53] - MERCEDEZ BENZ ",Edison Uribe,Correctivo,2
+9 oct 2025,"[CT-20 BFTP53] - MERCEDEZ BENZ ",Daniel Rubio,Correctivo,6
+9 oct 2025,"[CT-20 BFTP53] - MERCEDEZ BENZ ",Claudio Vásquez,Correctivo,1
+9 oct 2025,[CF-05 LZRC22] - CLINTON LW 300 F,Gabriel Compay,Correctivo,2
+9 oct 2025,[CF-05 LZRC22] - CLINTON LW 300 F,Alex Cuevas,Correctivo,2
+9 oct 2025,"[RXm-09 JOHN DEERE] - JOHN DEERE ",Cristóbal Burgos,Preventivo,8
+9 oct 2025,"[RXm-09 JOHN DEERE] - JOHN DEERE ",Carlos Canales,Preventivo,8
+8 oct 2025,[CF-05 LZRC22] - CLINTON LW 300 F,SAMUEL NUÑEZ,Preventivo,2
+8 oct 2025,[CF-05 LZRC22] - CLINTON LW 300 F,IGNACIO ROSAS,Preventivo,2
+8 oct 2025,[CT-12 PDSF74] - IVECO TRAKKER HI LAND AD 380T50,EXTERNO EXTERNO,Correctivo,1
+8 oct 2025,[CF-07 HYUNDAI HL770 9S] - HYUNDAI HL770 9S,Edison Uribe,Correctivo,3
+8 oct 2025,[CF-07 HYUNDAI HL770 9S] - HYUNDAI HL770 9S,Daniel Rubio,Correctivo,3
+8 oct 2025,"[C-38 SRPL59] - MAXUS T60 DX 4X4 CABSIM 2,8CC",Carlos Astudillo,Correctivo,3
+8 oct 2025,"[C-23 RCWX81] - MAXUS T60 DX 4X4 DCAB 2,8CC",Carlos Astudillo,Correctivo,3
+8 oct 2025,"[C-04 GBPH77] - JAC REFINE 1,9cc",daniel alvares,Correctivo,6
+8 oct 2025,"[C-04 GBPH77] - JAC REFINE 1,9cc",Paulo Coronado,Correctivo,3
+8 oct 2025,"[C-04 GBPH77] - JAC REFINE 1,9cc",Luis Patricio Lamilla Mansilla,Correctivo,5
+8 oct 2025,"[C-04 GBPH77] - JAC REFINE 1,9cc",Gabriel Compay,Correctivo,6
+8 oct 2025,"[C-04 GBPH77] - JAC REFINE 1,9cc",Cristóbal Burgos,Correctivo,15
+7 oct 2025,[EX-17 SDRZ54] - KOMATSU PC210LC-10H0,EXTERNO EXTERNO,Preventivo,1
+7 oct 2025,[TC-03 RKYD79] - MERCEDEZ BENZ NEW ACTROS 3351,Gabriel Compay,Correctivo,5
+7 oct 2025,[MN-03 KTRL62] - KOMATSU GD675-5,Carlos Canales,Correctivo,2
+7 oct 2025,[CM-01 YZ6869] - INTERNACIONAL 7600,Paulo Coronado,Correctivo,4
+7 oct 2025,[CM-01 YZ6869] - INTERNACIONAL 7600,Cristóbal Burgos,Correctivo,7
+7 oct 2025,[CM-01 YZ6869] - INTERNACIONAL 7600,Claudio Vásquez,Correctivo,7
+6 oct 2025,[CT-07 CHPV26] - FREIGHTLINER M2 112,Edison Uribe,Correctivo,7
+6 oct 2025,[CT-07 CHPV26] - FREIGHTLINER M2 112,Daniel Rubio,Correctivo,7
+6 oct 2025,[CP-06 DJBD80] - SINOTRUCK CG 190,EXTERNO EXTERNO,Correctivo,1
+6 oct 2025,[CF-04 DSLH27] - VOLVO L150G,EXTERNO EXTERNO,Correctivo,1
+6 oct 2025,"[C-39 SRPL60] - MAXUS T60 DX 4X4 CABSIM 2,8CC",Carlos Astudillo,Correctivo,4
+6 oct 2025,"[C-06 GZZB73] - MAHINDRA PIC UP 4X2 2,2cc DOB CAB",Carlos Astudillo,Correctivo,5
+6 oct 2025,"[C-04 GBPH77] - JAC REFINE 1,9cc",EXTERNO EXTERNO,Correctivo,1
+6 oct 2025,[GM-03] - TEREX HC-110,Paulo Coronado,Preventivo,6
+6 oct 2025,[GM-03] - TEREX HC-110,Luis Patricio Lamilla Mansilla,Preventivo,7
+6 oct 2025,[GM-03] - TEREX HC-110,Edison Uribe,Preventivo,7
+6 oct 2025,[GM-03] - TEREX HC-110,Carlos Astudillo,Preventivo,84
+6 oct 2025,[EX-17 SDRZ54] - KOMATSU PC210LC-10H0,Edison Uribe,Correctivo,2
+6 oct 2025,[EX-17 SDRZ54] - KOMATSU PC210LC-10H0,Daniel Rubio,Correctivo,2
+6 oct 2025,[EX-17 SDRZ54] - KOMATSU PC210LC-10H0,Claudio Vásquez,Correctivo,2
+6 oct 2025,[EX-17 SDRZ54] - KOMATSU PC210LC-10H0,Carlos Astudillo,Correctivo,2
+4 oct 2025,[PF-01] - CRAWLER DRILL RIG,Alex Cuevas,Correctivo,2
+3 oct 2025,[C-29 RWRH49] - JMC VIGUS WOR 4X4,Carlos Astudillo,Preventivo,4
+3 oct 2025,[EX-06 DRXC28] - JCB JS 330 LC AUTO,EXTERNO EXTERNO,Correctivo,1
+2 oct 2025,[CF-04 DSLH27] - VOLVO L150G,Luis Patricio Lamilla Mansilla,Correctivo,10
+2 oct 2025,[CF-04 DSLH27] - VOLVO L150G,IGNACIO ROSAS,Correctivo,4
+2 oct 2025,[CF-04 DSLH27] - VOLVO L150G,Gabriel Compay,Correctivo,11
+2 oct 2025,[CF-04 DSLH27] - VOLVO L150G,Edison Uribe,Correctivo,22
+2 oct 2025,[CF-04 DSLH27] - VOLVO L150G,Daniel Rubio,Correctivo,18
+2 oct 2025,[EX-08 JVXT34] - KOMATSU PC200LC 8MO,Samuel García,Correctivo,180
+2 oct 2025,[CT-33 YU4931-5] - MACK CV713,Luis Patricio Lamilla Mansilla,Correctivo,16
+2 oct 2025,[CF-04 DSLH27] - VOLVO L150G,Cristóbal Burgos,Correctivo,5
+2 oct 2025,[CT-33 YU4931-5] - MACK CV713,Gabriel Compay,Correctivo,19
+2 oct 2025,[CT-33 YU4931-5] - MACK CV713,Cristóbal Burgos,Correctivo,11
+2 oct 2025,[CF-04 DSLH27] - VOLVO L150G,Claudio Vásquez,Correctivo,11
+2 oct 2025,"[CT-20 BFTP53] - MERCEDEZ BENZ ",EXTERNO EXTERNO,Correctivo,1
+2 oct 2025,[CF-04 DSLH27] - VOLVO L150G,SAMUEL NUÑEZ,Correctivo,4
+1 oct 2025,[RC-01 DBFS56] - CATERPILLAR CS 533 E,Carlos Canales,Correctivo,2
+1 oct 2025,[CT-26 WH9820-0] - MACK CV713,Luis Patricio Lamilla Mansilla,Correctivo,16
+1 oct 2025,[CT-24 BDYC87-k] - MACK GU 813,Alex Cuevas,Correctivo,1
+1 oct 2025,[CT-26 WH9820-0] - MACK CV713,IGNACIO ROSAS,Correctivo,16
+1 oct 2025,"[C-12 JZRK53] - MITSUBISHI L 200 4X2, WORK CR 2,4cc DOB CAB",Carlos Astudillo,Preventivo,3
+1 oct 2025,[CT-24 BDYC87-k] - MACK GU 813,Edison Uribe,Correctivo,1
+1 oct 2025,[CP-08 SXBK30] - IVECO TECTOR,daniel alvares,Correctivo,4
+1 oct 2025,[CP-08 SXBK30] - IVECO TECTOR,Paulo Coronado,Correctivo,4
