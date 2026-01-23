@@ -1,6 +1,6 @@
 ---
 name: Informe Producción vs Gastos
-overview: Crear un sistema que procese datos de producción, horas hombre y repuestos para generar informes mensuales y trimestrales en Excel y HTML, calculando la producción real (trabajo realizado - gastos).
+overview: Crear un sistema que procese datos de producción, horas hombre, repuestos y gastos operacionales para generar informes mensuales y trimestrales en Excel y HTML, calculando la producción real (trabajo realizado - gastos).
 todos:
   - id: "1"
     content: Crear entidades de dominio (Maquina, Produccion, HorasHombre, Repuesto)
@@ -59,13 +59,53 @@ todos:
     status: completed
     dependencies:
       - "9"
+  - id: "11"
+    content: Crear entidad GastoOperacional con 27 tipos de gastos
+    status: completed
+    dependencies:
+      - "1"
+  - id: "12"
+    content: Crear lector ReportesContablesReader para gastos operacionales
+    status: completed
+    dependencies:
+      - "11"
+  - id: "13"
+    content: Expandir CalculadorGastos con desglose completo por tipo de gasto
+    status: completed
+    dependencies:
+      - "11"
+      - "12"
+  - id: "14"
+    content: Actualizar InformeService para integrar gastos operacionales
+    status: completed
+    dependencies:
+      - "12"
+      - "13"
+  - id: "15"
+    content: Implementar exportar_completo() en ExcelExporter (6 hojas)
+    status: completed
+    dependencies:
+      - "13"
+      - "14"
+  - id: "16"
+    content: Implementar exportar_completo() en HTMLExporter (dashboard actualizado)
+    status: completed
+    dependencies:
+      - "13"
+      - "14"
+  - id: "17"
+    content: Actualizar main.py para ejecutar exportar_completo()
+    status: completed
+    dependencies:
+      - "15"
+      - "16"
 ---
 
 # Plan: Sistema de Informe Producción vs Gastos
 
 ## Objetivo
 
-Generar informes mensuales y trimestrales (octubre, noviembre, diciembre 2025) que muestren por máquina: producción, gastos en repuestos, horas hombre, y producción real (trabajo realizado - gastos).
+Generar informes mensuales y trimestrales (octubre, noviembre, diciembre 2025) que muestren por máquina: producción, gastos en repuestos, gastos operacionales (27 tipos), horas hombre, y producción real (trabajo realizado - gastos).
 
 ## Arquitectura de la Solución
 
@@ -156,6 +196,7 @@ flowchart TD
 
 - **ProduccionCSVReader**: Lee `Harcha Maquinaria - Reportaría_Reportes_Tabla (3).csv`
   - Parsear fecha formato `dd/mm/yyyy`
+  - Detectar automáticamente el año
   - Extraer: MT3, HORAS_TRABAJADAS, KILOMETROS, VUELTAS
 - **HorasHombreCSVReader**: Lee `_Harcha Maquinaria- HH_Copia de MAQVSOTSVSHH_Tabla.csv`
   - Parsear fecha formato `dd MMM yyyy` (ej: "31 dic 2025")
@@ -164,6 +205,12 @@ flowchart TD
   - Parsear fecha formato `dd-mm-yyyy`
   - Filtrar por "Centro Costo(Salida)" que contenga código de máquina
   - Extraer total de repuestos
+- **LeasingCSVReader**: Lee `Leasing Credito HMAQ.csv`
+  - Parsear cuotas de leasing mensual
+- **ReportesContablesReader** (NUEVO): Lee 16 archivos CSV de reportes contables
+  - Parsea formato de reportes contables
+  - Filtra por Q4 2025 automáticamente
+  - Extrae 27 tipos de gastos operacionales
 
 ### 3. Calculador de Producción (`CalculadorProduccion.py`)
 
@@ -176,9 +223,15 @@ flowchart TD
 
 ### 4. Calculador de Gastos (`CalculadorGastos.py`)
 
-- Suma gastos de repuestos por máquina/mes
-- Calcula costo HH = horas × $35.000 (costo fijo)
-- Total gastos = repuestos + costo HH
+- **calcular_por_maquina_mes()**: Cálculo básico
+  - Suma gastos de repuestos por máquina/mes
+  - Calcula costo HH = horas × $35.000 (costo fijo)
+  - Total gastos = repuestos + costo HH + leasing
+- **calcular_por_maquina_mes_completo()** (NUEVO): Cálculo con desglose
+  - Incluye 27 tipos de gastos operacionales
+  - Clasifica por: combustibles, reparaciones, seguros, honorarios, EPP, etc.
+  - Total = repuestos + gastos operacionales + HH + leasing
+- **calcular_total_por_maquina_completo()** (NUEVO): Totales trimestrales
 
 ### 5. Calculador de Producción Real (`CalculadorProduccionReal.py`)
 
@@ -190,23 +243,32 @@ flowchart TD
 
 #### Excel (`ExcelExporter.py`)
 
-- Hoja 1: Resumen Trimestral
-  - Columnas: Máquina | Producción Oct (MT3/Horas/KM/Vueltas) | Gastos Oct | Producción Real Oct | ... (Nov, Dic) | Totales
-- Hoja 2: Detalle Producción Mensual
-  - Desglose de producción (MT3, horas, km, vueltas) por máquina y mes
-- Hoja 3: Detalle Gastos Mensual
-  - Desglose de gastos (repuestos + HH) por máquina y mes
-- Hoja 4: Desglose Repuestos
-  - Lista de repuestos por máquina/mes
-- Hoja 5: Desglose Horas Hombre
-  - Lista de HH por máquina/mes/mecánico
+- `exportar()`: Generación básica (5 hojas)
+  - Hoja 1: Resumen Trimestral
+  - Hoja 2: Detalle Producción Mensual
+  - Hoja 3: Detalle Gastos Mensual
+  - Hoja 4: Desglose Repuestos
+  - Hoja 5: Desglose Horas Hombre
+- `exportar_completo()` (NUEVO): Generación completa (6 hojas)
+  - Hoja 1: Resumen Trimestral Completo
+  - Hoja 2: Detalle Producción Completo
+  - Hoja 3: Detalle Gastos Completo (con 27 categorías)
+  - Hoja 4: Desglose Repuestos
+  - Hoja 5: Desglose Horas Hombre
+  - Hoja 6: Desglose Gastos por Tipo
 
 #### HTML (`HTMLExporter.py`)
 
-- Dashboard con gráficos (usando Chart.js)
-- Tablas interactivas con filtros
-- Resumen ejecutivo
-- Detalle por máquina
+- `exportar()`: Dashboard básico
+  - Gráficos de gastos por mes
+  - Gráficos de producción por mes
+  - Tablas interactivas con filtros
+  - Resumen ejecutivo
+- `exportar_completo()` (NUEVO): Dashboard actualizado
+  - Gráfico de gastos por categoría (horizontal)
+  - Gráfico de gastos operacionales por mes
+  - Tabla de detalle por máquina y mes
+  - Resumen ejecutivo con 5 métricas clave
 
 ## Datos de Configuración
 

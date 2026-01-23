@@ -7,8 +7,9 @@
 Sistema para analizar y comparar la producción vs gastos de maquinaria pesada y vehículos. Integra datos de múltiples fuentes:
 
 - **Harcha Maq App**: Producción diaria reportada por operadores
-- **Construit**: Sistema contable con facturación y gastos
+- **Construit**: Sistema contable con facturación y gastos (27 tipos de gastos)
 - **DATABODEGA**: Salida de repuestos de bodega
+- **Leasing**: Cuotas mensuales de leasing de maquinaria
 
 ---
 
@@ -55,7 +56,7 @@ Todos los archivos de datos deben estar en la carpeta `gastos/`:
 
 | Archivo | Fuente | Contenido |
 |---------|--------|-----------|
-| `Harcha Maquinaria - Reportaría_Reportes_Tabla (3).csv` | Harcha Maq App | Producción diaria |
+| `Harcha Maquinaria - Reportaría_Producción_Tabla.csv` | Harcha Maq App | Producción diaria |
 | `_Harcha Maquinaria- HH_Copia de MAQVSOTSVSHH_Tabla.csv` | Harcha Maq App | Horas hombre |
 | `DATABODEGA.csv` | Bodega | Salida de repuestos |
 | `Leasing Credito HMAQ.csv` | Contabilidad | Cuotas de leasing |
@@ -81,19 +82,57 @@ Todos los archivos de datos deben estar en la carpeta `gastos/`:
 
 ---
 
+## Fuentes de Datos
+
+### Sistema Contable (Construit) - INTEGRADO EN ENE 2026
+- **16 archivos CSV** con reportes de gastos/ingresos
+- **27 tipos de gastos operacionales** clasificados
+- **5,914 registros** procesados en Q4 2025
+- **Total gastos Q4 2025**: $700,806,451
+- **Total ingresos Q4 2025**: $1,379,494,912
+- **Resultado neto**: +$678,688,461 (ganancia positiva)
+
+**Categorías de Gastos:**
+- Repuestos y accesorios: $171.2M
+- Remuneraciones: $115.8M
+- Reparaciones y mantención: $76.4M
+- Combustibles: $54.2M
+- Seguros: $15.2M
+- Otros (peajes, EPP, honorarios, permisos, etc.): $268.0M
+
+### DATABODEGA
+- Salidas de repuestos de bodega
+- **17,061 registros** históricos (todos los meses)
+- **2,915 registros** en Q4 2025
+- **Total Q4 2025**: $218,904,568 en repuestos
+
+**NOTA**: DATABODEGA solo captura salidas de repuestos de bodega. Los reportes contables (Construit) capturan TODOS los gastos operacionales (combustibles, reparaciones externas, leasing, seguros, etc.).
+
+---
+
 ## Scripts Disponibles
 
 ### 1. `main.py` - Sistema Principal
 
-Genera informes completos de producción vs gastos.
+Genera informes completos de producción vs gastos con **todos los gastos operacionales integrados**.
 
 ```bash
 python main.py
 ```
 
 **Salida:**
-- `informe_produccion_gastos.xlsx` - Informe Excel
-- `informe_produccion_gastos.html` - Dashboard HTML
+- `informe_produccion_gastos.xlsx` (454 KB) - Informe Excel con 6 hojas:
+  1. Resumen Trimestral Completo
+  2. Detalle Producción Completo
+  3. Detalle Gastos Completo (con 27 categorías de gastos)
+  4. Desglose Repuestos
+  5. Desglose Horas Hombre
+  6. Desglose Gastos por Tipo
+- `informe_produccion_gastos.html` (288 KB) - Dashboard interactivo:
+  - Resumen ejecutivo con totales
+  - Gráfico de gastos por categoría (horizontal)
+  - Gráfico de gastos operacionales por mes
+  - Tablas con filtros por máquina y mes
 
 ### 2. `analizar_reportes_contables.py` - Análisis de Construit
 
@@ -170,7 +209,8 @@ GastosVsProduccion/
 │       │   ├── HorasHombreCSVReader.py
 │       │   ├── LeasingCSVReader.py
 │       │   ├── ProduccionCSVReader.py
-│       │   └── RepuestosCSVReader.py
+│       │   ├── RepuestosCSVReader.py
+│       │   └── ReportesContablesReader.py
 │       │
 │       └── export/                     # Exportadores
 │           ├── ExcelExporter.py
@@ -346,6 +386,63 @@ COSTO_HORA = Decimal('35000')  # $35.000 CLP
 ### Período de Análisis
 
 Por defecto: **Q4 2025** (Octubre, Noviembre, Diciembre)
+
+---
+
+## Correcciones Realizadas (Enero 2026)
+
+### Problema: Valores de producción en 0
+
+**Síntoma**: Los valores de producción (MT3, horas, kilómetros) se mostraban como 0.0 en el informe HTML.
+
+**Causas identificadas**:
+1. Nombre de archivo incorrecto en [`main.py`](main.py:36)
+2. Comparación case-sensitive de tipo de unidad en [`ProduccionCSVReader.py`](src/infrastructure/csv/ProduccionCSVReader.py)
+3. Tipo de unidad no especificado en el CSV (valor "?")
+4. Variante "Mt3" no soportada
+
+**Soluciones aplicadas**:
+
+1. **Actualización de nombre de archivo** en [`main.py`](main.py:36):
+   ```python
+   # Antes:
+   archivo_produccion = os.path.join(base_dir, "gastos", "Harcha Maquinaria - Reportaría_Reportes_Tabla (3).csv")
+   
+   # Después:
+   archivo_produccion = os.path.join(base_dir, "gastos", "Harcha Maquinaria - Reportaría_Producción_Tabla.csv")
+   ```
+
+2. **Corrección de case-sensitive** en [`ProduccionCSVReader.py`](src/infrastructure/csv/ProduccionCSVReader.py:62):
+   ```python
+   # Agregado:
+   tipo_unidad_upper = tipo_unidad.upper()
+   # Usado para todas las comparaciones
+   ```
+
+3. **Inferencia de tipo de unidad** desde nombre de contrato:
+   ```python
+   # Si el tipo de unidad es "?" o está vacío, inferir desde el nombre del contrato
+   if tipo_unidad_upper == '?' or not tipo_unidad:
+       contrato_upper = contrato_txt.upper()
+       if 'MT3' in contrato_upper:
+           tipo_unidad_upper = 'MT3'
+       elif 'HR' in contrato_upper or 'HORAS' in contrato_upper:
+           tipo_unidad_upper = 'HR'
+       elif 'KM' in contrato_upper and 'MT3' not in contrato_upper:
+           tipo_unidad_upper = 'KM'
+       elif 'DIA' in contrato_upper:
+           tipo_unidad_upper = 'DIA'
+   ```
+
+4. **Soporte para variante "Mt3"**:
+   ```python
+   # Agregado soporte para "Mt3" (capital M, minúscula t3)
+   if tipo_unidad_upper == 'MT3' or tipo_unidad_upper == 'M3' or tipo_unidad_upper == 'M³':
+   ```
+
+**Resultado**: Los datos de producción se calculan correctamente:
+- CT-10,10: MT3 = 343.0
+- CT-26,11: MT3 = 476.0, Horas Trabajadas = 88.0
 
 ---
 

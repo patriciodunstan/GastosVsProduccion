@@ -7,7 +7,7 @@ Sigue el principio de responsabilidad única (SRP).
 
 from decimal import Decimal
 from pathlib import Path
-from typing import Dict, Tuple, List
+from typing import Dict, Tuple, List, Optional
 
 import openpyxl
 from openpyxl.styles import Font, Alignment, PatternFill, Border, Side
@@ -17,7 +17,9 @@ from src.domain.entities.Produccion import Produccion
 from src.domain.entities.HorasHombre import HorasHombre
 from src.domain.entities.Repuesto import Repuesto
 from src.domain.entities.Leasing import Leasing
+from src.domain.entities.GastoOperacional import GastoOperacional
 from src.domain.services.CalculadorProduccionReal import CalculadorProduccionReal
+from src.domain.services.CalculadorGastos import CalculadorGastos
 
 
 class ExcelExporter:
@@ -94,20 +96,20 @@ class ExcelExporter:
         producciones: List[Produccion],
         repuestos: List[Repuesto],
         horas_hombre: List[HorasHombre],
-        leasing: List[Leasing] = None
+        leasing: Optional[List[Leasing]] = None
     ):
         """
-        Exporta todos los datos a Excel.
+        Exporta todos los datos a Excel (solo producción, repuestos, HH, leasing).
         
         Args:
             producciones: Lista de producciones
-            repuestos: Lista de repuestos
+            repuestos: Lista de repuestos (DATABODEGA)
             horas_hombre: Lista de horas hombre
             leasing: Lista de leasing (opcional)
         """
         # Calcular datos agregados
         datos = CalculadorProduccionReal.calcular_por_maquina_mes(
-            producciones, repuestos, horas_hombre, leasing
+            producciones, repuestos, horas_hombre, leasing or []
         )
         
         # Crear hojas
@@ -123,6 +125,472 @@ class ExcelExporter:
         
         # Guardar archivo
         self.workbook.save(self.ruta_salida)
+    
+    def exportar_completo(
+        self,
+        producciones: List[Produccion],
+        repuestos: List[Repuesto],
+        horas_hombre: List[HorasHombre],
+        gastos_operacionales: List[GastoOperacional],
+        leasing: Optional[List[Leasing]] = None
+    ):
+        """
+        Exporta todos los datos completos a Excel (producción + gastos operacionales).
+        
+        Args:
+            producciones: Lista de producciones
+            repuestos: Lista de repuestos (DATABODEGA)
+            horas_hombre: Lista de horas hombre
+            gastos_operacionales: Lista de gastos de reportes contables
+            leasing: Lista de leasing (opcional)
+        """
+        # Calcular datos de producción
+        datos_produccion = CalculadorProduccionReal.calcular_por_maquina_mes(
+            producciones, repuestos, horas_hombre, leasing or []
+        )
+        
+        # Calcular datos de gastos completos
+        datos_gastos = CalculadorGastos.calcular_por_maquina_mes_completo(
+            repuestos, horas_hombre, gastos_operacionales, leasing or []
+        )
+        
+        # Combinar ambos conjuntos de datos
+        datos = self._combinar_datos_produccion_gastos(datos_produccion, datos_gastos)
+        
+        # Crear hojas
+        self._crear_hoja_resumen_completo(datos, producciones)
+        self._crear_hoja_detalle_produccion_completo(datos, producciones)
+        self._crear_hoja_detalle_gastos_completo(datos)
+        self._crear_hoja_desglose_repuestos(repuestos)
+        self._crear_hoja_desglose_horas_hombre(horas_hombre)
+        self._crear_hoja_desglose_gastos_operacionales(gastos_operacionales)
+        
+        # Eliminar hoja por defecto si existe
+        if 'Sheet' in self.workbook.sheetnames:
+            del self.workbook['Sheet']
+        
+        # Guardar archivo
+        self.workbook.save(self.ruta_salida)
+    
+    def _combinar_datos_produccion_gastos(
+        self, 
+        datos_produccion: Dict[Tuple[str, int], Dict], 
+        datos_gastos: Dict[Tuple[str, int], Dict]
+    ) -> Dict[Tuple[str, int], Dict]:
+        """Combina datos de producción y gastos en una sola estructura."""
+        datos_combinados = {}
+        
+        # Obtener todas las claves únicas
+        todas_claves = set(datos_produccion.keys()) | set(datos_gastos.keys())
+        
+        for clave in todas_claves:
+            datos_combinados[clave] = {}
+            
+            # Agregar datos de producción si existen
+            if clave in datos_produccion:
+                datos_combinados[clave]['produccion'] = datos_produccion[clave]['produccion']
+                datos_combinados[clave]['produccion_neta'] = datos_produccion[clave]['produccion_neta']
+                datos_combinados[clave]['produccion_real'] = datos_produccion[clave]['produccion_real']
+            else:
+                # Valores por defecto si no hay datos de producción
+                datos_combinados[clave]['produccion'] = {
+                    'mt3': Decimal('0'),
+                    'horas_trabajadas': Decimal('0'),
+                    'kilometros': Decimal('0'),
+                    'vueltas': Decimal('0'),
+                    'valor_mt3': Decimal('0'),
+                    'valor_horas': Decimal('0'),
+                    'valor_km': Decimal('0'),
+                    'valor_dias': Decimal('0'),
+                    'valor_vueltas': Decimal('0')
+                }
+                datos_combinados[clave]['produccion_neta'] = {
+                    'mt3': Decimal('0'),
+                    'horas_trabajadas': Decimal('0'),
+                    'kilometros': Decimal('0'),
+                    'vueltas': Decimal('0'),
+                    'valor_monetario': Decimal('0')
+                }
+                datos_combinados[clave]['produccion_real'] = {
+                    'mt3': Decimal('0'),
+                    'horas_trabajadas': Decimal('0'),
+                    'kilometros': Decimal('0'),
+                    'vueltas': Decimal('0'),
+                    'valor_monetario': Decimal('0')
+                }
+            
+            # Agregar datos de gastos si existen
+            if clave in datos_gastos:
+                datos_combinados[clave]['gastos'] = datos_gastos[clave]
+            else:
+                # Valores por defecto si no hay datos de gastos
+                datos_combinados[clave]['gastos'] = datos_gastos.get(clave, {
+                    'repuestos': Decimal('0'),
+                    'horas_hombre': Decimal('0'),
+                    'costo_hh': Decimal('0'),
+                    'leasing': Decimal('0'),
+                    'combustibles': Decimal('0'),
+                    'reparaciones': Decimal('0'),
+                    'seguros': Decimal('0'),
+                    'honorarios': Decimal('0'),
+                    'epp': Decimal('0'),
+                    'peajes': Decimal('0'),
+                    'remuneraciones': Decimal('0'),
+                    'permisos': Decimal('0'),
+                    'alimentacion': Decimal('0'),
+                    'pasajes': Decimal('0'),
+                    'correspondencia': Decimal('0'),
+                    'gastos_legales': Decimal('0'),
+                    'multas': Decimal('0'),
+                    'otros_gastos': Decimal('0'),
+                    'total_gastos_operacionales': Decimal('0'),
+                    'total': Decimal('0')
+                })
+        
+        return datos_combinados
+    
+    def _crear_hoja_detalle_gastos_completo(self, datos: Dict[Tuple[str, int], Dict]):
+        """Crea la hoja de detalle de gastos mensual con desglose por categoría."""
+        hoja = self.workbook.create_sheet("Detalle Gastos Completo")
+        
+        # Título
+        hoja['A1'] = 'DETALLE GASTOS POR MES Y CATEGORÍA'
+        hoja['A1'].font = self.estilo_titulo
+        hoja.merge_cells('A1:P1')
+        
+        # Nota
+        hoja['A2'] = 'NOTA: Incluye TODOS los gastos operacionales de reportes contables + repuestos DATABODEGA. Valores NETOS (sin IVA).'
+        hoja['A2'].font = Font(size=9, italic=True, color='666666')
+        hoja.merge_cells('A2:P2')
+        
+        # Encabezados
+        encabezados = [
+            'Máquina', 'Mes', 'Repuestos', 'Combustibles', 'Reparaciones', 'Seguros', 'Honorarios',
+            'EPP', 'Peajes', 'Remuneraciones', 'Permisos', 'Alimentación', 'Pasajes',
+            'Correspondencia', 'Gastos Legales', 'Multas', 'Otros', 'Total Gastos'
+        ]
+        
+        for col, encabezado in enumerate(encabezados, start=1):
+            celda = hoja.cell(row=3, column=col)
+            celda.value = encabezado
+            self._aplicar_estilo_encabezado(celda)
+        
+        # Datos por (maquina, mes)
+        fila = 4
+        for (maquina, mes), datos_mes in sorted(datos.items()):
+            gastos = datos_mes.get('gastos', {})
+            
+            hoja.cell(row=fila, column=1, value=maquina)
+            hoja.cell(row=fila, column=2, value=self.MESES[mes])
+            hoja.cell(row=fila, column=3, value=self._formatear_moneda(gastos.get('repuestos', Decimal('0'))))
+            hoja.cell(row=fila, column=4, value=self._formatear_moneda(gastos.get('combustibles', Decimal('0'))))
+            hoja.cell(row=fila, column=5, value=self._formatear_moneda(gastos.get('reparaciones', Decimal('0'))))
+            hoja.cell(row=fila, column=6, value=self._formatear_moneda(gastos.get('seguros', Decimal('0'))))
+            hoja.cell(row=fila, column=7, value=self._formatear_moneda(gastos.get('honorarios', Decimal('0'))))
+            hoja.cell(row=fila, column=8, value=self._formatear_moneda(gastos.get('epp', Decimal('0'))))
+            hoja.cell(row=fila, column=9, value=self._formatear_moneda(gastos.get('peajes', Decimal('0'))))
+            hoja.cell(row=fila, column=10, value=self._formatear_moneda(gastos.get('remuneraciones', Decimal('0'))))
+            hoja.cell(row=fila, column=11, value=self._formatear_moneda(gastos.get('permisos', Decimal('0'))))
+            hoja.cell(row=fila, column=12, value=self._formatear_moneda(gastos.get('alimentacion', Decimal('0'))))
+            hoja.cell(row=fila, column=13, value=self._formatear_moneda(gastos.get('pasajes', Decimal('0'))))
+            hoja.cell(row=fila, column=14, value=self._formatear_moneda(gastos.get('correspondencia', Decimal('0'))))
+            hoja.cell(row=fila, column=15, value=self._formatear_moneda(gastos.get('gastos_legales', Decimal('0'))))
+            hoja.cell(row=fila, column=16, value=self._formatear_moneda(gastos.get('multas', Decimal('0'))))
+            hoja.cell(row=fila, column=17, value=self._formatear_moneda(gastos.get('otros_gastos', Decimal('0'))))
+            
+            # Calcular total real (repuestos + gastos operacionales + HH + leasing)
+            total_real = (
+                gastos.get('repuestos', Decimal('0')) +
+                gastos.get('horas_hombre', Decimal('0')) * Decimal('35000') +
+                gastos.get('leasing', Decimal('0')) +
+                gastos.get('total_gastos_operacionales', Decimal('0'))
+            )
+            hoja.cell(row=fila, column=18, value=self._formatear_moneda(total_real))
+            
+            # Estilo para celdas de datos
+            for col in range(3, 19):
+                self._aplicar_borde(hoja.cell(row=fila, column=col))
+            
+            fila += 1
+        
+        # Ajustar ancho de columnas
+        hoja.column_dimensions['A'].width = 25
+        for col in range(3, 19):
+            hoja.column_dimensions[get_column_letter(col)].width = 15
+    
+    def _crear_hoja_detalle_produccion_completo(self, datos: Dict[Tuple[str, int], Dict], producciones: List[Produccion]):
+        """Crea la hoja de detalle de producción mensual con datos completos."""
+        hoja = self.workbook.create_sheet("Detalle Producción Completo")
+        
+        # Título
+        hoja['A1'] = 'DETALLE PRODUCCIÓN MENSUAL COMPLETO'
+        hoja['A1'].font = self.estilo_titulo
+        hoja.merge_cells('A1:G1')
+        
+        # Nota
+        hoja['A2'] = 'NOTA: Datos de producción combinados con gastos operacionales. Valores NETOS (sin IVA).'
+        hoja['A2'].font = Font(size=9, italic=True, color='666666')
+        hoja.merge_cells('A2:G2')
+        
+        # Encabezados
+        encabezados = [
+            'Máquina', 'Mes', 'MT3', 'Horas Trabajadas', 'Kilómetros', 'Vueltas', 'Producción Real ($)'
+        ]
+        
+        for col, encabezado in enumerate(encabezados, start=1):
+            celda = hoja.cell(row=4, column=col)
+            celda.value = encabezado
+            self._aplicar_estilo_encabezado(celda)
+        
+        # Datos por (maquina, mes)
+        fila = 5
+        for (maquina, mes), datos_mes in sorted(datos.items()):
+            prod = datos_mes['produccion']
+            
+            hoja.cell(row=fila, column=1, value=maquina)
+            hoja.cell(row=fila, column=2, value=self.MESES[mes])
+            hoja.cell(row=fila, column=3, value=float(prod['mt3']))
+            hoja.cell(row=fila, column=4, value=float(prod['horas_trabajadas']))
+            hoja.cell(row=fila, column=5, value=float(prod['kilometros']))
+            hoja.cell(row=fila, column=6, value=float(prod['vueltas']))
+            hoja.cell(row=fila, column=7, value=self._formatear_moneda(datos_mes['produccion_real']['valor_monetario']))
+            
+            # Estilo para celdas de datos
+            for col in range(1, 8):
+                self._aplicar_borde(hoja.cell(row=fila, column=col))
+            
+            fila += 1
+        
+        # Ajustar ancho de columnas
+        hoja.column_dimensions['A'].width = 25
+        hoja.column_dimensions['B'].width = 15
+        for col in range(3, 8):
+            hoja.column_dimensions[get_column_letter(col)].width = 18
+    
+    def _crear_hoja_resumen_completo(self, datos: Dict[Tuple[str, int], Dict], producciones: List[Produccion]):
+        """Crea la hoja de resumen trimestral con desglose completo."""
+        hoja = self.workbook.create_sheet("Resumen Trimestral Completo")
+        
+        # Título
+        hoja['A1'] = 'RESUMEN TRIMESTRAL - PRODUCCIÓN VS GASTOS COMPLETO'
+        hoja['A1'].font = self.estilo_titulo
+        hoja.merge_cells('A1:P1')
+        
+        # Nota
+        hoja['A2'] = 'NOTA: Incluye TODOS los gastos operacionales de reportes contables + repuestos DATABODEGA + datos de producción. Valores NETOS (sin IVA).'
+        hoja['A2'].font = Font(size=9, italic=True, color='666666')
+        hoja.merge_cells('A2:P2')
+        
+        # Encabezados
+        encabezados = [
+            'Máquina', 'Producción (MT3)', 'Horas (H)', 'Km', 'Vueltas', 'Val. Prod. Neto',
+            'Repuestos', 'Combustibles', 'Reparaciones', 'Seguros', 'Honorarios',
+            'EPP', 'Peajes', 'Remuneraciones', 'Permisos', 'Alimentación', 'Pasajes',
+            'Correspondencia', 'Gastos Legales', 'Multas', 'Otros', 'Total Op.', 'Total Prod. Neto'
+        ]
+        
+        for col, encabezado in enumerate(encabezados, start=1):
+            celda = hoja.cell(row=4, column=col)
+            celda.value = encabezado
+            self._aplicar_estilo_encabezado(celda)
+        
+        # Obtener todas las máquinas únicas
+        maquinas = set()
+        for (maquina, mes) in datos.keys():
+            maquinas.add(maquina)
+        
+        fila = 5
+        for maquina in sorted(maquinas):
+            # Calcular totales por máquina (trimestral)
+            total_prod_mt3 = Decimal('0')
+            total_prod_h = Decimal('0')
+            total_prod_km = Decimal('0')
+            total_prod_vueltas = Decimal('0')
+            
+            total_repuestos = Decimal('0')
+            total_combustibles = Decimal('0')
+            total_reparaciones = Decimal('0')
+            total_seguros = Decimal('0')
+            total_honorarios = Decimal('0')
+            total_epp = Decimal('0')
+            total_peajes = Decimal('0')
+            total_remuneraciones = Decimal('0')
+            total_permisos = Decimal('0')
+            total_alimentacion = Decimal('0')
+            total_pasajes = Decimal('0')
+            total_correspondencia = Decimal('0')
+            total_gastos_legales = Decimal('0')
+            total_multas = Decimal('0')
+            total_otros = Decimal('0')
+            total_gastos_op = Decimal('0')
+            
+            total_prod_neta = Decimal('0')
+            total_prod_real = Decimal('0')
+            
+            for mes in [10, 11, 12]:
+                clave = (maquina, mes)
+                if clave in datos:
+                    d = datos[clave]['produccion']
+                    g = datos[clave]['gastos']
+                    
+                    total_prod_mt3 += d['mt3']
+                    total_prod_h += d['horas_trabajadas']
+                    total_prod_km += d['kilometros']
+                    total_prod_vueltas += d['vueltas']
+                    
+                    total_repuestos += g.get('repuestos', Decimal('0'))
+                    total_combustibles += g.get('combustibles', Decimal('0'))
+                    total_reparaciones += g.get('reparaciones', Decimal('0'))
+                    total_seguros += g.get('seguros', Decimal('0'))
+                    total_honorarios += g.get('honorarios', Decimal('0'))
+                    total_epp += g.get('epp', Decimal('0'))
+                    total_peajes += g.get('peajes', Decimal('0'))
+                    total_remuneraciones += g.get('remuneraciones', Decimal('0'))
+                    total_permisos += g.get('permisos', Decimal('0'))
+                    total_alimentacion += g.get('alimentacion', Decimal('0'))
+                    total_pasajes += g.get('pasajes', Decimal('0'))
+                    total_correspondencia += g.get('correspondencia', Decimal('0'))
+                    total_gastos_legales += g.get('gastos_legales', Decimal('0'))
+                    total_multas += g.get('multas', Decimal('0'))
+                    total_otros += g.get('otros_gastos', Decimal('0'))
+                    total_gastos_op += g.get('total_gastos_operacionales', Decimal('0'))
+                    
+                    total_prod_neta += datos[clave]['produccion_neta']['valor_monetario']
+                    total_prod_real += datos[clave]['produccion_real']['valor_monetario']
+            
+            # Totales
+            total_gastos = (
+                total_repuestos +
+                total_combustibles +
+                total_reparaciones +
+                total_seguros +
+                total_honorarios +
+                total_epp +
+                total_peajes +
+                total_remuneraciones +
+                total_permisos +
+                total_alimentacion +
+                total_pasajes +
+                total_correspondencia +
+                total_gastos_legales +
+                total_multas +
+                total_otros +
+                total_gastos_op
+            )
+            
+            # Escribir fila
+            hoja.cell(row=fila, column=1, value=maquina)
+            hoja.cell(row=fila, column=2, value=self._formatear_numero(total_prod_mt3, 0))
+            hoja.cell(row=fila, column=3, value=self._formatear_numero(total_prod_h, 2))
+            hoja.cell(row=fila, column=4, value=self._formatear_numero(total_prod_km, 0))
+            hoja.cell(row=fila, column=5, value=self._formatear_numero(total_prod_vueltas, 0))
+            
+            hoja.cell(row=fila, column=6, value=self._formatear_moneda(total_prod_neta))
+            hoja.cell(row=fila, column=7, value=self._formatear_moneda(total_prod_real))
+            
+            hoja.cell(row=fila, column=8, value=self._formatear_moneda(total_repuestos))
+            hoja.cell(row=fila, column=9, value=self._formatear_moneda(total_combustibles))
+            hoja.cell(row=fila, column=10, value=self._formatear_moneda(total_reparaciones))
+            hoja.cell(row=fila, column=11, value=self._formatear_moneda(total_seguros))
+            hoja.cell(row=fila, column=12, value=self._formatear_moneda(total_honorarios))
+            hoja.cell(row=fila, column=13, value=self._formatear_moneda(total_epp))
+            hoja.cell(row=fila, column=14, value=self._formatear_moneda(total_peajes))
+            hoja.cell(row=fila, column=15, value=self._formatear_moneda(total_remuneraciones))
+            hoja.cell(row=fila, column=16, value=self._formatear_moneda(total_permisos))
+            hoja.cell(row=fila, column=17, value=self._formatear_moneda(total_alimentacion))
+            hoja.cell(row=fila, column=18, value=self._formatear_moneda(total_pasajes))
+            hoja.cell(row=fila, column=19, value=self._formatear_moneda(total_correspondencia))
+            hoja.cell(row=fila, column=20, value=self._formatear_moneda(total_gastos_legales))
+            hoja.cell(row=fila, column=21, value=self._formatear_moneda(total_multas))
+            hoja.cell(row=fila, column=22, value=self._formatear_moneda(total_otros))
+            hoja.cell(row=fila, column=23, value=self._formatear_moneda(total_gastos_op))
+            
+            # Total parcial (sin repuestos ni horas hombre ni leasing)
+            total_parcial = (
+                total_combustibles +
+                total_reparaciones +
+                total_seguros +
+                total_honorarios +
+                total_epp +
+                total_peajes +
+                total_remuneraciones +
+                total_permisos +
+                total_alimentacion +
+                total_pasajes +
+                total_correspondencia +
+                total_gastos_legales +
+                total_multas +
+                total_otros
+            )
+            
+            hoja.cell(row=fila, column=24, value=self._formatear_moneda(total_parcial))
+            
+            # Total general
+            hoja.cell(row=fila, column=25, value=self._formatear_moneda(total_gastos))
+            
+            # Total neto (producción real - total gastos)
+            resultado = total_prod_real - total_gastos
+            hoja.cell(row=fila, column=26, value=self._formatear_moneda(resultado))
+            
+            # Estilo de resultado
+            celda_resultado = hoja.cell(row=fila, column=26)
+            celda_resultado.alignment = Alignment(horizontal='center', vertical='center')
+            if resultado > 0:
+                celda_resultado.font = Font(color='28a745', bold=True)
+            else:
+                celda_resultado.font = Font(color='dc3545', bold=True)
+            
+            fila += 1
+        
+        # Ajustar ancho de columnas
+        hoja.column_dimensions['A'].width = 30
+        for col in range(2, 27):
+            hoja.column_dimensions[get_column_letter(col)].width = 14
+        
+        # Ajustar columna de resultado
+        hoja.column_dimensions['AA'].width = 18
+        for col in range(28, 31):
+            hoja.column_dimensions[get_column_letter(col)].width = 18
+    
+    def _crear_hoja_desglose_gastos_operacionales(self, gastos_operacionales: List[GastoOperacional]):
+        """Crea una hoja con desglose detallado de gastos operacionales."""
+        hoja = self.workbook.create_sheet("Desglose Gastos por Tipo")
+        
+        # Título
+        hoja['A1'] = 'DESGLOSE DE GASTOS POR TIPO Y MÁQUINA'
+        hoja['A1'].font = self.estilo_titulo
+        hoja.merge_cells('A1:G1')
+        
+        # Encabezados
+        encabezados = [
+            'Código Máquina', 'Mes', 'Tipo Gasto', 'Nombre Tipo Gasto', 'Glosa', 'Origen', 'Monto'
+        ]
+        
+        for col, encabezado in enumerate(encabezados, start=1):
+            celda = hoja.cell(row=3, column=col)
+            celda.value = encabezado
+            self._aplicar_estilo_encabezado(celda)
+        
+        # Ordenar por máquina y fecha
+        fila = 4
+        for gasto in sorted(gastos_operacionales, key=lambda g: (g.codigo_maquina, g.fecha)):
+            hoja.cell(row=fila, column=1, value=gasto.codigo_maquina)
+            hoja.cell(row=fila, column=2, value=self.MESES[gasto.fecha.month])
+            hoja.cell(row=fila, column=3, value=gasto.tipo_gasto)
+            hoja.cell(row=fila, column=4, value=gasto.nombre_tipo_gasto)
+            hoja.cell(row=fila, column=5, value=gasto.glosa)
+            hoja.cell(row=fila, column=6, value=gasto.origen)
+            hoja.cell(row=fila, column=7, value=self._formatear_moneda(gasto.monto))
+            
+            for col in range(1, 8):
+                self._aplicar_borde(hoja.cell(row=fila, column=col))
+            
+            fila += 1
+        
+        # Ajustar ancho de columnas
+        hoja.column_dimensions['A'].width = 20
+        for col in range(2, 8):
+            hoja.column_dimensions[get_column_letter(col)].width = 18
     
     def _crear_hoja_resumen(self, datos: Dict[Tuple[str, int], Dict]):
         """Crea la hoja de resumen trimestral."""

@@ -25,7 +25,7 @@ class ProduccionCSVReader:
     """
     
     MESES_FILTRO = [10, 11, 12]  # Octubre, Noviembre, Diciembre
-    ANIO_FILTRO = 2025
+    ANIO_FILTRO = None  # Se detectará automáticamente desde los datos
     
     def __init__(self, ruta_archivo: str, valor_uf: Optional[Decimal] = None):
         """
@@ -85,8 +85,10 @@ class ProduccionCSVReader:
             fecha: Fecha a verificar
             
         Returns:
-            True si la fecha está en octubre, noviembre o diciembre de 2025
+            True si la fecha está en los meses filtrados del año filtrado
         """
+        if self.ANIO_FILTRO is None:
+            return False
         return (fecha.year == self.ANIO_FILTRO and 
                 fecha.month in self.MESES_FILTRO)
     
@@ -99,6 +101,26 @@ class ProduccionCSVReader:
         """
         producciones = []
         
+        # Primera pasada: detectar el año más común
+        anos_contados: dict[int, int] = {}
+        with open(self.ruta_archivo, 'r', encoding='utf-8-sig') as archivo:
+            lector = csv.DictReader(archivo)
+            for fila in lector:
+                fecha_str = fila.get('FECHA REPORTE', '').strip()
+                fecha = self._parsear_fecha(fecha_str)
+                if fecha:
+                    ano = fecha.year
+                    anos_contados[ano] = anos_contados.get(ano, 0) + 1
+        
+        # Establecer el año con más registros
+        if anos_contados:
+            self.ANIO_FILTRO = max(anos_contados.keys(), key=lambda k: anos_contados[k])
+            print(f"  - Año detectado automáticamente: {self.ANIO_FILTRO}")
+        else:
+            print("  - [WARNING] No se detectaron fechas válidas en el archivo")
+            return []
+        
+        # Segunda pasada: procesar los datos con el filtro establecido
         with open(self.ruta_archivo, 'r', encoding='utf-8-sig') as archivo:
             lector = csv.DictReader(archivo)
             
@@ -119,6 +141,7 @@ class ProduccionCSVReader:
                 
                 # Extraer tipo de unidad, cantidad y precio
                 tipo_unidad = fila.get('vc_Tipo_Unidad', '').strip()
+                contrato_txt = fila.get('CONTRATO_TXT', '').strip()
                 unidades = self._parsear_decimal(fila.get('vc_Unidades', '0'))
                 precio_unidad = self._parsear_decimal(fila.get('vc_Precio_Unidades', '0'))
                 
@@ -130,16 +153,30 @@ class ProduccionCSVReader:
                 valor_monetario = Decimal('0')
                 
                 # Mapear tipo de unidad a las columnas correspondientes
-                if tipo_unidad.upper() == 'MT3':
+                tipo_unidad_upper = tipo_unidad.upper() if tipo_unidad else ''
+                
+                # Si el tipo de unidad es "?" o está vacío, inferir desde el nombre del contrato
+                if tipo_unidad_upper == '?' or not tipo_unidad:
+                    contrato_upper = contrato_txt.upper()
+                    if 'MT3' in contrato_upper:
+                        tipo_unidad_upper = 'MT3'
+                    elif 'HR' in contrato_upper or 'HORAS' in contrato_upper:
+                        tipo_unidad_upper = 'HR'
+                    elif 'KM' in contrato_upper and 'MT3' not in contrato_upper:
+                        tipo_unidad_upper = 'KM'
+                    elif 'DIA' in contrato_upper:
+                        tipo_unidad_upper = 'DIA'
+                
+                if tipo_unidad_upper == 'MT3' or tipo_unidad_upper == 'M3' or tipo_unidad_upper == 'M³' or tipo_unidad_upper == 'MT3':
                     mt3 = unidades
                     valor_monetario = unidades * precio_unidad
-                elif tipo_unidad.upper() == 'HR' or tipo_unidad.upper() == 'H':
+                elif tipo_unidad_upper == 'HR' or tipo_unidad_upper == 'H':
                     horas = unidades
                     valor_monetario = unidades * precio_unidad
-                elif tipo_unidad.upper() == 'KM' or tipo_unidad.upper() == 'K':
+                elif tipo_unidad_upper == 'KM' or tipo_unidad_upper == 'K':
                     km = unidades
                     valor_monetario = unidades * precio_unidad
-                elif tipo_unidad.upper() == 'DIA':
+                elif tipo_unidad_upper == 'DIA':
                     # Los días se pueden considerar como horas (1 día = 8 horas típicamente)
                     horas = unidades * Decimal('8')  # Asumiendo 8 horas por día
                     valor_monetario = unidades * precio_unidad  # El precio ya es por día

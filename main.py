@@ -25,10 +25,13 @@ def main():
     ruta_base = Path(__file__).parent
     ruta_gastos = ruta_base / "gastos"
     
+    # Ruta de reportes contables (carpeta con CSVs de gastos operacionales)
+    ruta_reportes_contables = ruta_gastos
+    
     # Buscar archivos primero en carpeta gastos, luego en raíz
-    ruta_produccion = ruta_gastos / "Harcha Maquinaria - Reportaría_Reportes_Tabla (3).csv"
+    ruta_produccion = ruta_gastos / "Harcha Maquinaria - Reportaría_Producción_Tabla.csv"
     if not ruta_produccion.exists():
-        ruta_produccion = ruta_base / "Harcha Maquinaria - Reportaría_Reportes_Tabla (3).csv"
+        ruta_produccion = ruta_base / "Harcha Maquinaria - Reportaría_Producción_Tabla.csv"
     
     ruta_horas_hombre = ruta_gastos / "_Harcha Maquinaria- HH_Copia de MAQVSOTSVSHH_Tabla.csv"
     if not ruta_horas_hombre.exists():
@@ -80,6 +83,7 @@ def main():
             ruta_horas_hombre=str(ruta_horas_hombre),
             ruta_repuestos=str(ruta_repuestos),
             ruta_leasing=str(ruta_leasing) if ruta_leasing.exists() else None,
+            ruta_gastos=str(ruta_reportes_contables),
             valor_uf=valor_uf
         )
         
