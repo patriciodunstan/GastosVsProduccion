@@ -58,6 +58,50 @@ class InformeService:
         self.ruta_gastos = ruta_gastos
         self.valor_uf = valor_uf
     
+    def _es_gasto_taller(self, gasto: GastoOperacional) -> bool:
+        """
+        Determina si un gasto operacional pertenece a TALLER.
+        
+        Args:
+            gasto: Gasto operacional a evaluar
+            
+        Returns:
+            True si el gasto es de TALLER, False en caso contrario
+        """
+        # Criterio 1: Origen es taller.csv
+        if gasto.origen.lower() == 'taller.csv':
+            return True
+        
+        # Criterio 2: Código de máquina contiene 'TALLER' (case-insensitive)
+        if gasto.codigo_maquina and 'TALLER' in gasto.codigo_maquina.upper():
+            return True
+        
+        return False
+    
+    def _filtrar_taller(
+        self, 
+        gastos_operacionales: List[GastoOperacional]
+    ) -> tuple[List[GastoOperacional], List[GastoOperacional]]:
+        """
+        Filtra los gastos operacionales separando los de TALLER.
+        
+        Args:
+            gastos_operacionales: Lista completa de gastos operacionales
+            
+        Returns:
+            Tupla con (gastos_sin_taller, gastos_taller)
+        """
+        gastos_sin_taller = []
+        gastos_taller = []
+        
+        for gasto in gastos_operacionales:
+            if self._es_gasto_taller(gasto):
+                gastos_taller.append(gasto)
+            else:
+                gastos_sin_taller.append(gasto)
+        
+        return gastos_sin_taller, gastos_taller
+    
     def leer_datos(self) -> tuple[
         List[Produccion], 
         List[HorasHombre], 
@@ -103,8 +147,15 @@ class InformeService:
             print("Leyendo datos de gastos operacionales (reportes contables)...")
             try:
                 reader_gastos = ReportesContablesReader(self.ruta_gastos)
-                gastos_operacionales = reader_gastos.leer_todos_filtrados()
-                print(f"  - {len(gastos_operacionales)} registros de gastos operacionales leídos")
+                gastos_operacionales_todos = reader_gastos.leer_todos_filtrados()
+                print(f"  - {len(gastos_operacionales_todos)} registros de gastos operacionales leídos")
+                
+                # Filtrar gastos de TALLER (excluir del informe principal)
+                gastos_operacionales, gastos_taller = self._filtrar_taller(gastos_operacionales_todos)
+                print(f"  - {len(gastos_operacionales)} registros incluidos en informe principal (excluidos {len(gastos_taller)} de TALLER)")
+                if gastos_taller:
+                    total_taller = sum(g.monto for g in gastos_taller)
+                    print(f"  - Monto total excluido de TALLER: ${total_taller:,.0f}")
             except Exception as e:
                 print(f"  - [WARNING] Error leyendo gastos operacionales: {e}")
         else:
@@ -137,6 +188,12 @@ class InformeService:
         # Leer datos si no se proporcionan
         if producciones is None or horas_hombre is None or repuestos is None or gastos_operacionales is None:
             producciones, horas_hombre, repuestos, leasing, gastos_operacionales = self.leer_datos()
+        else:
+            # Si se proporcionan gastos operacionales directamente, también filtrar TALLER
+            if gastos_operacionales:
+                gastos_operacionales, gastos_taller = self._filtrar_taller(gastos_operacionales)
+                if gastos_taller:
+                    print(f"  - [INFO] Excluidos {len(gastos_taller)} registros de TALLER del informe principal")
         
         # Generar Excel
         print("\nGenerando informe Excel...")

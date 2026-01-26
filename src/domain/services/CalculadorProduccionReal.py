@@ -14,7 +14,7 @@ from src.domain.entities.Produccion import Produccion
 from src.domain.entities.HorasHombre import HorasHombre
 from src.domain.entities.Repuesto import Repuesto
 from src.domain.entities.Leasing import Leasing
-from src.domain.entities.Repuesto import Repuesto
+from src.domain.entities.GastoOperacional import GastoOperacional
 
 
 class CalculadorProduccionReal:
@@ -113,6 +113,97 @@ class CalculadorProduccionReal:
                     'kilometros': Decimal('0'),
                     'vueltas': Decimal('0'),
                     'valor_monetario': produccion_real  # Producción Neta - Gastos Totales
+                }
+            }
+        
+        return resultado
+    
+    @staticmethod
+    def calcular_por_maquina_mes_completo(
+        producciones: list[Produccion],
+        repuestos: list[Repuesto],
+        horas_hombre: list[HorasHombre],
+        gastos_operacionales: list[GastoOperacional],
+        leasing: list[Leasing] = None
+    ) -> Dict[Tuple[str, int], Dict[str, Decimal]]:
+        """
+        Calcula la producción real por máquina y mes incluyendo gastos operacionales completos.
+        
+        Args:
+            producciones: Lista de entidades Produccion
+            repuestos: Lista de entidades Repuesto
+            horas_hombre: Lista de entidades HorasHombre
+            gastos_operacionales: Lista de gastos operacionales (combustibles, reparaciones, etc.)
+            leasing: Lista de entidades Leasing (opcional)
+            
+        Returns:
+            Diccionario con clave (codigo_maquina, mes) y valor:
+            {
+                'produccion': {...},
+                'gastos': {
+                    'repuestos': Decimal,
+                    'costo_hh': Decimal,
+                    'total': Decimal,  # Incluye todos los gastos operacionales
+                    ...
+                },
+                'produccion_real': {
+                    'valor_monetario': Decimal  # Producción - Gastos Totales (completos)
+                }
+            }
+        """
+        # Calcular producción y gastos completos (incluyendo operacionales)
+        prod_por_mes = CalculadorProduccion.calcular_por_maquina_mes(producciones)
+        gastos_por_mes = CalculadorGastos.calcular_por_maquina_mes_completo(
+            repuestos, horas_hombre, gastos_operacionales, leasing or []
+        )
+        
+        # Combinar resultados
+        resultado = {}
+        
+        # Procesar todas las máquinas y meses que tienen producción o gastos
+        todas_las_claves = set(prod_por_mes.keys()) | set(gastos_por_mes.keys())
+        
+        for clave in todas_las_claves:
+            prod = prod_por_mes.get(clave, {
+                'mt3': Decimal('0'),
+                'horas_trabajadas': Decimal('0'),
+                'kilometros': Decimal('0'),
+                'vueltas': Decimal('0'),
+                'valor_monetario': Decimal('0')
+            })
+            
+            gastos = gastos_por_mes.get(clave, {
+                'repuestos': Decimal('0'),
+                'horas_hombre': Decimal('0'),
+                'costo_hh': Decimal('0'),
+                'leasing': Decimal('0'),
+                'total_gastos_operacionales': Decimal('0'),
+                'total': Decimal('0')
+            })
+            
+            # Calcular producción neta usando el valor monetario real del CSV
+            produccion_neta = prod.get('valor_monetario', Decimal('0'))
+            
+            # Calcular producción real usando el total completo de gastos
+            # El 'total' de gastos_por_mes ya incluye repuestos + HH + leasing + gastos operacionales
+            produccion_real = produccion_neta - gastos['total']
+            
+            resultado[clave] = {
+                'produccion': prod,
+                'gastos': gastos,
+                'produccion_neta': {
+                    'mt3': prod['mt3'],
+                    'horas_trabajadas': prod['horas_trabajadas'],
+                    'kilometros': prod['kilometros'],
+                    'vueltas': prod['vueltas'],
+                    'valor_monetario': produccion_neta
+                },
+                'produccion_real': {
+                    'mt3': Decimal('0'),
+                    'horas_trabajadas': Decimal('0'),
+                    'kilometros': Decimal('0'),
+                    'vueltas': Decimal('0'),
+                    'valor_monetario': produccion_real  # Producción Neta - Gastos Totales (completos)
                 }
             }
         
