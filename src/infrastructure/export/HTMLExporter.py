@@ -140,7 +140,9 @@ class HTMLExporter:
         # Actualizar los gastos en los datos combinados para asegurar consistencia
         for clave in datos.keys():
             if clave in datos_gastos:
-                datos[clave]['gastos'] = datos_gastos[clave]
+                # Asegurarse de que 'gastos' es un diccionario, no un Decimal
+                if isinstance(datos_gastos[clave], dict):
+                    datos[clave]['gastos'] = datos_gastos[clave]
         
         # Generar HTML
         html = self._generar_html_completo(datos, producciones, repuestos, horas_hombre, gastos_operacionales)
@@ -357,13 +359,17 @@ class HTMLExporter:
         filas_resumen_dic = self._generar_filas_resumen(datos_por_mes.get(12, []), incluir_gastos_operacionales)
         filas_resumen_trimestral = self._generar_filas_resumen_trimestral(datos_por_maquina, incluir_gastos_operacionales)
         filas_produccion = self._generar_filas_produccion(datos_por_maquina)
-        filas_gastos = self._generar_filas_gastos(datos_por_maquina, incluir_gastos_operacionales)
-        
-        # Generar headers de la tabla de gastos según el modo
+
+        # Generar filas de gastos por mes (para sub-tabs)
+        filas_gastos_oct = self._generar_filas_gastos_mes(datos_por_maquina, 10, incluir_gastos_operacionales)
+        filas_gastos_nov = self._generar_filas_gastos_mes(datos_por_maquina, 11, incluir_gastos_operacionales)
+        filas_gastos_dic = self._generar_filas_gastos_mes(datos_por_maquina, 12, incluir_gastos_operacionales)
+        filas_gastos_trimestral = self._generar_filas_resumen_gastos_trimestral(datos_por_maquina, incluir_gastos_operacionales)
+
+        # Generar headers de la tabla de gastos (sin columna Mes para sub-tabs)
         if incluir_gastos_operacionales:
-            headers_tabla_gastos = """<tr>
+            headers_tabla_gastos_sin_mes = """<tr>
                         <th>Máquina</th>
-                        <th>Mes</th>
                         <th>Repuestos</th>
                         <th>Horas HH</th>
                         <th>Costo HH</th>
@@ -385,19 +391,15 @@ class HTMLExporter:
                         <th>Total Gastos</th>
                     </tr>"""
         else:
-            headers_tabla_gastos = """<tr>
+            headers_tabla_gastos_sin_mes = """<tr>
                         <th>Máquina</th>
-                        <th>Mes</th>
                         <th>Repuestos</th>
                         <th>Horas Hombre</th>
                         <th>Costo HH</th>
                         <th>Leasing</th>
                         <th>Total Gastos</th>
                     </tr>"""
-        
-        # Generar tabla de resumen de gastos por mes (estático)
-        tabla_gastos_mensual = self._generar_tabla_gastos_mensual(datos_por_mes, incluir_gastos_operacionales)
-        
+
         html = f"""<!DOCTYPE html>
 <html lang="es">
 <head>
@@ -757,25 +759,69 @@ class HTMLExporter:
         <!-- Tab: Detalle Gastos -->
         <div id="tab-gastos" class="tab-content">
             <div class="section">
-                <h2>📈 Resumen de Gastos por Mes</h2>
-                <div class="table-responsive">
-                    {tabla_gastos_mensual}
-                </div>
+                <h2>💰 Gastos por Máquina</h2>
+            <div class="tabs">
+                <button class="tab active" onclick="mostrarSubTabGastos('tab-gastos-oct')">Octubre 2025</button>
+                <button class="tab" onclick="mostrarSubTabGastos('tab-gastos-nov')">Noviembre 2025</button>
+                <button class="tab" onclick="mostrarSubTabGastos('tab-gastos-dic')">Diciembre 2025</button>
+                <button class="tab" onclick="mostrarSubTabGastos('tab-gastos-trimestral')">Resumen Trimestral</button>
             </div>
-            
-            <div class="section">
-                <h2>💰 Detalle Gastos por Máquina</h2>
-                <div class="table-responsive">
-                <table id="tabla-gastos">
+            <div id="tab-gastos-oct" class="tab-content active">
+            <h3 style="margin-top: 20px; color: #333;">Octubre 2025</h3>
+            <div class="table-responsive">
+                <table id="tabla-gastos-oct" class="tabla-mensual">
                 <thead>
-                    {headers_tabla_gastos}
+                    {headers_tabla_gastos_sin_mes}
                 </thead>
                 <tbody>
-                    {filas_gastos}
+                    {filas_gastos_oct}
                 </tbody>
                 </table>
-                </div>
             </div>
+            </div>
+
+            <div id="tab-gastos-nov" class="tab-content">
+            <h3 style="margin-top: 40px; color: #333;">Noviembre 2025</h3>
+            <div class="table-responsive">
+                <table id="tabla-gastos-nov" class="tabla-mensual">
+                <thead>
+                    {headers_tabla_gastos_sin_mes}
+                </thead>
+                <tbody>
+                    {filas_gastos_nov}
+                </tbody>
+                </table>
+            </div>
+            </div>
+
+            <div id="tab-gastos-dic" class="tab-content">
+            <h3 style="margin-top: 40px; color: #333;">Diciembre 2025</h3>
+            <div class="table-responsive">
+                <table id="tabla-gastos-dic" class="tabla-mensual">
+                <thead>
+                    {headers_tabla_gastos_sin_mes}
+                </thead>
+                <tbody>
+                    {filas_gastos_dic}
+                </tbody>
+                </table>
+            </div>
+            </div>
+
+            <div id="tab-gastos-trimestral" class="tab-content">
+            <h3 style="margin-top: 40px; color: #333;">Resumen Trimestral</h3>
+            <div class="table-responsive">
+                <table id="tabla-gastos-trimestral">
+                <thead>
+                    {headers_tabla_gastos_sin_mes}
+                </thead>
+                <tbody>
+                    {filas_gastos_trimestral}
+                </tbody>
+                </table>
+            </div>
+            </div>
+        </div>
         </div>
     </div>
     
@@ -814,19 +860,35 @@ class HTMLExporter:
                 }}
             }}
         }}
-        
+
         function mostrarSubTab(subTabId) {{
             // Solo afectar los subtabs dentro de #tab-resumen
             const subContents = document.querySelectorAll('#tab-resumen > .section .tab-content, #tab-resumen .tab-content[id^="tab-resumen-"]');
             const subTabs = document.querySelectorAll('#tab-resumen .tabs > .tab');
-            
+
             subContents.forEach(c => {{
                 if (c.id && c.id.startsWith('tab-resumen-')) {{
                     c.classList.remove('active');
                 }}
             }});
             subTabs.forEach(t => t.classList.remove('active'));
-            
+
+            document.getElementById(subTabId).classList.add('active');
+            event.target.classList.add('active');
+        }}
+
+        function mostrarSubTabGastos(subTabId) {{
+            // Solo afectar los subtabs dentro de #tab-gastos
+            const subContents = document.querySelectorAll('#tab-gastos .tab-content[id^="tab-gastos-"]');
+            const subTabs = document.querySelectorAll('#tab-gastos .tabs > .tab');
+
+            subContents.forEach(c => {{
+                if (c.id && c.id.startsWith('tab-gastos-')) {{
+                    c.classList.remove('active');
+                }}
+            }});
+            subTabs.forEach(t => t.classList.remove('active'));
+
             document.getElementById(subTabId).classList.add('active');
             event.target.classList.add('active');
         }}
@@ -927,13 +989,171 @@ class HTMLExporter:
                         <td>{self._formatear_numero(prod['vueltas'], 0)}</td>
                     </tr>"""
                 filas.append(fila)
-        
+
         return '\n'.join(filas)
-    
-    def _generar_filas_gastos(self, datos_por_maquina: Dict[str, Dict[int, Dict]], incluir_gastos_operacionales: bool) -> str:
-        """Genera las filas de la tabla de gastos."""
+
+    def _generar_filas_gastos_mes(self, datos_por_maquina: Dict[str, Dict[int, Dict]], mes: int, incluir_gastos_operacionales: bool) -> str:
+        """Genera las filas de la tabla de gastos para un mes específico, ordenadas de mayor a menor por total de gastos."""
+        # Primero recopilar datos y calcular totales para poder ordenar
+        datos_ordenados = []
+        for maquina, datos_por_mes in datos_por_maquina.items():
+            if mes in datos_por_mes:
+                valores = datos_por_mes[mes]
+                gastos = valores['gastos']
+                total_gastos = self._get_total_gastos(gastos, incluir_gastos_operacionales)
+                datos_ordenados.append((maquina, gastos, total_gastos))
+
+        # Ordenar de mayor a menor por total de gastos
+        datos_ordenados.sort(key=lambda x: x[2], reverse=True)
+
+        # Generar filas en el orden correcto
         filas = []
-        
+        for maquina, gastos, total_gastos in datos_ordenados:
+            if incluir_gastos_operacionales:
+                fila = f"""<tr data-maquina="{maquina}">
+                    <td>{maquina}</td>
+                    <td>{self._formatear_moneda(gastos.get('repuestos', Decimal('0')))}</td>
+                    <td>{self._formatear_numero(gastos.get('horas_hombre', Decimal('0')), 0)}</td>
+                    <td>{self._formatear_moneda(gastos.get('costo_hh', Decimal('0')))}</td>
+                    <td>{self._formatear_moneda(gastos.get('leasing', Decimal('0')))}</td>
+                    <td>{self._formatear_moneda(gastos.get('combustibles', Decimal('0')))}</td>
+                    <td>{self._formatear_moneda(gastos.get('reparaciones', Decimal('0')))}</td>
+                    <td>{self._formatear_moneda(gastos.get('seguros', Decimal('0')))}</td>
+                    <td>{self._formatear_moneda(gastos.get('honorarios', Decimal('0')))}</td>
+                    <td>{self._formatear_moneda(gastos.get('epp', Decimal('0')))}</td>
+                    <td>{self._formatear_moneda(gastos.get('peajes', Decimal('0')))}</td>
+                    <td>{self._formatear_moneda(gastos.get('remuneraciones', Decimal('0')))}</td>
+                    <td>{self._formatear_moneda(gastos.get('permisos', Decimal('0')))}</td>
+                    <td>{self._formatear_moneda(gastos.get('alimentacion', Decimal('0')))}</td>
+                    <td>{self._formatear_moneda(gastos.get('pasajes', Decimal('0')))}</td>
+                    <td>{self._formatear_moneda(gastos.get('correspondencia', Decimal('0')))}</td>
+                    <td>{self._formatear_moneda(gastos.get('gastos_legales', Decimal('0')))}</td>
+                    <td>{self._formatear_moneda(gastos.get('multas', Decimal('0')))}</td>
+                    <td>{self._formatear_moneda(gastos.get('otros_gastos', Decimal('0')))}</td>
+                    <td><strong>{self._formatear_moneda(total_gastos)}</strong></td>
+                </tr>"""
+            else:
+                fila = f"""<tr data-maquina="{maquina}">
+                    <td>{maquina}</td>
+                    <td>{self._formatear_moneda(gastos.get('repuestos', Decimal('0')))}</td>
+                    <td>{self._formatear_numero(gastos.get('horas_hombre', Decimal('0')), 0)}</td>
+                    <td>{self._formatear_moneda(gastos.get('costo_hh', Decimal('0')))}</td>
+                    <td>{self._formatear_moneda(gastos.get('leasing', Decimal('0')))}</td>
+                    <td>{self._formatear_moneda(total_gastos)}</td>
+                </tr>"""
+            filas.append(fila)
+
+        return '\n'.join(filas)
+
+    def _generar_filas_resumen_gastos_trimestral(self, datos_por_maquina: Dict[str, Dict[int, Dict]], incluir_gastos_operacionales: bool) -> str:
+        """Genera las filas del resumen trimestral de gastos, ordenadas de mayor a menor por total."""
+        filas = []
+
+        # Primero calcular todos los totales trimestrales por máquina
+        totales_por_maquina = []
+        for maquina, datos_por_mes in datos_por_maquina.items():
+            # Calcular totales trimestrales
+            total_repuestos = Decimal('0')
+            total_hh = Decimal('0')
+            total_costo_hh = Decimal('0')
+            total_leasing = Decimal('0')
+            total_combustibles = Decimal('0')
+            total_reparaciones = Decimal('0')
+            total_seguros = Decimal('0')
+            total_honorarios = Decimal('0')
+            total_epp = Decimal('0')
+            total_peajes = Decimal('0')
+            total_remuneraciones = Decimal('0')
+            total_permisos = Decimal('0')
+            total_alimentacion = Decimal('0')
+            total_pasajes = Decimal('0')
+            total_correspondencia = Decimal('0')
+            total_gastos_legales = Decimal('0')
+            total_multas = Decimal('0')
+            total_otros = Decimal('0')
+            total_general = Decimal('0')
+
+            for mes, valores in datos_por_mes.items():
+                gastos = valores['gastos']
+                total_repuestos += gastos.get('repuestos', Decimal('0'))
+                total_hh += gastos.get('horas_hombre', Decimal('0'))
+                total_costo_hh += gastos.get('costo_hh', Decimal('0'))
+                total_leasing += gastos.get('leasing', Decimal('0'))
+                if incluir_gastos_operacionales:
+                    total_combustibles += gastos.get('combustibles', Decimal('0'))
+                    total_reparaciones += gastos.get('reparaciones', Decimal('0'))
+                    total_seguros += gastos.get('seguros', Decimal('0'))
+                    total_honorarios += gastos.get('honorarios', Decimal('0'))
+                    total_epp += gastos.get('epp', Decimal('0'))
+                    total_peajes += gastos.get('peajes', Decimal('0'))
+                    total_remuneraciones += gastos.get('remuneraciones', Decimal('0'))
+                    total_permisos += gastos.get('permisos', Decimal('0'))
+                    total_alimentacion += gastos.get('alimentacion', Decimal('0'))
+                    total_pasajes += gastos.get('pasajes', Decimal('0'))
+                    total_correspondencia += gastos.get('correspondencia', Decimal('0'))
+                    total_gastos_legales += gastos.get('gastos_legales', Decimal('0'))
+                    total_multas += gastos.get('multas', Decimal('0'))
+                    total_otros += gastos.get('otros_gastos', Decimal('0'))
+                total_general += self._get_total_gastos(gastos, incluir_gastos_operacionales)
+
+            totales_por_maquina.append((
+                maquina, total_repuestos, total_hh, total_costo_hh, total_leasing,
+                total_combustibles, total_reparaciones, total_seguros, total_honorarios,
+                total_epp, total_peajes, total_remuneraciones, total_permisos,
+                total_alimentacion, total_pasajes, total_correspondencia,
+                total_gastos_legales, total_multas, total_otros, total_general
+            ))
+
+        # Ordenar de mayor a menor por total_general (último elemento, índice 19)
+        totales_por_maquina.sort(key=lambda x: x[19], reverse=True)
+
+        # Generar filas en el orden correcto
+        for (maquina, total_repuestos, total_hh, total_costo_hh, total_leasing,
+              total_combustibles, total_reparaciones, total_seguros, total_honorarios,
+              total_epp, total_peajes, total_remuneraciones, total_permisos,
+              total_alimentacion, total_pasajes, total_correspondencia,
+              total_gastos_legales, total_multas, total_otros, total_general) in totales_por_maquina:
+
+            if incluir_gastos_operacionales:
+                fila = f"""<tr data-maquina="{maquina}">
+                    <td>{maquina}</td>
+                    <td>{self._formatear_moneda(total_repuestos)}</td>
+                    <td>{self._formatear_numero(total_hh, 0)}</td>
+                    <td>{self._formatear_moneda(total_costo_hh)}</td>
+                    <td>{self._formatear_moneda(total_leasing)}</td>
+                    <td>{self._formatear_moneda(total_combustibles)}</td>
+                    <td>{self._formatear_moneda(total_reparaciones)}</td>
+                    <td>{self._formatear_moneda(total_seguros)}</td>
+                    <td>{self._formatear_moneda(total_honorarios)}</td>
+                    <td>{self._formatear_moneda(total_epp)}</td>
+                    <td>{self._formatear_moneda(total_peajes)}</td>
+                    <td>{self._formatear_moneda(total_remuneraciones)}</td>
+                    <td>{self._formatear_moneda(total_permisos)}</td>
+                    <td>{self._formatear_moneda(total_alimentacion)}</td>
+                    <td>{self._formatear_moneda(total_pasajes)}</td>
+                    <td>{self._formatear_moneda(total_correspondencia)}</td>
+                    <td>{self._formatear_moneda(total_gastos_legales)}</td>
+                    <td>{self._formatear_moneda(total_multas)}</td>
+                    <td>{self._formatear_moneda(total_otros)}</td>
+                    <td><strong>{self._formatear_moneda(total_general)}</strong></td>
+                </tr>"""
+            else:
+                fila = f"""<tr data-maquina="{maquina}">
+                    <td>{maquina}</td>
+                    <td>{self._formatear_moneda(total_repuestos)}</td>
+                    <td>{self._formatear_numero(total_hh, 0)}</td>
+                    <td>{self._formatear_moneda(total_costo_hh)}</td>
+                    <td>{self._formatear_moneda(total_leasing)}</td>
+                    <td>{self._formatear_moneda(total_general)}</td>
+                </tr>"""
+            filas.append(fila)
+
+        return '\n'.join(filas)
+
+    def _generar_filas_gastos(self, datos_por_maquina: Dict[str, Dict[int, Dict]], incluir_gastos_operacionales: bool) -> str:
+        """Genera las filas de la tabla de gastos (todas juntas - método obsoleto, mantener por compatibilidad)."""
+        filas = []
+
         for maquina, datos_por_mes in datos_por_maquina.items():
             for mes, valores in datos_por_mes.items():
                 gastos = valores['gastos']

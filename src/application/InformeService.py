@@ -21,6 +21,7 @@ from src.infrastructure.csv.LeasingCSVReader import LeasingCSVReader
 from src.infrastructure.csv.ReportesContablesReader import ReportesContablesReader
 from src.infrastructure.export.ExcelExporter import ExcelExporter
 from src.infrastructure.export.HTMLExporter import HTMLExporter
+from src.infrastructure.export.HTMLExporterTaller import HTMLExporterTaller
 from src.domain.services.CalculadorGastos import CalculadorGastos
 
 
@@ -57,6 +58,11 @@ class InformeService:
         self.ruta_leasing = ruta_leasing
         self.ruta_gastos = ruta_gastos
         self.valor_uf = valor_uf
+        
+        # Almacenar gastos de taller para informe separado
+        self._gastos_taller: List[GastoOperacional] = []
+        self._repuestos_taller: List[Repuesto] = []
+        self._horas_hombre_taller: List[HorasHombre] = []
     
     def _es_gasto_taller(self, gasto: GastoOperacional) -> bool:
         """
@@ -76,6 +82,34 @@ class InformeService:
         if gasto.codigo_maquina and 'TALLER' in gasto.codigo_maquina.upper():
             return True
         
+        return False
+    
+    def _es_repuesto_taller(self, repuesto: Repuesto) -> bool:
+        """
+        Determina si un repuesto pertenece a TALLER.
+        
+        Args:
+            repuesto: Repuesto a evaluar
+            
+        Returns:
+            True si el repuesto es de TALLER, False en caso contrario
+        """
+        if repuesto.codigo_maquina and 'TALLER' in repuesto.codigo_maquina.upper():
+            return True
+        return False
+    
+    def _es_hh_taller(self, hh: HorasHombre) -> bool:
+        """
+        Determina si una hora hombre pertenece a TALLER.
+        
+        Args:
+            hh: Hora hombre a evaluar
+            
+        Returns:
+            True si la HH es de TALLER, False en caso contrario
+        """
+        if hh.codigo_maquina and 'TALLER' in hh.codigo_maquina.upper():
+            return True
         return False
     
     def _filtrar_taller(
@@ -102,6 +136,54 @@ class InformeService:
         
         return gastos_sin_taller, gastos_taller
     
+    def _filtrar_repuestos_taller(
+        self,
+        repuestos: List[Repuesto]
+    ) -> tuple[List[Repuesto], List[Repuesto]]:
+        """
+        Filtra los repuestos separando los de TALLER.
+        
+        Args:
+            repuestos: Lista completa de repuestos
+            
+        Returns:
+            Tupla con (repuestos_sin_taller, repuestos_taller)
+        """
+        repuestos_sin_taller = []
+        repuestos_taller = []
+        
+        for repuesto in repuestos:
+            if self._es_repuesto_taller(repuesto):
+                repuestos_taller.append(repuesto)
+            else:
+                repuestos_sin_taller.append(repuesto)
+        
+        return repuestos_sin_taller, repuestos_taller
+    
+    def _filtrar_hh_taller(
+        self,
+        horas_hombre: List[HorasHombre]
+    ) -> tuple[List[HorasHombre], List[HorasHombre]]:
+        """
+        Filtra las horas hombre separando las de TALLER.
+        
+        Args:
+            horas_hombre: Lista completa de horas hombre
+            
+        Returns:
+            Tupla con (hh_sin_taller, hh_taller)
+        """
+        hh_sin_taller = []
+        hh_taller = []
+        
+        for hh in horas_hombre:
+            if self._es_hh_taller(hh):
+                hh_taller.append(hh)
+            else:
+                hh_sin_taller.append(hh)
+        
+        return hh_sin_taller, hh_taller
+    
     def leer_datos(self) -> tuple[
         List[Produccion], 
         List[HorasHombre], 
@@ -122,13 +204,24 @@ class InformeService:
         
         print("Leyendo datos de horas hombre...")
         reader_hh = HorasHombreCSVReader(self.ruta_horas_hombre)
-        horas_hombre = reader_hh.leer()
-        print(f"  - {len(horas_hombre)} registros de horas hombre leídos")
+        horas_hombre_todas = reader_hh.leer()
+        print(f"  - {len(horas_hombre_todas)} registros de horas hombre leídos")
+        
+        # Filtrar HH de TALLER
+        horas_hombre, self._horas_hombre_taller = self._filtrar_hh_taller(horas_hombre_todas)
+        if self._horas_hombre_taller:
+            print(f"  - {len(horas_hombre)} HH para máquinas, {len(self._horas_hombre_taller)} HH para TALLER")
         
         print("Leyendo datos de repuestos (DATABODEGA)...")
         reader_rep = RepuestosCSVReader(self.ruta_repuestos)
-        repuestos = reader_rep.leer()
-        print(f"  - {len(repuestos)} registros de repuestos leídos")
+        repuestos_todos = reader_rep.leer()
+        print(f"  - {len(repuestos_todos)} registros de repuestos leídos")
+        
+        # Filtrar repuestos de TALLER
+        repuestos, self._repuestos_taller = self._filtrar_repuestos_taller(repuestos_todos)
+        if self._repuestos_taller:
+            total_rep_taller = sum(r.total for r in self._repuestos_taller)
+            print(f"  - {len(repuestos)} repuestos para máquinas, {len(self._repuestos_taller)} para TALLER (${total_rep_taller:,.0f})")
         
         leasing = []
         if self.ruta_leasing:
@@ -150,12 +243,12 @@ class InformeService:
                 gastos_operacionales_todos = reader_gastos.leer_todos_filtrados()
                 print(f"  - {len(gastos_operacionales_todos)} registros de gastos operacionales leídos")
                 
-                # Filtrar gastos de TALLER (excluir del informe principal)
-                gastos_operacionales, gastos_taller = self._filtrar_taller(gastos_operacionales_todos)
-                print(f"  - {len(gastos_operacionales)} registros incluidos en informe principal (excluidos {len(gastos_taller)} de TALLER)")
-                if gastos_taller:
-                    total_taller = sum(g.monto for g in gastos_taller)
-                    print(f"  - Monto total excluido de TALLER: ${total_taller:,.0f}")
+                # Filtrar gastos de TALLER
+                gastos_operacionales, self._gastos_taller = self._filtrar_taller(gastos_operacionales_todos)
+                print(f"  - {len(gastos_operacionales)} registros para máquinas")
+                if self._gastos_taller:
+                    total_taller = sum(g.monto for g in self._gastos_taller)
+                    print(f"  - {len(self._gastos_taller)} registros para TALLER (${total_taller:,.0f})")
             except Exception as e:
                 print(f"  - [WARNING] Error leyendo gastos operacionales: {e}")
         else:
@@ -167,6 +260,7 @@ class InformeService:
         self,
         ruta_excel: str,
         ruta_html: str,
+        ruta_html_taller: Optional[str] = None,
         producciones: Optional[List[Produccion]] = None,
         horas_hombre: Optional[List[HorasHombre]] = None,
         repuestos: Optional[List[Repuesto]] = None,
@@ -178,7 +272,8 @@ class InformeService:
         
         Args:
             ruta_excel: Ruta donde guardar el archivo Excel
-            ruta_html: Ruta donde guardar el archivo HTML
+            ruta_html: Ruta donde guardar el archivo HTML de máquinas
+            ruta_html_taller: Ruta donde guardar el archivo HTML de TALLER (opcional)
             producciones: Lista de producciones (opcional, se leen si no se proporciona)
             horas_hombre: Lista de horas hombre (opcional, se leen si no se proporciona)
             repuestos: Lista de repuestos (opcional, se leen si no se proporciona)
@@ -191,9 +286,9 @@ class InformeService:
         else:
             # Si se proporcionan gastos operacionales directamente, también filtrar TALLER
             if gastos_operacionales:
-                gastos_operacionales, gastos_taller = self._filtrar_taller(gastos_operacionales)
-                if gastos_taller:
-                    print(f"  - [INFO] Excluidos {len(gastos_taller)} registros de TALLER del informe principal")
+                gastos_operacionales, self._gastos_taller = self._filtrar_taller(gastos_operacionales)
+                if self._gastos_taller:
+                    print(f"  - [INFO] Excluidos {len(self._gastos_taller)} registros de TALLER del informe principal")
         
         # Generar Excel
         print("\nGenerando informe Excel...")
@@ -207,8 +302,8 @@ class InformeService:
         )
         print(f"  - Archivo Excel generado: {ruta_excel}")
         
-        # Generar HTML
-        print("\nGenerando informe HTML...")
+        # Generar HTML de máquinas
+        print("\nGenerando informe HTML de máquinas...")
         html_exporter = HTMLExporter(ruta_html)
         html_exporter.exportar_completo(
             producciones,
@@ -218,5 +313,42 @@ class InformeService:
             leasing
         )
         print(f"  - Archivo HTML generado: {ruta_html}")
+        
+        # Generar HTML de TALLER si hay datos
+        if ruta_html_taller is None:
+            # Generar ruta automática basada en ruta_html
+            ruta_base = Path(ruta_html)
+            ruta_html_taller = str(ruta_base.parent / f"{ruta_base.stem}_taller{ruta_base.suffix}")
+        
+        tiene_datos_taller = (
+            self._gastos_taller or 
+            self._repuestos_taller or 
+            self._horas_hombre_taller
+        )
+        
+        if tiene_datos_taller:
+            print("\nGenerando informe HTML de TALLER...")
+            html_exporter_taller = HTMLExporterTaller(ruta_html_taller)
+            html_exporter_taller.exportar(
+                self._gastos_taller,
+                self._repuestos_taller,
+                self._horas_hombre_taller
+            )
+            print(f"  - Archivo HTML TALLER generado: {ruta_html_taller}")
+            
+            # Mostrar resumen de taller
+            total_gastos_taller = sum(g.monto for g in self._gastos_taller if not g.es_ingreso)
+            total_repuestos_taller = sum(r.total for r in self._repuestos_taller)
+            total_hh_taller = sum(hh.horas for hh in self._horas_hombre_taller)
+            total_costo_hh_taller = total_hh_taller * Decimal('35000')
+            total_taller = total_gastos_taller + total_repuestos_taller + total_costo_hh_taller
+            
+            print(f"\n  === RESUMEN TALLER ===")
+            print(f"  - Gastos operacionales: ${total_gastos_taller:,.0f}")
+            print(f"  - Repuestos: ${total_repuestos_taller:,.0f}")
+            print(f"  - Horas hombre: {total_hh_taller} H (${total_costo_hh_taller:,.0f})")
+            print(f"  - TOTAL TALLER: ${total_taller:,.0f}")
+        else:
+            print("\n  - [INFO] No hay datos de TALLER, no se generará informe separado")
         
         print("\n[OK] Informes generados exitosamente!")

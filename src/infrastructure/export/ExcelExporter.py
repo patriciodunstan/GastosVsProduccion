@@ -178,7 +178,7 @@ class ExcelExporter:
         datos_gastos: Dict[Tuple[str, int], Dict]
     ) -> Dict[Tuple[str, int], Dict]:
         """Combina datos de producción y gastos en una sola estructura."""
-        datos_combinados = {}
+        datos_combinados: Dict[Tuple[str, int], Dict] = {}
         
         # Obtener todas las claves únicas
         todas_claves = set(datos_produccion.keys()) | set(datos_gastos.keys())
@@ -250,54 +250,73 @@ class ExcelExporter:
         return datos_combinados
     
     def _crear_hoja_detalle_gastos_completo(self, datos: Dict[Tuple[str, int], Dict]):
-        """Crea la hoja de detalle de gastos mensual con desglose por categoría."""
-        hoja = self.workbook.create_sheet("Detalle Gastos Completo")
-        
+        """Crea 4 hojas de gastos completos: Octubre, Noviembre, Diciembre y Resumen Trimestral."""
+        # Crear hoja individual por cada mes
+        self._crear_hoja_gastos_completo_mes(datos, 10, "Gastos Octubre Completo")
+        self._crear_hoja_gastos_completo_mes(datos, 11, "Gastos Noviembre Completo")
+        self._crear_hoja_gastos_completo_mes(datos, 12, "Gastos Diciembre Completo")
+        # Crear resumen trimestral
+        self._crear_hoja_resumen_gastos_trimestral_completo(datos)
+
+    def _crear_hoja_gastos_completo_mes(self, datos: Dict[Tuple[str, int], Dict], mes: int, nombre_hoja: str):
+        """Crea una hoja de gastos completos para un mes específico."""
+        hoja = self.workbook.create_sheet(nombre_hoja)
+
         # Título
-        hoja['A1'] = 'DETALLE GASTOS POR MES Y CATEGORÍA'
+        hoja['A1'] = f'GASTOS COMPLETOS {self.MESES[mes].upper()}'
         hoja['A1'].font = self.estilo_titulo
-        hoja.merge_cells('A1:P1')
-        
+        hoja.merge_cells('A1:O1')
+
         # Nota
         hoja['A2'] = 'NOTA: Incluye TODOS los gastos operacionales de reportes contables + repuestos DATABODEGA. Valores NETOS (sin IVA).'
         hoja['A2'].font = Font(size=9, italic=True, color='666666')
-        hoja.merge_cells('A2:P2')
-        
+        hoja.merge_cells('A2:O2')
+
         # Encabezados
         encabezados = [
-            'Máquina', 'Mes', 'Repuestos', 'Combustibles', 'Reparaciones', 'Seguros', 'Honorarios',
+            'Máquina', 'Repuestos', 'Combustibles', 'Reparaciones', 'Seguros', 'Honorarios',
             'EPP', 'Peajes', 'Remuneraciones', 'Permisos', 'Alimentación', 'Pasajes',
             'Correspondencia', 'Gastos Legales', 'Multas', 'Otros', 'Total Gastos'
         ]
-        
+
         for col, encabezado in enumerate(encabezados, start=1):
-            celda = hoja.cell(row=3, column=col)
+            celda = hoja.cell(row=4, column=col)
             celda.value = encabezado
             self._aplicar_estilo_encabezado(celda)
-        
-        # Datos por (maquina, mes)
-        fila = 4
-        for (maquina, mes), datos_mes in sorted(datos.items()):
+
+        # Filtrar datos por mes y ordenar por total de gastos (mayor a menor)
+        fila = 5
+        datos_mes = sorted(
+            [(maq, datos_mes) for (maq, m), datos_mes in datos.items() if m == mes],
+            key=lambda x: (
+                x[1].get('gastos', {}).get('repuestos', Decimal('0')) +
+                x[1].get('gastos', {}).get('horas_hombre', Decimal('0')) * Decimal('35000') +
+                x[1].get('gastos', {}).get('leasing', Decimal('0')) +
+                x[1].get('gastos', {}).get('total_gastos_operacionales', Decimal('0'))
+            ),
+            reverse=True
+        )
+
+        for maquina, datos_mes in datos_mes:
             gastos = datos_mes.get('gastos', {})
-            
+
             hoja.cell(row=fila, column=1, value=maquina)
-            hoja.cell(row=fila, column=2, value=self.MESES[mes])
-            hoja.cell(row=fila, column=3, value=self._formatear_moneda(gastos.get('repuestos', Decimal('0'))))
-            hoja.cell(row=fila, column=4, value=self._formatear_moneda(gastos.get('combustibles', Decimal('0'))))
-            hoja.cell(row=fila, column=5, value=self._formatear_moneda(gastos.get('reparaciones', Decimal('0'))))
-            hoja.cell(row=fila, column=6, value=self._formatear_moneda(gastos.get('seguros', Decimal('0'))))
-            hoja.cell(row=fila, column=7, value=self._formatear_moneda(gastos.get('honorarios', Decimal('0'))))
-            hoja.cell(row=fila, column=8, value=self._formatear_moneda(gastos.get('epp', Decimal('0'))))
-            hoja.cell(row=fila, column=9, value=self._formatear_moneda(gastos.get('peajes', Decimal('0'))))
-            hoja.cell(row=fila, column=10, value=self._formatear_moneda(gastos.get('remuneraciones', Decimal('0'))))
-            hoja.cell(row=fila, column=11, value=self._formatear_moneda(gastos.get('permisos', Decimal('0'))))
-            hoja.cell(row=fila, column=12, value=self._formatear_moneda(gastos.get('alimentacion', Decimal('0'))))
-            hoja.cell(row=fila, column=13, value=self._formatear_moneda(gastos.get('pasajes', Decimal('0'))))
-            hoja.cell(row=fila, column=14, value=self._formatear_moneda(gastos.get('correspondencia', Decimal('0'))))
-            hoja.cell(row=fila, column=15, value=self._formatear_moneda(gastos.get('gastos_legales', Decimal('0'))))
-            hoja.cell(row=fila, column=16, value=self._formatear_moneda(gastos.get('multas', Decimal('0'))))
-            hoja.cell(row=fila, column=17, value=self._formatear_moneda(gastos.get('otros_gastos', Decimal('0'))))
-            
+            hoja.cell(row=fila, column=2, value=self._formatear_moneda(gastos.get('repuestos', Decimal('0'))))
+            hoja.cell(row=fila, column=3, value=self._formatear_moneda(gastos.get('combustibles', Decimal('0'))))
+            hoja.cell(row=fila, column=4, value=self._formatear_moneda(gastos.get('reparaciones', Decimal('0'))))
+            hoja.cell(row=fila, column=5, value=self._formatear_moneda(gastos.get('seguros', Decimal('0'))))
+            hoja.cell(row=fila, column=6, value=self._formatear_moneda(gastos.get('honorarios', Decimal('0'))))
+            hoja.cell(row=fila, column=7, value=self._formatear_moneda(gastos.get('epp', Decimal('0'))))
+            hoja.cell(row=fila, column=8, value=self._formatear_moneda(gastos.get('peajes', Decimal('0'))))
+            hoja.cell(row=fila, column=9, value=self._formatear_moneda(gastos.get('remuneraciones', Decimal('0'))))
+            hoja.cell(row=fila, column=10, value=self._formatear_moneda(gastos.get('permisos', Decimal('0'))))
+            hoja.cell(row=fila, column=11, value=self._formatear_moneda(gastos.get('alimentacion', Decimal('0'))))
+            hoja.cell(row=fila, column=12, value=self._formatear_moneda(gastos.get('pasajes', Decimal('0'))))
+            hoja.cell(row=fila, column=13, value=self._formatear_moneda(gastos.get('correspondencia', Decimal('0'))))
+            hoja.cell(row=fila, column=14, value=self._formatear_moneda(gastos.get('gastos_legales', Decimal('0'))))
+            hoja.cell(row=fila, column=15, value=self._formatear_moneda(gastos.get('multas', Decimal('0'))))
+            hoja.cell(row=fila, column=16, value=self._formatear_moneda(gastos.get('otros_gastos', Decimal('0'))))
+
             # Calcular total real (repuestos + gastos operacionales + HH + leasing)
             total_real = (
                 gastos.get('repuestos', Decimal('0')) +
@@ -305,18 +324,142 @@ class ExcelExporter:
                 gastos.get('leasing', Decimal('0')) +
                 gastos.get('total_gastos_operacionales', Decimal('0'))
             )
-            hoja.cell(row=fila, column=18, value=self._formatear_moneda(total_real))
-            
+            hoja.cell(row=fila, column=17, value=self._formatear_moneda(total_real))
+
             # Estilo para celdas de datos
-            for col in range(3, 19):
+            for col in range(1, 18):
                 self._aplicar_borde(hoja.cell(row=fila, column=col))
-            
+
             fila += 1
-        
+
         # Ajustar ancho de columnas
         hoja.column_dimensions['A'].width = 25
-        for col in range(3, 19):
+        for col in range(2, 18):
             hoja.column_dimensions[get_column_letter(col)].width = 15
+
+    def _crear_hoja_resumen_gastos_trimestral_completo(self, datos: Dict[Tuple[str, int], Dict]):
+        """Crea la hoja de resumen trimestral de gastos completos."""
+        hoja = self.workbook.create_sheet("Resumen Gastos Trimestral Completo")
+
+        # Título
+        hoja['A1'] = 'RESUMEN GASTOS TRIMESTRAL COMPLETO'
+        hoja['A1'].font = self.estilo_titulo
+        hoja.merge_cells('A1:BM1')
+
+        # Nota
+        hoja['A2'] = 'NOTA: Incluye TODOS los gastos operacionales de reportes contables + repuestos DATABODEGA. Valores NETOS (sin IVA).'
+        hoja['A2'].font = Font(size=9, italic=True, color='666666')
+        hoja.merge_cells('A2:BM2')
+
+        # Definir categorías de gastos
+        categorias = [
+            'Repuestos', 'Combustibles', 'Reparaciones', 'Seguros', 'Honorarios',
+            'EPP', 'Peajes', 'Remuneraciones', 'Permisos', 'Alimentación', 'Pasajes',
+            'Correspondencia', 'Gastos Legales', 'Multas', 'Otros', 'Total'
+        ]
+
+        # Construir encabezados
+        encabezados = ['Máquina']
+        for mes in [10, 11, 12]:
+            nombre_mes = self.MESES[mes]
+            for cat in categorias:
+                encabezados.append(f'{cat} {nombre_mes[:3]}')  # Oct, Nov, Dic
+
+        # Agregar columnas de totales trimestrales
+        for cat in categorias:
+            encabezados.append(f'Total {cat}')
+
+        for col, encabezado in enumerate(encabezados, start=1):
+            celda = hoja.cell(row=4, column=col)
+            celda.value = encabezado
+            self._aplicar_estilo_encabezado(celda)
+
+        # Obtener todas las máquinas únicas con su total general y ordenar por total (mayor a menor)
+        maquinas_con_total = []
+        for maquina in set(maq for maq, _ in datos.keys()):
+            total_general = Decimal('0')
+            for mes in [10, 11, 12]:
+                clave = (maquina, mes)
+                if clave in datos:
+                    gastos = datos[clave].get('gastos', {})
+                    total_general += (
+                        gastos.get('repuestos', Decimal('0')) +
+                        gastos.get('horas_hombre', Decimal('0')) * Decimal('35000') +
+                        gastos.get('leasing', Decimal('0')) +
+                        gastos.get('total_gastos_operacionales', Decimal('0'))
+                    )
+            maquinas_con_total.append((maquina, total_general))
+
+        # Ordenar por total general (mayor a menor)
+        maquinas_ordenadas = sorted(maquinas_con_total, key=lambda x: x[1], reverse=True)
+
+        fila = 5
+        for maquina, _ in maquinas_ordenadas:
+            col = 1
+            hoja.cell(row=fila, column=col, value=maquina)
+            self._aplicar_borde(hoja.cell(row=fila, column=col))
+            col += 1
+
+            # Inicializar acumuladores para totales trimestrales
+            totales_trimestral = {cat: Decimal('0') for cat in categorias}
+
+            # Datos por cada mes
+            for mes in [10, 11, 12]:
+                clave = (maquina, mes)
+                if clave in datos:
+                    gastos = datos[clave].get('gastos', {})
+
+                    # Valores del mes
+                    valores_mes = {
+                        'Repuestos': gastos.get('repuestos', Decimal('0')),
+                        'Combustibles': gastos.get('combustibles', Decimal('0')),
+                        'Reparaciones': gastos.get('reparaciones', Decimal('0')),
+                        'Seguros': gastos.get('seguros', Decimal('0')),
+                        'Honorarios': gastos.get('honorarios', Decimal('0')),
+                        'EPP': gastos.get('epp', Decimal('0')),
+                        'Peajes': gastos.get('peajes', Decimal('0')),
+                        'Remuneraciones': gastos.get('remuneraciones', Decimal('0')),
+                        'Permisos': gastos.get('permisos', Decimal('0')),
+                        'Alimentación': gastos.get('alimentacion', Decimal('0')),
+                        'Pasajes': gastos.get('pasajes', Decimal('0')),
+                        'Correspondencia': gastos.get('correspondencia', Decimal('0')),
+                        'Gastos Legales': gastos.get('gastos_legales', Decimal('0')),
+                        'Multas': gastos.get('multas', Decimal('0')),
+                        'Otros': gastos.get('otros_gastos', Decimal('0')),
+                        'Total': (
+                            gastos.get('repuestos', Decimal('0')) +
+                            gastos.get('horas_hombre', Decimal('0')) * Decimal('35000') +
+                            gastos.get('leasing', Decimal('0')) +
+                            gastos.get('total_gastos_operacionales', Decimal('0'))
+                        )
+                    }
+
+                    # Escribir valores del mes
+                    for cat in categorias:
+                        valor = valores_mes[cat]
+                        hoja.cell(row=fila, column=col, value=self._formatear_moneda(valor))
+                        self._aplicar_borde(hoja.cell(row=fila, column=col))
+                        totales_trimestral[cat] += valor
+                        col += 1
+                else:
+                    # Sin datos para este mes
+                    for _ in categorias:
+                        hoja.cell(row=fila, column=col, value='-')
+                        self._aplicar_borde(hoja.cell(row=fila, column=col))
+                        col += 1
+
+            # Escribir totales trimestrales
+            for cat in categorias:
+                hoja.cell(row=fila, column=col, value=self._formatear_moneda(totales_trimestral[cat]))
+                self._aplicar_borde(hoja.cell(row=fila, column=col))
+                col += 1
+
+            fila += 1
+
+        # Ajustar ancho de columnas
+        hoja.column_dimensions['A'].width = 25
+        for col in range(2, len(encabezados) + 1):
+            hoja.column_dimensions[get_column_letter(col)].width = 13
     
     def _crear_hoja_detalle_produccion_completo(self, datos: Dict[Tuple[str, int], Dict], producciones: List[Produccion]):
         """Crea la hoja de detalle de producción mensual con datos completos."""
@@ -765,48 +908,179 @@ class ExcelExporter:
             hoja.column_dimensions[get_column_letter(col)].width = 18
     
     def _crear_hoja_detalle_gastos(self, datos: Dict[Tuple[str, int], Dict]):
-        """Crea la hoja de detalle de gastos mensual."""
-        hoja = self.workbook.create_sheet("Detalle Gastos")
-        
+        """Crea 4 hojas de gastos: Octubre, Noviembre, Diciembre y Resumen Trimestral."""
+        # Crear hoja individual por cada mes
+        self._crear_hoja_gastos_mes(datos, 10, "Gastos Octubre")
+        self._crear_hoja_gastos_mes(datos, 11, "Gastos Noviembre")
+        self._crear_hoja_gastos_mes(datos, 12, "Gastos Diciembre")
+        # Crear resumen trimestral
+        self._crear_hoja_resumen_gastos_trimestral(datos)
+
+    def _crear_hoja_gastos_mes(self, datos: Dict[Tuple[str, int], Dict], mes: int, nombre_hoja: str):
+        """Crea una hoja de gastos para un mes específico."""
+        hoja = self.workbook.create_sheet(nombre_hoja)
+
         # Título
-        hoja['A1'] = 'DETALLE GASTOS MENSUAL'
+        hoja['A1'] = f'GASTOS {self.MESES[mes].upper()}'
         hoja['A1'].font = self.estilo_titulo
-        hoja.merge_cells('A1:G1')
-        
+        hoja.merge_cells('A1:F1')
+
         # Nota sobre valores netos
         hoja['A2'] = 'NOTA: Valores NETOS (sin IVA). Leasing: IVA descontado. Repuestos: sin IVA.'
         hoja['A2'].font = Font(size=9, italic=True, color='666666')
-        hoja.merge_cells('A2:G2')
-        
+        hoja.merge_cells('A2:F2')
+
         # Encabezados
-        encabezados = ['Máquina', 'Mes', 'Repuestos', 'Horas Hombre', 'Costo HH', 'Leasing', 'Total Gastos']
+        encabezados = ['Máquina', 'Repuestos', 'Horas Hombre', 'Costo HH', 'Leasing', 'Total Gastos']
         for col, encabezado in enumerate(encabezados, start=1):
-            celda = hoja.cell(row=3, column=col)
+            celda = hoja.cell(row=4, column=col)
             celda.value = encabezado
             self._aplicar_estilo_encabezado(celda)
-        
-        fila = 4
-        for (maquina, mes), datos_mes in sorted(datos.items()):
+
+        # Filtrar datos por mes y ordenar por total de gastos (mayor a menor)
+        fila = 5
+        datos_mes = sorted(
+            [(maq, datos_mes) for (maq, m), datos_mes in datos.items() if m == mes],
+            key=lambda x: x[1]['gastos']['total'],
+            reverse=True
+        )
+
+        for maquina, datos_mes in datos_mes:
             gastos = datos_mes['gastos']
-            
+
             hoja.cell(row=fila, column=1, value=maquina)
-            hoja.cell(row=fila, column=2, value=self.MESES[mes])
-            hoja.cell(row=fila, column=3, value=self._formatear_moneda(gastos['repuestos']))
-            hoja.cell(row=fila, column=4, value=float(gastos['horas_hombre']))
-            hoja.cell(row=fila, column=5, value=self._formatear_moneda(gastos['costo_hh']))
-            hoja.cell(row=fila, column=6, value=self._formatear_moneda(gastos.get('leasing', Decimal('0'))))
-            hoja.cell(row=fila, column=7, value=self._formatear_moneda(gastos['total']))
-            
-            for col in range(1, 8):
+            hoja.cell(row=fila, column=2, value=self._formatear_moneda(gastos['repuestos']))
+            hoja.cell(row=fila, column=3, value=float(gastos['horas_hombre']))
+            hoja.cell(row=fila, column=4, value=self._formatear_moneda(gastos['costo_hh']))
+            hoja.cell(row=fila, column=5, value=self._formatear_moneda(gastos.get('leasing', Decimal('0'))))
+            hoja.cell(row=fila, column=6, value=self._formatear_moneda(gastos['total']))
+
+            for col in range(1, 7):
                 self._aplicar_borde(hoja.cell(row=fila, column=col))
-            
+
             fila += 1
-        
+
         # Ajustar ancho de columnas
         hoja.column_dimensions['A'].width = 25
-        hoja.column_dimensions['B'].width = 15
-        for col in range(3, 7):
+        for col in range(2, 7):
             hoja.column_dimensions[get_column_letter(col)].width = 18
+
+    def _crear_hoja_resumen_gastos_trimestral(self, datos: Dict[Tuple[str, int], Dict]):
+        """Crea la hoja de resumen trimestral de gastos."""
+        hoja = self.workbook.create_sheet("Resumen Gastos Trimestral")
+
+        # Título
+        hoja['A1'] = 'RESUMEN GASTOS TRIMESTRAL'
+        hoja['A1'].font = self.estilo_titulo
+        hoja.merge_cells('A1:P1')
+
+        # Nota sobre valores netos
+        hoja['A2'] = 'NOTA: Valores NETOS (sin IVA). Leasing: IVA descontado. Repuestos: sin IVA.'
+        hoja['A2'].font = Font(size=9, italic=True, color='666666')
+        hoja.merge_cells('A2:P2')
+
+        # Encabezados
+        encabezados = [
+            'Máquina',
+            'Repuestos Oct', 'HH Oct', 'Costo HH Oct', 'Leasing Oct', 'Total Oct',
+            'Repuestos Nov', 'HH Nov', 'Costo HH Nov', 'Leasing Nov', 'Total Nov',
+            'Repuestos Dic', 'HH Dic', 'Costo HH Dic', 'Leasing Dic', 'Total Dic',
+            'Total Repuestos', 'Total HH', 'Total Costo HH', 'Total Leasing', 'Total General'
+        ]
+        for col, encabezado in enumerate(encabezados, start=1):
+            celda = hoja.cell(row=4, column=col)
+            celda.value = encabezado
+            self._aplicar_estilo_encabezado(celda)
+
+        # Obtener todas las máquinas únicas con su total general y ordenar por total (mayor a menor)
+        maquinas_con_total = []
+        for maquina in set(maq for maq, _ in datos.keys()):
+            total_general = Decimal('0')
+            for mes in [10, 11, 12]:
+                clave = (maquina, mes)
+                if clave in datos:
+                    total_general += datos[clave]['gastos']['total']
+            maquinas_con_total.append((maquina, total_general))
+
+        # Ordenar por total general (mayor a menor)
+        maquinas_ordenadas = sorted(maquinas_con_total, key=lambda x: x[1], reverse=True)
+
+        fila = 5
+        for maquina, _ in maquinas_ordenadas:
+            col = 1
+            hoja.cell(row=fila, column=col, value=maquina)
+            self._aplicar_borde(hoja.cell(row=fila, column=col))
+            col += 1
+
+            # Acumuladores para totales trimestrales
+            total_repuestos = Decimal('0')
+            total_hh = Decimal('0')
+            total_costo_hh = Decimal('0')
+            total_leasing = Decimal('0')
+            total_general = Decimal('0')
+
+            # Datos por cada mes
+            for mes in [10, 11, 12]:
+                clave = (maquina, mes)
+                if clave in datos:
+                    gastos = datos[clave]['gastos']
+                    repuestos = gastos['repuestos']
+                    hh = gastos['horas_hombre']
+                    costo_hh = gastos['costo_hh']
+                    leasing = gastos.get('leasing', Decimal('0'))
+                    total = gastos['total']
+
+                    hoja.cell(row=fila, column=col, value=self._formatear_moneda(repuestos))
+                    self._aplicar_borde(hoja.cell(row=fila, column=col))
+                    col += 1
+                    hoja.cell(row=fila, column=col, value=float(hh))
+                    self._aplicar_borde(hoja.cell(row=fila, column=col))
+                    col += 1
+                    hoja.cell(row=fila, column=col, value=self._formatear_moneda(costo_hh))
+                    self._aplicar_borde(hoja.cell(row=fila, column=col))
+                    col += 1
+                    hoja.cell(row=fila, column=col, value=self._formatear_moneda(leasing))
+                    self._aplicar_borde(hoja.cell(row=fila, column=col))
+                    col += 1
+                    hoja.cell(row=fila, column=col, value=self._formatear_moneda(total))
+                    self._aplicar_borde(hoja.cell(row=fila, column=col))
+                    col += 1
+
+                    # Acumular totales
+                    total_repuestos += repuestos
+                    total_hh += hh
+                    total_costo_hh += costo_hh
+                    total_leasing += leasing
+                    total_general += total
+                else:
+                    # Sin datos para este mes
+                    for _ in range(5):
+                        hoja.cell(row=fila, column=col, value='-')
+                        self._aplicar_borde(hoja.cell(row=fila, column=col))
+                        col += 1
+
+            # Escribir totales trimestrales
+            hoja.cell(row=fila, column=col, value=self._formatear_moneda(total_repuestos))
+            self._aplicar_borde(hoja.cell(row=fila, column=col))
+            col += 1
+            hoja.cell(row=fila, column=col, value=float(total_hh))
+            self._aplicar_borde(hoja.cell(row=fila, column=col))
+            col += 1
+            hoja.cell(row=fila, column=col, value=self._formatear_moneda(total_costo_hh))
+            self._aplicar_borde(hoja.cell(row=fila, column=col))
+            col += 1
+            hoja.cell(row=fila, column=col, value=self._formatear_moneda(total_leasing))
+            self._aplicar_borde(hoja.cell(row=fila, column=col))
+            col += 1
+            hoja.cell(row=fila, column=col, value=self._formatear_moneda(total_general))
+            self._aplicar_borde(hoja.cell(row=fila, column=col))
+
+            fila += 1
+
+        # Ajustar ancho de columnas
+        hoja.column_dimensions['A'].width = 25
+        for col in range(2, 22):
+            hoja.column_dimensions[get_column_letter(col)].width = 15
     
     def _crear_hoja_desglose_repuestos(self, repuestos: List[Repuesto]):
         """Crea la hoja de desglose de repuestos."""
