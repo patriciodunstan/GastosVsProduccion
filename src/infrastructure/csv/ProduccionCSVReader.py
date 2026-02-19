@@ -8,39 +8,53 @@ Sigue el principio de inversión de dependencias (DIP).
 import csv
 from datetime import datetime
 from decimal import Decimal
-from typing import List, Optional
+from typing import List, Optional, TYPE_CHECKING
 from pathlib import Path
 
 from src.domain.entities.Produccion import Produccion
 from src.domain.services.NormalizadorMaquinas import NormalizadorMaquinas
 from src.domain.services.ValorUFService import ValorUFService
 
+# Avoid circular import
+if TYPE_CHECKING:
+    from src.domain.services.PreciosContratoService import PreciosContratoService
+
 
 class ProduccionCSVReader:
     """
     Lector de archivos CSV de producción.
-    
+
     Lee el archivo 'Harcha Maquinaria - Reportaría_Reportes_Tabla (3).csv'
     y extrae los datos de producción por máquina.
+
+    Ahora soporta contratos híbridos mediante el servicio de precios.
     """
-    
+
     MESES_FILTRO = [10, 11, 12]  # Octubre, Noviembre, Diciembre
     ANIO_FILTRO = None  # Se detectará automáticamente desde los datos
-    
-    def __init__(self, ruta_archivo: str, valor_uf: Optional[Decimal] = None):
+
+    def __init__(
+        self,
+        ruta_archivo: str,
+        valor_uf: Optional[Decimal] = None,
+        precios_service: Optional['PreciosContratoService'] = None
+    ):
         """
         Inicializa el lector con la ruta del archivo.
-        
+
         Args:
             ruta_archivo: Ruta al archivo CSV de producción
             valor_uf: Valor de la UF en pesos chilenos (opcional)
+            precios_service: Servicio de precios para contratos híbridos (opcional)
         """
         self.ruta_archivo = Path(ruta_archivo)
         if not self.ruta_archivo.exists():
             raise FileNotFoundError(f"El archivo no existe: {ruta_archivo}")
-        
+
         # Inicializar servicio de UF
         self.uf_service = ValorUFService(valor_uf_manual=valor_uf)
+        # Inicializar servicio de precios (opcional)
+        self.precios_service = precios_service
     
     def _parsear_fecha(self, fecha_str: str) -> Optional[datetime]:
         """
@@ -144,17 +158,23 @@ class ProduccionCSVReader:
                 contrato_txt = fila.get('CONTRATO_TXT', '').strip()
                 unidades = self._parsear_decimal(fila.get('vc_Unidades', '0'))
                 precio_unidad = self._parsear_decimal(fila.get('vc_Precio_Unidades', '0'))
-                
+
                 # Inicializar valores según el tipo de unidad
                 mt3 = Decimal('0')
                 horas = Decimal('0')
                 km = Decimal('0')
                 vueltas = Decimal('0')
                 valor_monetario = Decimal('0')
-                
+
+                # Nuevos campos para contratos híbridos
+                es_hibrido = False
+                precios_usados = []
+                desglose_precios = {}
+                contrato_tiene_precio = True
+
                 # Mapear tipo de unidad a las columnas correspondientes
                 tipo_unidad_upper = tipo_unidad.upper() if tipo_unidad else ''
-                
+
                 # Si el tipo de unidad es "?" o está vacío, inferir desde el nombre del contrato
                 if tipo_unidad_upper == '?' or not tipo_unidad:
                     contrato_upper = contrato_txt.upper()
@@ -166,37 +186,78 @@ class ProduccionCSVReader:
                         tipo_unidad_upper = 'KM'
                     elif 'DIA' in contrato_upper:
                         tipo_unidad_upper = 'DIA'
-                
-                if tipo_unidad_upper == 'MT3' or tipo_unidad_upper == 'M3' or tipo_unidad_upper == 'M³' or tipo_unidad_upper == 'MT3':
-                    mt3 = unidades
-                    valor_monetario = unidades * precio_unidad
-                elif tipo_unidad_upper == 'HR' or tipo_unidad_upper == 'H':
-                    horas = unidades
-                    valor_monetario = unidades * precio_unidad
-                elif tipo_unidad_upper == 'KM' or tipo_unidad_upper == 'K':
-                    km = unidades
-                    valor_monetario = unidades * precio_unidad
-                elif tipo_unidad_upper == 'DIA':
-                    # Los días se pueden considerar como horas (1 día = 8 horas típicamente)
-                    horas = unidades * Decimal('8')  # Asumiendo 8 horas por día
-                    valor_monetario = unidades * precio_unidad  # El precio ya es por día
-                elif tipo_unidad == '?' or tipo_unidad.upper() == 'UF':
-                    # Es UF (Unidad de Fomento) - Siempre usar 0.9 UF
-                    valor_uf = self.uf_service.obtener_valor_uf(fecha)
-                    unidades_uf = Decimal('0.9')  # Siempre 0.9 UF según especificación
-                    
-                    # Calcular el valor en pesos: 0.9 UF × valor_uf_actual
-                    valor_monetario = unidades_uf * valor_uf
-                    
-                    # Calcular horas equivalentes basado en el valor en pesos
-                    # Usamos el precio por unidad si está disponible, sino $35,000
-                    if precio_unidad > 0:
-                        horas = valor_monetario / precio_unidad
-                    else:
-                        precio_hora_estimado = Decimal('35000')
-                        horas = valor_monetario / precio_hora_estimado
-                
-                # Crear entidad
+
+                # ===== LÓGICA DE CÁLCULO DE VALOR MONETARIO =====
+                # Primero intentar usar el servicio de precios si está disponible
+                if self.precios_service and contrato_txt:
+                    # Obtener los precios del contrato
+                    precios_contrato = self.precios_service.get_precios(contrato_txt)
+
+                    # Si el contrato existe en el catálogo de precios
+                    if precios_contrato:
+                        # Verificar si es híbrido o tiene precio
+                        es_hibrido_calc = precios_contrato.is_hibrido()
+                        tiene_precio_calc = precios_contrato.has_any_precio()
+
+                        # Calcular según tipo de unidad (para saber qué unidades leer del CSV)
+                        if tipo_unidad_upper in ['MT3', 'M3', 'M³']:
+                            mt3 = unidades
+                        elif tipo_unidad_upper in ['HR', 'H']:
+                            horas = unidades
+                        elif tipo_unidad_upper in ['KM', 'K']:
+                            km = unidades
+                        elif tipo_unidad_upper == 'DIA':
+                            horas = unidades * Decimal('8')  # Convertir días a horas
+
+                        # Calcular valor usando TODOS los precios del contrato híbrido
+                        valor_total, unidades_lista, desglose = precios_contrato.calcular_valor_produccion(
+                            horas=horas,
+                            km=km,
+                            mt3=mt3,
+                            vueltas=vueltas,
+                            dias=Decimal('0')
+                        )
+
+                        valor_monetario = valor_total
+                        es_hibrido = es_hibrido_calc
+                        contrato_tiene_precio = tiene_precio_calc
+
+                        if valor_monetario > 0:
+                            precios_usados = [(u, desglose.get(u.lower(), Decimal('0'))) for u in unidades_lista]
+                            desglose_precios = desglose
+
+                # Fallback: si no hay servicio de precios o no encontró contrato, usar lógica original
+                if valor_monetario == 0:
+                    if tipo_unidad_upper == 'MT3' or tipo_unidad_upper == 'M3' or tipo_unidad_upper == 'M³' or tipo_unidad_upper == 'MT3':
+                        mt3 = unidades
+                        valor_monetario = unidades * precio_unidad
+                    elif tipo_unidad_upper == 'HR' or tipo_unidad_upper == 'H':
+                        horas = unidades
+                        valor_monetario = unidades * precio_unidad
+                    elif tipo_unidad_upper == 'KM' or tipo_unidad_upper == 'K':
+                        km = unidades
+                        valor_monetario = unidades * precio_unidad
+                    elif tipo_unidad_upper == 'DIA':
+                        # Los días se pueden considerar como horas (1 día = 8 horas típicamente)
+                        horas = unidades * Decimal('8')  # Asumiendo 8 horas por día
+                        valor_monetario = unidades * precio_unidad  # El precio ya es por día
+                    elif tipo_unidad == '?' or tipo_unidad.upper() == 'UF':
+                        # Es UF (Unidad de Fomento) - Siempre usar 0.9 UF
+                        valor_uf = self.uf_service.obtener_valor_uf(fecha)
+                        unidades_uf = Decimal('0.9')  # Siempre 0.9 UF según especificación
+
+                        # Calcular el valor en pesos: 0.9 UF × valor_uf_actual
+                        valor_monetario = unidades_uf * valor_uf
+
+                        # Calcular horas equivalentes basado en el valor en pesos
+                        # Usamos el precio por unidad si está disponible, sino $35,000
+                        if precio_unidad > 0:
+                            horas = valor_monetario / precio_unidad
+                        else:
+                            precio_hora_estimado = Decimal('35000')
+                            horas = valor_monetario / precio_hora_estimado
+
+                # Crear entidad con nuevos campos
                 produccion = Produccion(
                     codigo_maquina=codigo_maquina,
                     fecha=fecha,
@@ -206,7 +267,13 @@ class ProduccionCSVReader:
                     vueltas=vueltas,
                     precio_unidad=precio_unidad,
                     valor_monetario=valor_monetario,
-                    tipo_unidad_original=tipo_unidad.upper()  # Guardar tipo original
+                    tipo_unidad_original=tipo_unidad.upper() if tipo_unidad else '',  # Guardar tipo original
+                    # Campos para contratos híbridos
+                    contrato_id=contrato_txt,
+                    es_hibrido=es_hibrido,
+                    precios_usados=tuple(precios_usados),
+                    desglose_precios=desglose_precios,
+                    contrato_tiene_precio=contrato_tiene_precio
                 )
                 
                 producciones.append(produccion)

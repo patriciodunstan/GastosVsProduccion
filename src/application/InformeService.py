@@ -23,6 +23,8 @@ from src.infrastructure.export.ExcelExporter import ExcelExporter
 from src.infrastructure.export.HTMLExporter import HTMLExporter
 from src.infrastructure.export.HTMLExporterTaller import HTMLExporterTaller
 from src.domain.services.CalculadorGastos import CalculadorGastos
+from src.domain.services.PreciosContratoService import PreciosContratoService
+from src.infrastructure.excel.PreciosContratoExcelReader import PreciosContratoExcelReader
 
 
 class InformeService:
@@ -39,11 +41,12 @@ class InformeService:
         ruta_repuestos: str,
         ruta_leasing: Optional[str] = None,
         ruta_gastos: Optional[str] = None,
-        valor_uf: Optional[Decimal] = None
+        valor_uf: Optional[Decimal] = None,
+        ruta_precios: Optional[str] = None
     ):
         """
         Inicializa el servicio con las rutas de los archivos.
-        
+
         Args:
             ruta_produccion: Ruta al archivo CSV de producción
             ruta_horas_hombre: Ruta al archivo CSV de horas hombre
@@ -51,6 +54,7 @@ class InformeService:
             ruta_leasing: Ruta al archivo CSV de leasing (opcional)
             ruta_gastos: Ruta a la carpeta de gastos con reportes contables
             valor_uf: Valor de la UF en pesos chilenos (opcional)
+            ruta_precios: Ruta al archivo Excel de precios de contratos (opcional)
         """
         self.ruta_produccion = ruta_produccion
         self.ruta_horas_hombre = ruta_horas_hombre
@@ -58,7 +62,27 @@ class InformeService:
         self.ruta_leasing = ruta_leasing
         self.ruta_gastos = ruta_gastos
         self.valor_uf = valor_uf
-        
+        self.ruta_precios = ruta_precios
+
+        # Inicializar servicio de precios si se proporciona ruta
+        self._precios_service: Optional[PreciosContratoService] = None
+        if ruta_precios:
+            try:
+                precios_reader = PreciosContratoExcelReader(ruta_precios)
+                self._precios_service = PreciosContratoService(precios_reader)
+                self._precios_service.cargar_precios()
+                estadisticas = self._precios_service.get_estadisticas()
+                print(f"  - Precios de contratos cargados: {estadisticas['total_contratos']} contratos")
+                print(f"    * Con precio: {estadisticas['contratos_con_precio']}")
+                print(f"    * Sin precio: {estadisticas['contratos_sin_precio']} (CRÍTICO)")
+                print(f"    * Híbridos: {estadisticas['contratos_hibridos']}")
+            except Exception as e:
+                print(f"  - [WARNING] Error cargando precios de contratos: {e}")
+                print(f"    Se usará lógica original (precio único)")
+                self._precios_service = None
+        else:
+            print("  - [INFO] No se proporcionó archivo de precios, se usará lógica original")
+
         # Almacenar gastos de taller para informe separado
         self._gastos_taller: List[GastoOperacional] = []
         self._repuestos_taller: List[Repuesto] = []
@@ -198,7 +222,11 @@ class InformeService:
             Tupla con (producciones, horas_hombre, repuestos, leasing, gastos_operacionales)
         """
         print("Leyendo datos de producción...")
-        reader_prod = ProduccionCSVReader(self.ruta_produccion, valor_uf=self.valor_uf)
+        reader_prod = ProduccionCSVReader(
+            self.ruta_produccion,
+            valor_uf=self.valor_uf,
+            precios_service=self._precios_service  # Pasar servicio de precios
+        )
         producciones = reader_prod.leer()
         print(f"  - {len(producciones)} registros de producción leídos")
         

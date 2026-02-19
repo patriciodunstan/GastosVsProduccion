@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auditoría de Precios - Contratos Harcha Maquinaria</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; background: #f5f5f5; padding: 20px; }
+        .container { max-width: 1400px; margin: 0 auto; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: white; padding: 30px; border-radius: 8px 8px 0 0; text-align: center; }
+        h2 { color: #1e3c72; padding: 20px 20px 10px; border-bottom: 2px solid #2a5298; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 20px; }
+        .stat-card { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 8px; text-align: center; }
+        .stat-card.danger { background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%); }
+        .stat-card.success { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .stat-card.warning { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .stat-number { font-size: 2.5em; font-weight: bold; }
+        .stat-label { font-size: 0.9em; opacity: 0.9; }
+        .section { padding: 20px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.85em; }
+        th { background: #1e3c72; color: white; padding: 12px; text-align: left; position: sticky; top: 0; }
+        td { padding: 10px; border-bottom: 1px solid #ddd; }
+        tr:nth-child(even) { background: #f9f9f9; }
+        tr:hover { background: #f0f0f0; }
+        .badge { display: inline-block; padding: 4px 8px; border-radius: 4px; font-size: 0.75em; font-weight: bold; }
+        .badge-danger { background: #dc3545; color: white; }
+        .badge-warning { background: #ffc107; color: #333; }
+        .badge-success { background: #28a745; color: white; }
+        .badge-info { background: #17a2b8; color: white; }
+        .summary { background: #f8f9fa; padding: 15px; border-left: 4px solid #2a5298; margin: 20px; border-radius: 4px; }
+        .progress-bar { width: 100%; height: 30px; background: #e0e0e0; border-radius: 15px; overflow: hidden; margin: 10px 0; }
+        .progress-fill { height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; }
+        .footer { background: #1e3c72; color: white; padding: 20px; text-align: center; border-radius: 0 0 8px 8px; }
+        .alert-danger { background: #f8d7da; color: #721c24; padding: 15px; border-radius: 4px; margin: 10px 0; }
+        .alert-warning { background: #fff3cd; color: #856404; padding: 15px; border-radius: 4px; margin: 10px 0; }
+        .alert-success { background: #d4edda; color: #155724; padding: 15px; border-radius: 4px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 AUDITORÍA DE PRECIOS - CONTRATOS HARCHA MAQUINARIA</h1>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">5,134</div>
+                <div class="stat-label">Total Registros</div>
+            </div>
+            <div class="stat-card success">
+                <div class="stat-number">4,402</div>
+                <div class="stat-label">1 Precio (85.7%)</div>
+            </div>
+            <div class="stat-card warning">
+                <div class="stat-number">194</div>
+                <div class="stat-label">Múltiples (3.8%)</div>
+            </div>
+            <div class="stat-card danger">
+                <div class="stat-number">538</div>
+                <div class="stat-label">Sin Precio (10.5%)</div>
+            </div>
+        </div>
+        <h2>1. RESUMEN EJECUTIVO</h2>
+        <div class="section">
+            <div class="summary">
+                <h3>🎯 Hallazgos Principales</h3>
+                <div class="alert-danger">
+                    <strong>⚠️ CRÍTICO:</strong> 538 registros (10.5%) NO tienen ningún precio asignado.
+                    <br>34 contratos únicos afectados requieren atención inmediata.
+                </div>
+                <div class="alert-warning">
+                    <strong>⚡ ATENCIÓN:</strong> 194 registros (3.8%) tienen MÚLTIPLES precios.
+                    <br>28 contratos híbridos requieren lógica especial de cálculo.
+                </div>
+                <div class="alert-success">
+                    <strong>✅ CUMPLEN NORMA:</strong> 4402 registros (85.7%) tienen exactamente un precio asignado.
+                </div>
+            </div>
+        </div>
+        <h2>2. DISTRIBUCIÓN DE PRECIOS</h2>
+        <div class="section">
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 85.7%; background: #28a745;">
+                    1 Precio: 85.7%
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 3.8%; background: #ffc107;">
+                    Múltiples: 3.8%
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 10.5%; background: #dc3545;">
+                    Sin Precio: 10.5%
+                </div>
+            </div>
+        </div>
+        <h2>3. CONTRATOS HÍBRIDOS (Múltiples Precios)</h2>
+        <div class="section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Contrato</th>
+                        <th>Tipo</th>
+                        <th>Hora</th>
+                        <th>Km</th>
+                        <th>Mt3</th>
+                        <th>Vuelta</th>
+                        <th>Diario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="badge badge-info">CT00042Km</span></td>
+                        <td>Km</td>
+                        <td>-</td>
+                        <td>$1,800</td>
+                        <td>$1,800</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00042Mt3</span></td>
+                        <td>Km</td>
+                        <td>-</td>
+                        <td>$1,800</td>
+                        <td>$1,800</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00052KmHr</span></td>
+                        <td>Km , Hr</td>
+                        <td>$35,000</td>
+                        <td>$2,500</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00053KmHr</span></td>
+                        <td>Km , Hr</td>
+                        <td>$35,000</td>
+                        <td>$2,500</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00054KmHr</span></td>
+                        <td>Km , Hr</td>
+                        <td>$35,000</td>
+                        <td>$2,500</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00060Mt3Km</span></td>
+                        <td>Mt3 , Km</td>
+                        <td>-</td>
+                        <td>$2,800</td>
+                        <td>$1,800</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00062KmMt3</span></td>
+                        <td>Km , Mt3</td>
+                        <td>-</td>
+                        <td>$2,800</td>
+                        <td>$1,800</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00127KmMt3</span></td>
+                        <td>Km , Mt3</td>
+                        <td>-</td>
+                        <td>$2,800</td>
+                        <td>$1,800</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00270KmMt3</span></td>
+                        <td>Km , Mt3</td>
+                        <td>-</td>
+                        <td>$2,800</td>
+                        <td>$1,800</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00300KmHr</span></td>
+                        <td>Km , Hr</td>
+                        <td>$35,000</td>
+                        <td>$2,500</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00318KmHr</span></td>
+                        <td>Km , Hr</td>
+                        <td>$35,000</td>
+                        <td>$2,500</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00394KmMt3</span></td>
+                        <td>Km , Mt3</td>
+                        <td>-</td>
+                        <td>$180</td>
+                        <td>$1,000</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00478Km</span></td>
+                        <td>Km</td>
+                        <td>-</td>
+                        <td>$180</td>
+                        <td>$1</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00485KmHr</span></td>
+                        <td>Km , Hr</td>
+                        <td>$35,000</td>
+                        <td>$2,500</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00513KmHr</span></td>
+                        <td>Km , Hr</td>
+                        <td>$35,000</td>
+                        <td>$2,500</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00691KmHr</span></td>
+                        <td>Km , Hr</td>
+                        <td>$35,000</td>
+                        <td>$2,500</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00695HrKm</span></td>
+                        <td>Hr , Km</td>
+                        <td>$35,000</td>
+                        <td>$2,500</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00745KmHr</span></td>
+                        <td>Km , Hr</td>
+                        <td>$35,000</td>
+                        <td>$2,500</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00835KmHr</span></td>
+                        <td>Km , Hr</td>
+                        <td>$30,000</td>
+                        <td>$2,500</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00843Dia</span></td>
+                        <td>Dia</td>
+                        <td>$280,000</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>$280,000</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00857Mt3Km</span></td>
+                        <td>Mt3 , Km</td>
+                        <td>-</td>
+                        <td>$180</td>
+                        <td>$180</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00863KmHr</span></td>
+                        <td>Km , Hr</td>
+                        <td>$35,000</td>
+                        <td>$2,500</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00873Km</span></td>
+                        <td>Km</td>
+                        <td>$35,000</td>
+                        <td>$1,400</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00881KmHr</span></td>
+                        <td>Km , Hr</td>
+                        <td>$35,000</td>
+                        <td>$2,500</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00943KmMt3</span></td>
+                        <td>Km , Mt3</td>
+                        <td>$180</td>
+                        <td>-</td>
+                        <td>$180</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00945KmHr</span></td>
+                        <td>Km , Hr</td>
+                        <td>$30,000</td>
+                        <td>$2,500</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT00949KmHr</span></td>
+                        <td>Km , Hr</td>
+                        <td>$35,000</td>
+                        <td>$2,500</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-info">CT01001KmHr</span></td>
+                        <td>Km , Hr</td>
+                        <td>$35,000</td>
+                        <td>$2,500</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h2>4. REGISTROS SIN PRECIO (Requieren Atención)</h2>
+        <div class="section"><p><strong>34 contratos únicos</strong> sin precios asignados</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Contrato</th>
+                        <th>Tipo</th>
+                        <th>Máquinas</th>
+                        <th>Cliente</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00044Hr</span></td>
+                        <td>Hr, Unidades</td>
+                        <td>T-02 HLZF62-8 SAME EXPLORER 95 - SAME - EXPLORER 95, T-01 MASSEY FERGUSON 299 - MASSEY FERGUSON - 299, T-01 - MASSEY FERGUSON - 299</td>
+                        <td>Harcha Maquinaria</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00073KmUnidadesMt3</span></td>
+                        <td>Km , Unidades , Mt3</td>
+                        <td>CT-09 GGFY95 - JAC - LANDER HFC 3311</td>
+                        <td>Harcha Maquinaria</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00096Km</span></td>
+                        <td>Km, Unidades</td>
+                        <td>CT-10 HKDX21 - FOTON - AUMAN 3239</td>
+                        <td>Harcha Maquinaria</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00099Km</span></td>
+                        <td>Km, Unidades</td>
+                        <td>CT-10 HKDX21 - FOTON - AUMAN 3239</td>
+                        <td>Harcha Maquinaria</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00099KmUnidades</span></td>
+                        <td>Km, Unidades</td>
+                        <td>CT-10 HKDX21 - FOTON - AUMAN 3239</td>
+                        <td>Aridos Materra Spa</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00100KmUnidades</span></td>
+                        <td>Km, Unidades</td>
+                        <td>CT-10 HKDX21 - FOTON - AUMAN 3239</td>
+                        <td>Itamalal</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00291Km</span></td>
+                        <td>Km, Unidades</td>
+                        <td>CP-06 DJBD80 - SINOTRUCK - CG 190</td>
+                        <td>N/A</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00292Hr</span></td>
+                        <td>Hr, Unidades</td>
+                        <td>CF-05 LZRC22 - CLINTON - LW 300 F, CF-05 CLINTON LW 300 F - CLINTON - LW 300 F, CF-05 - CLINTON - LW 300 F</td>
+                        <td>Melon Hormigones S.a.</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00306Hr</span></td>
+                        <td>Hr, Unidades</td>
+                        <td>T-05 DONGFENG DF404 - DONGFENG - DF404, T-05 - DONGFENG - DF404</td>
+                        <td>N/A</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00355Km</span></td>
+                        <td>Km, Unidades</td>
+                        <td>CP-06 DJBD80 - SINOTRUCK - CG 190</td>
+                        <td>Familia Constructora Spa (FAMCO)</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00367KmUnidadesMt3</span></td>
+                        <td>Km , Unidades , Mt3</td>
+                        <td>CT-25 WH9819-7 - MACK - CV713</td>
+                        <td>Aridos Materra Spa</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00436Km</span></td>
+                        <td>Km, Unidades</td>
+                        <td>CP-06 DJBD80 - SINOTRUCK - CG 190</td>
+                        <td>N/A</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00472KmUnidadesMt3</span></td>
+                        <td>Km , Unidades , Mt3</td>
+                        <td>CT-31 YU4569-7 - MACK - CV713</td>
+                        <td>Aridos Materra Spa</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00473KmUnidadesMt3</span></td>
+                        <td>Km , Unidades , Mt3</td>
+                        <td>CT-31 YU4569-7 - MACK - CV713</td>
+                        <td>Aridos Materra Spa</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00480KmUnidades</span></td>
+                        <td>Km, Unidades</td>
+                        <td>CT-28 WH9822-7 - MACK - CV713</td>
+                        <td>Aridos Materra Spa</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00486Km</span></td>
+                        <td>Km, Unidades</td>
+                        <td>CG-02 GGBJ29 - FOTON - AUMARK 1117</td>
+                        <td>Itamalal</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00488Km</span></td>
+                        <td>Km, Dia</td>
+                        <td>C-35 SCSL76 - JMC - VIGUS WOR LX 4X4</td>
+                        <td>N/A</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00508Km</span></td>
+                        <td>Km, Unidades</td>
+                        <td>CT-34 YU4943-9 - MACK - CV713</td>
+                        <td>Aridos Materra Spa</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00524KmHr</span></td>
+                        <td>Km , Hr</td>
+                        <td>CP-07 DZYT67 - FORD - CARGO 2429</td>
+                        <td>Harcha Maquinaria</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00562Km</span></td>
+                        <td>Km, Dia</td>
+                        <td>C-39 SRPL60 - MAXUS - T60 DX 4X4 CABSIM 2,8CC</td>
+                        <td>Harcha Maquinaria</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00562KmDia</span></td>
+                        <td>Km, Dia</td>
+                        <td>C-39 SRPL60 - MAXUS - T60 DX 4X4 CABSIM 2,8CC</td>
+                        <td>Harcha Maquinaria</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00665Km</span></td>
+                        <td>Km</td>
+                        <td>CP-02 HKST11 - FOTON - AUMARK 613 CS</td>
+                        <td>Itamalal</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00666Hr</span></td>
+                        <td>Hr</td>
+                        <td>RX-06 GYXY36-5 NEW HOLAND B90B 4X4 - NEW HOLAND - B90B 4X4</td>
+                        <td>Aridos Materra Spa</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00678KmMt3</span></td>
+                        <td>Km , Mt3</td>
+                        <td>CT-06 BSLY79 - FREIGHTLINER - M2 106</td>
+                        <td>Aridos Materra Spa</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00680Km</span></td>
+                        <td>Km</td>
+                        <td>C-37 SLCT28 - MAXUS - T60 DX 4X4 DCAB 2,8CC</td>
+                        <td>Harcha Maquinaria</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00688Hr</span></td>
+                        <td>Hr</td>
+                        <td>T-03 - MASSEY FERGUSON - 4292T4K</td>
+                        <td>Itamalal</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00734Km</span></td>
+                        <td>Km</td>
+                        <td>CT-20 BFTP53 - MERCEDEZ BENZ - Sin Modelo</td>
+                        <td>Constructora Region Sur Spa</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00738Km</span></td>
+                        <td>Km</td>
+                        <td>CP-06 DJBD80 - SINOTRUCK - CG 190</td>
+                        <td>Harcha Maquinaria</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00800Km</span></td>
+                        <td>Km</td>
+                        <td>C-29 RWRH49 - JMC - VIGUS WOR 4X4</td>
+                        <td>Harcha Maquinaria</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00853Km</span></td>
+                        <td>Km</td>
+                        <td>CT-31 YU4569-7 - MACK - CV713</td>
+                        <td>Harcha Maquinaria</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00860Km</span></td>
+                        <td>Km</td>
+                        <td>CT-30 YU4568-9 - MACK - CV713</td>
+                        <td>Harcha Maquinaria</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00957Hr</span></td>
+                        <td>Hr</td>
+                        <td>C-39 SRPL60 - MAXUS - T60 DX 4X4 CABSIM 2,8CC, C-30 RWRH50 - JMC - VIGUS WOR 4X4</td>
+                        <td>Harcha Maquinaria</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT00998Km</span></td>
+                        <td>Km</td>
+                        <td>CT-25 WH9819-7 - MACK - CV713</td>
+                        <td>Harcha Maquinaria</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-danger">CT01002Hr</span></td>
+                        <td>Mes</td>
+                        <td>P-04 - POWERSREEN - CRUSHER, P-04 POWERSREEN CRUSHER - POWERSREEN - CRUSHER</td>
+                        <td>CONSORCIO</td>
+                        <td><span class="badge badge-danger">SIN PRECIO</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h2>5. RECOMENDACIONES</h2>
+        <div class="section">
+            <div class="summary">
+                <h3>📋 Plan de Acción</h3>
+                <ol style="margin: 10px 0 10px 20px; line-height: 2;">
+                    <li><strong>URGENTE:</strong> Asignar precios a los contratos sin precio para permitir cálculo de producción</li>
+                    <li><strong>CONTRATOS HÍBRIDOS:</strong> Implementar lógica que sume los valores de todas las unidades con precio</li>
+                    <li><strong>VALIDACIÓN:</strong> Crear validación automática en la carga de nuevos contratos</li>
+                    <li><strong>REPORTING:</strong> Incluir indicador de estado de precios en los reportes</li>
+                </ol>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Generado: 28/01/2026 15:08:38 | Archivo: Harcha Maquinaria - Reportaría_CON_PRECIOS.xlsx</p>
+        </div>
+    </div>
+</body>
+</html>

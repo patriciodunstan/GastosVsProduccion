@@ -164,6 +164,7 @@ class ExcelExporter:
         self._crear_hoja_desglose_repuestos(repuestos)
         self._crear_hoja_desglose_horas_hombre(horas_hombre)
         self._crear_hoja_desglose_gastos_operacionales(gastos_operacionales)
+        self._crear_hoja_auditoria_precios(producciones)  # Nueva hoja de auditoría
         
         # Eliminar hoja por defecto si existe
         if 'Sheet' in self.workbook.sheetnames:
@@ -297,8 +298,8 @@ class ExcelExporter:
             reverse=True
         )
 
-        for maquina, datos_mes in datos_mes:
-            gastos = datos_mes.get('gastos', {})
+        for maquina, datos_mes_item in datos_mes:
+            gastos = datos_mes_item.get('gastos', {})
 
             hoja.cell(row=fila, column=1, value=maquina)
             hoja.cell(row=fila, column=2, value=self._formatear_moneda(gastos.get('repuestos', Decimal('0'))))
@@ -945,8 +946,8 @@ class ExcelExporter:
             reverse=True
         )
 
-        for maquina, datos_mes in datos_mes:
-            gastos = datos_mes['gastos']
+        for maquina, datos_mes_item in datos_mes:
+            gastos = datos_mes_item['gastos']
 
             hoja.cell(row=fila, column=1, value=maquina)
             hoja.cell(row=fila, column=2, value=self._formatear_moneda(gastos['repuestos']))
@@ -1147,9 +1148,9 @@ class ExcelExporter:
             
             for col in range(1, 7):
                 self._aplicar_borde(hoja.cell(row=fila, column=col))
-            
+
             fila += 1
-        
+
         # Ajustar ancho de columnas
         hoja.column_dimensions['A'].width = 20
         hoja.column_dimensions['B'].width = 12
@@ -1157,3 +1158,124 @@ class ExcelExporter:
         hoja.column_dimensions['D'].width = 15
         for col in range(5, 7):
             hoja.column_dimensions[get_column_letter(col)].width = 18
+
+    def _crear_hoja_auditoria_precios(self, producciones: List[Produccion]):
+        """
+        Crea una hoja de auditoría de precios.
+
+        Muestra:
+        - Contratos sin precio (crítico)
+        - Contratos híbridos (múltiples precios)
+        - Estadísticas de cobertura de precios
+        """
+        hoja = self.workbook.create_sheet("Auditoría de Precios")
+
+        # Título
+        hoja['A1'] = 'AUDITORÍA DE PRECIOS DE CONTRATOS'
+        hoja['A1'].font = self.estilo_titulo
+        hoja.merge_cells('A1:E1')
+
+        # Nota
+        hoja['A2'] = 'NOTA: Esta hoja muestra el estado de los precios de contratos usados en el cálculo de producción.'
+        hoja['A2'].font = Font(size=9, italic=True, color='666666')
+        hoja.merge_cells('A2:E2')
+
+        # Recopilar datos de auditoría
+        contratos_sin_precio = {}  # contrato_id -> [(codigo_maquina, fecha), ...]
+        contratos_hibridos = {}  # contrato_id -> [(codigo_maquina, fecha, valor, desglose), ...]
+        total_registros = 0
+        total_sin_precio = 0
+        total_hibridos = 0
+
+        for prod in producciones:
+            total_registros += 1
+
+            if not prod.contrato_tiene_precio:
+                total_sin_precio += 1
+                if prod.contrato_id not in contratos_sin_precio:
+                    contratos_sin_precio[prod.contrato_id] = []
+                contratos_sin_precio[prod.contrato_id].append((prod.codigo_maquina, prod.fecha))
+
+            if prod.es_hibrido:
+                total_hibridos += 1
+                if prod.contrato_id not in contratos_hibridos:
+                    contratos_hibridos[prod.contrato_id] = []
+                desglose_str = ', '.join([f'{k}: ${int(v):,}' for k, v in prod.desglose_precios.items()]) if prod.desglose_precios else ''
+                contratos_hibridos[prod.contrato_id].append(
+                    (prod.codigo_maquina, prod.fecha, prod.valor_monetario, desglose_str)
+                )
+
+        # Estadísticas
+        fila = 4
+        hoja.cell(row=fila, column=1, value='Total Registros Analizados:')
+        hoja.cell(row=fila, column=2, value=total_registros)
+        fila += 1
+        hoja.cell(row=fila, column=1, value='Registros Sin Precio (CRÍTICO):')
+        hoja.cell(row=fila, column=2, value=total_sin_precio)
+        hoja.cell(row=fila, column=2).font = Font(color='DC3545', bold=True)
+        fila += 1
+        hoja.cell(row=fila, column=1, value='Contratos Híbridos (Múltiples Precios):')
+        hoja.cell(row=fila, column=2, value=total_hibridos)
+        hoja.cell(row=fila, column=2).font = Font(color='FFC107', bold=True)
+        fila += 2
+
+        # Sección: Contratos Sin Precio
+        hoja.cell(row=fila, column=1, value='CONTRATOS SIN PRECIO (REQUIEREN ATENCIÓN)')
+        hoja.cell(row=fila, column=1).font = Font(bold=True, color='DC3545', size=12)
+        fila += 1
+
+        # Encabezados tabla sin precio
+        encabezados = ['Contrato', 'Máquina', 'Fecha', 'Estado']
+        for col, enc in enumerate(encabezados, start=1):
+            celda = hoja.cell(row=fila, column=col)
+            celda.value = enc
+            self._aplicar_estilo_encabezado(celda)
+        fila += 1
+
+        # Datos tabla sin precio
+        for contrato_id, registros in sorted(contratos_sin_precio.items()):
+            for codigo_maquina, fecha in registros[:5]:  # Máximo 5 registros por contrato
+                hoja.cell(row=fila, column=1, value=contrato_id)
+                hoja.cell(row=fila, column=2, value=codigo_maquina)
+                hoja.cell(row=fila, column=3, value=fecha.strftime('%d/%m/%Y'))
+                hoja.cell(row=fila, column=4, value='SIN PRECIO')
+                hoja.cell(row=fila, column=4).font = Font(color='DC3545', bold=True)
+
+                for col in range(1, 5):
+                    self._aplicar_borde(hoja.cell(row=fila, column=col))
+                fila += 1
+
+        fila += 1
+
+        # Sección: Contratos Híbridos
+        hoja.cell(row=fila, column=1, value='CONTRATOS HÍBRIDOS (MÚLTIPLES PRECIOS)')
+        hoja.cell(row=fila, column=1).font = Font(bold=True, color='FFC107', size=12)
+        fila += 1
+
+        # Encabezados tabla híbridos
+        encabezados_hibridos = ['Contrato', 'Máquina', 'Fecha', 'Valor Total', 'Desglose']
+        for col, enc in enumerate(encabezados_hibridos, start=1):
+            celda = hoja.cell(row=fila, column=col)
+            celda.value = enc
+            self._aplicar_estilo_encabezado(celda)
+        fila += 1
+
+        # Datos tabla híbridos
+        for contrato_id, registros in sorted(contratos_hibridos.items()):
+            for codigo_maquina, fecha, valor, desglose in registros[:5]:  # Máximo 5 por contrato
+                hoja.cell(row=fila, column=1, value=contrato_id)
+                hoja.cell(row=fila, column=2, value=codigo_maquina)
+                hoja.cell(row=fila, column=3, value=fecha.strftime('%d/%m/%Y'))
+                hoja.cell(row=fila, column=4, value=self._formatear_moneda(valor))
+                hoja.cell(row=fila, column=5, value=desglose)
+
+                for col in range(1, 6):
+                    self._aplicar_borde(hoja.cell(row=fila, column=col))
+                fila += 1
+
+        # Ajustar ancho de columnas
+        hoja.column_dimensions['A'].width = 20
+        hoja.column_dimensions['B'].width = 25
+        hoja.column_dimensions['C'].width = 15
+        hoja.column_dimensions['D'].width = 18
+        hoja.column_dimensions['E'].width = 40

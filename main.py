@@ -44,6 +44,11 @@ def main():
     ruta_leasing = ruta_gastos / "Leasing Credito HMAQ.csv"
     if not ruta_leasing.exists():
         ruta_leasing = ruta_base / "Leasing Credito HMAQ.csv"
+
+    # Ruta de precios de contratos (para contratos híbridos)
+    ruta_precios = ruta_gastos / "Harcha Maquinaria - Reportaría_CON_PRECIOS.xlsx"
+    if not ruta_precios.exists():
+        ruta_precios = ruta_base / "Harcha Maquinaria - Reportaría_CON_PRECIOS.xlsx"
     
     # Verificar que los archivos existan
     archivos_faltantes = []
@@ -84,7 +89,8 @@ def main():
             ruta_repuestos=str(ruta_repuestos),
             ruta_leasing=str(ruta_leasing) if ruta_leasing.exists() else None,
             ruta_gastos=str(ruta_reportes_contables),
-            valor_uf=valor_uf
+            valor_uf=valor_uf,
+            ruta_precios=str(ruta_precios) if ruta_precios.exists() else None
         )
         
         servicio.generar_informes(
